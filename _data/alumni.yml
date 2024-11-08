@@ -1,0 +1,13 @@
+- name: Alumnus 1
+  degrees: 
+  previously: Undergraduate student
+  now: Graduate student
+  email: 
+  website: 
+
+- name: Alumnus 2
+  degrees: Ph.D.
+  previously: Project Scientist
+  now: Somewhere
+  email: 
+  website: blah blah blah
