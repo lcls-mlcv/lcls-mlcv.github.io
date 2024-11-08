@@ -2,7 +2,7 @@
 layout: page
 permalink: /team/
 title: Team
-description: 
+description:
 nav: true
 nav_order: 2
 ---
@@ -33,12 +33,14 @@ nav_order: 2
     <div class="col-sm-8">
         <p class="text-justify">{{person.description | markdownify}}</p>
     </div>
+
 </div>
 <hr>
 {% endfor %}
 
 {% if site.data.students %}
-  <h2 id="students">students</h2>
+
+  <h2 id="students">Students</h2>
   {% for person in site.data.students %}
 <div id = "{{person.name | replace: ' ', '-'}}" class="row" style="padding-top: 60px; margin-top: -60px;">
     <img style="float: right; width: 25%; padding-left: 20px;" src="{{ person.image | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" alt="photo of {{person.name}}">
@@ -63,12 +65,14 @@ nav_order: 2
     <div class="col-sm-8">
         <p class="text-justify">{{person.description | markdownify}}</p>
     </div>
+
 </div>
 <hr>
   {% endfor %}
 {% endif %}
 
 {% if site.data.affiliates %}
+
   <h2 id="affiliates">affiliate members</h2>
   {% for person in site.data.affiliates %}
 <div id = "{{person.name | replace: ' ', '-'}}" class="row" style="padding-top: 60px; margin-top: -60px;">
@@ -94,14 +98,16 @@ nav_order: 2
     <div class="col-sm-8">
         <p class="text-justify">{{person.description | markdownify}}</p>
     </div>
+
 </div>
 <hr>
   {% endfor %}
 {% endif %}
 
+## Alumni
 
-## alumni
 {% for alum in site.data.alumni %}
+
 <div id = "{{alum.name | replace: ' ', '-'}}" class="row" style="padding-top: 60px; margin-top: -60px;">
     <div style="margin-left: 15px;">
         <h4>{{alum.name}}{% if alum.degrees %}, {{alum.degrees}} {% endif %}</h4>

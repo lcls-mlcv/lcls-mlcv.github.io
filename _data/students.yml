@@ -1,20 +1,20 @@
 - name: student 1
   degrees: M.S.
   image: 3.jpg
-  position: 
+  position:
   email: student1 [at] stanford.edu
-  website: 
+  website:
   github:
-  scholar: 
+  scholar:
   orcid:
   description: I'm student 1.
-                
+
 - name: student 2
   degrees: B.S.
   image: 4.jpg
-  position: 
+  position:
   email: student2 [at] visitinguniveristy.edu
   website:
   scholar:
   orcid:
-  description:  I'm student 2.
+  description: I'm student 2.

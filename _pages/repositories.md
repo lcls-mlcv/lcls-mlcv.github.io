@@ -1,10 +1,30 @@
 ---
 layout: page
-permalink: /repositories/
-title: repositories
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+permalink: /resources/
+title: Resources
 nav: true
 nav_order: 5
+---
+
+### Internship Opportunities
+
+- [SLAC Summer Internship Program](https://careers.slac.stanford.edu/slac-summer-internship-program)
+- [LCLS Summer Internship Program](https://lcls.slac.stanford.edu/internships)
+
+### Presentations and Posters
+
+- [2024 SSRL/LCLS Users' Meeting Student Poster](https://www-ssrl.slac.stanford.edu/content/ssrl-news/student-poster-awards-sponsored-bioxfel)
+- [2023 SLAC Public Lecture: Capturing Molecular Motion Using Artificial Intelligence](https://www.youtube.com/watch?v=cuSC7LZHQkY)
+
+### Documentation and Tutorials
+
+- [LCLS User Resources](https://lcls-users.readthedocs.io)
+- [LUTE Documentation](https://slac-lcls.github.io/lute)
+
+### Community Resources
+
+- [Reciprocal Spaceship](https://rs-station.github.io)
+
 ---
 
 {% if site.data.repositories.github_users %}
