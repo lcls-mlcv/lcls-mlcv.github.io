@@ -1,0 +1,11 @@
+- name: Collaborator 1
+  degrees: Ph.D.
+  position: Assistant Professor, Univeristy of College
+  email:
+  website: lab website 1
+
+- name: Collaborator 2
+  degrees: Ph.D.
+  position: Senior Scientist, Some Lab
+  email:
+  website: lab website 2

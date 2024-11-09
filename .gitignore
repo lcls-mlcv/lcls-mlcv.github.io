@@ -11,7 +11,4 @@ assets/libs/
 node_modules/
 vendor
 .idea
-INSTALL.md
-CUSTOMIZE.md
 FAQ.md
-CONTRIBUTING.md
