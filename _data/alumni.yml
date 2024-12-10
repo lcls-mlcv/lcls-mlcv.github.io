@@ -1,13 +1,62 @@
-- name: Alumnus 1
-  degrees:
-  previously: Undergraduate student
-  now: Graduate student
+- name: David Klindt
+  degrees: Ph.D.
+  previously: Research Associate (2023)
+  now: Assistant Professor, Cold Spring Harbor Laboratory
+  email: klindt [at] cshl.edu
+  website: https://www.cshl.edu/research/faculty-staff/david-klindt/
+  projects: ["AtomicSPI"]
+
+- name: Bella Crouch
+  degrees: M.S.
+  previously: ICME Xplore Resarch Intern (Spring 2024)
+  now:
+  projects: ["MAXIE"]
   email:
   website:
 
-- name: Alumnus 2
-  degrees: Ph.D.
-  previously: Project Scientist
-  now: Somewhere
+- name: Fang Shu
+  degrees: M.S.
+  previously: ICME Xplore Resarch Intern (Spring 2024)
+  now:
+  projects: ["MAXIE"]
   email:
-  website: blah blah blah
+  website:
+
+- name: Paul-Emile Giacomelli
+  degrees: M.S.
+  previously: Research Assistant (Fall 2023 - Winter 2024)
+  now: Strategy Consultant
+  projects: ["BODet"]
+  email:
+  website:
+
+- name: Thomas Bougnon
+  degrees: M.S.
+  previously: Research Assistant (Fall 2023 - Winter 2024)
+  now: Consultant
+  email:
+  website:
+  projects: ["PyPCA"]
+
+- name: Russell Marasigan
+  degrees:
+  previously: LCLS Summer 2023 Intern
+  now:
+  email:
+  website:
+  projects: ["PyPCA"]
+
+- name: Charlotte Meredith
+  degrees:
+  previously: SAGE Summer 2023 Intern
+  now:
+  email:
+  website:
+
+- name: Callum Hepworth
+  degrees:
+  previously: LCLS Summer 2022 Intern
+  now:
+  email:
+  website:
+  projects: ["PyPCA"]

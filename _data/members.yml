@@ -1,6 +1,6 @@
 - name: Frédéric Poitevin
   degrees: Ph.D.
-  image: team_fred_poitevin.jpg
+  image: fred_poitevin.jpg
   position: Staff Scientist
   email: fpoitevi [at] slac.stanford.edu
   website: https://profiles.stanford.edu/frdric-poitevin
@@ -11,7 +11,7 @@
 
 - name: Kevin M. Dalton
   degrees: Ph.D.
-  image: team_kevin_dalton.jpg
+  image: kevin_dalton.jpg
   position: Associate Scientist
   email: kmdalton [at] slac.stanford.edu
   website: https://profiles.stanford.edu/kevin-dalton
@@ -22,7 +22,7 @@
 
 - name: Doris Mai
   degrees: Ph.D.
-  image: team_doris_mai.jpg
+  image: doris_mai.jpg
   position: Research Associate
   email: mai12345 [at] slac.stanford.edu
   scholar:

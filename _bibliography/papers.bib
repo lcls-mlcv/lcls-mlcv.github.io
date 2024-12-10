@@ -1,7 +1,179 @@
 ---
 ---
 
+% abbr: ['Data Reduction', 'Digital Twins']
+
 @string{aps = {American Physical Society,}}
+
+@inproceedings{winnicki2024matrixsketcher,
+  title={Matrix Sketching for Online Analysis of LCLS Imaging Datasets},
+  author={Winnicki, John and Poitevin, Fr{\'e}d{\'e}ric and Li, Haoyuan and Darve, Eric},
+  abstract={X-ray light source facilities such as the Linac Coherence Light Source (LCLS) at SLAC National Accelerator
+Laboratory generate massive amounts of data that need to be
+analyzed quickly to inform ongoing experiments. The analysis of
+data streams coming from various parts of the instrument has
+potential to feed back into instrument operation or experiment
+steering. For example, shot-to-shot images of the beam profile
+inform on the quality of the beam delivery while downstream data
+read from large area detectors inform on the state of diffraction
+experiments carried on samples of interests at various beamlines.
+However, the high repetition rate and high dimensionality of
+these data streams make their analysis challenging, both in
+terms of scalability and interpretability. In this work, we propose
+an image monitoring and classification framework that follows
+a three-stage process: dimensionality reduction using principal
+component analysis on a matrix sketch, visualization using
+UMAP, and clustering using OPTICS. In the dimensionality
+reduction step, we combine the Priority Sampling algorithm
+with a modified Frequent Directions algorithm to produce a
+rank-adaptive accelerated matrix sketching (ARAMS) algorithm,
+wherein practitioners specify the target error of the sketch as
+opposed to the rank. Furthermore, the framework is parallel,
+enabling real-time analysis of the underpinning structure of
+the data. This framework demonstrates strong empirical performance and scalability. We explore its effectiveness on both beam
+profile data and diffraction data from recent LCLS experiments.},
+  booktitle={SuperComputing},
+  pages={},
+  year={2024},
+  organization={},
+  preview={matrixsketcher.png},
+  selected={true},
+  abbr={Data Reduction},
+  project={MatrixSketcher},
+  pdf={https://conferences.computer.org/sc-wpub/pdfs/SC-W2024-6oZmigAQfgJ1GhPL0yE3pS/555400c144/555400c144.pdf}
+}
+
+@article{mai2024assessing,
+  title={Assessing the applicability of Bayesian inference for merging small molecule microED data},
+  author={Mai, Huanghao and Peck, Ariana and Dalton, Kevin M and de Moraes, Lygia Silva and Burch, Jessica E and Poitevin, Fr{\'e}d{\'e}ric and Nelson, Hosea M},
+  abstract={Microcrystal electron diffraction (MicroED) is an emerging technique for characterizing small molecule structures from nanoscale crystals. Merging data from multiple crystals is a particularly challenging step in the microED workflow. A common practice is to manually curate datasets and apply scaling programs conventionally utilized in rotational X-ray diffraction (XRD), but this could be time-consuming and risks introducing human bias in data analysis. Recently, a Bayesian inference program named Careless (Dalton et al., 2022) has demonstrated excellent performance in merging macromolecular XRD data. Here, the applicability of Careless to small molecule microED data is evaluated and an investigation of the impact of dataset curation is performed. Benchmarking against XDS/XSCALE shows that Careless is an effective complementary approach that merges data to a higher CC1/2 value at high resolution. Furthermore, merging outcomes are not significantly improved by curating datasets either manually or with an automated extension to Careless, cautioning against the common practice of manual dataset curation.},
+  journal={ChemRxiv},
+  year={2024},
+  abbr={Data Reduction},
+  project={Careless},
+  preview={mai2024assessing.png},
+  html={https://www.chemrxiv.org/engage/chemrxiv/article-details/66bd949820ac769e5fa7d032}
+}
+
+@article{klindt2024towards,
+  title={Towards interpretable Cryo-EM: disentangling latent spaces of molecular conformations},
+  author={Klindt, David A and Hyv{\"a}rinen, Aapo and Levy, Axel and Miolane, Nina and Poitevin, Fr{\'e}d{\'e}ric},
+  abstract={Molecules are essential building blocks of life and their different conformations (i.e., shapes) crucially determine the functional role that they play in living organisms. Cryogenic Electron Microscopy (cryo-EM) allows for acquisition of large image datasets of individual molecules. Recent advances in computational cryo-EM have made it possible to learn latent variable models of conformation landscapes. However, interpreting these latent spaces remains a challenge as their individual dimensions are often arbitrary. The key message of our work is that this interpretation challenge can be viewed as an Independent Component Analysis (ICA) problem where we seek models that have the property of identifiability. That means, they have an essentially unique solution, representing a conformational latent space that separates the different degrees of freedom a molecule is equipped with in nature. Thus, we aim to advance the computational field of cryo-EM beyond visualizations as we connect it with the theoretical framework of (nonlinear) ICA and discuss the need for identifiable models, improved metrics, and benchmarks. Moving forward, we propose future directions for enhancing the disentanglement of latent spaces in cryo-EM, refining evaluation metrics and exploring techniques that leverage physics-based decoders of biomolecular systems. Moreover, we discuss how future technological developments in time-resolved single particle imaging may enable the application of nonlinear ICA models that can discover the true conformation changes of molecules in nature. The pursuit of interpretable conformational latent spaces will empower researchers to unravel complex biological processes and facilitate targeted interventions. This has significant implications for drug discovery and structural biology more broadly. More generally, latent variable models are deployed widely across many scientific disciplines. Thus, the argument we present in this work has much broader applications in AI for science if we want to move from impressive nonlinear neural network models to mathematically grounded methods that can help us learn something new about nature.},
+  journal={Frontiers in Molecular Biosciences},
+  volume={11},
+  pages={1393564},
+  year={2024},
+  publisher={Frontiers Media SA},
+  abbr={Interpretability},
+  project={AtomicSPI},
+  preview={klindt2024towards.jpg},
+  html={https://www.frontiersin.org/journals/molecular-biosciences/articles/10.3389/fmolb.2024.1393564/full},
+  selected={true}
+}
+
+@article{levy2024solving,
+  title={Solving Inverse Problems in Protein Space Using Diffusion-Based Priors},
+  author={Levy, Axel and Chan, Eric R and Fridovich-Keil, Sara and Poitevin, Fr{\'e}d{\'e}ric and Zhong, Ellen D and Wetzstein, Gordon},
+  abstract={The interaction of a protein with its environment can be understood and controlled via its 3D structure. Experimental methods for protein structure determination, such as X-ray crystallography or cryogenic electron microscopy, shed light on biological processes but introduce challenging inverse problems. Learning-based approaches have emerged as accurate and efficient methods to solve these inverse problems for 3D structure determination, but are specialized for a predefined type of measurement. Here, we introduce a versatile framework to turn raw biophysical measurements of varying types into 3D atomic models. Our method combines a physics-based forward model of the measurement process with a pretrained generative model providing a task-agnostic, data-driven prior. Our method outperforms posterior sampling baselines on both linear and non-linear inverse problems. In particular, it is the first diffusion-based method for refining atomic models from cryo-EM density maps.},
+  journal={arXiv preprint arXiv:2406.04239},
+  year={2024},
+  abbr={Protein Folding},
+  project={AtomicSPI},
+  preview={levy2024solving.png},
+  html={https://arxiv.org/html/2406.04239v1}
+}
+
+@article{levy2024revealing,
+  title={Revealing biomolecular structure and motion with neural ab initio cryo-EM reconstruction},
+  author={Levy, Axel and Grzadkowski, Michal and Poitevin, Frederic and Vallese, Francesca and Clarke, Oliver B and Wetzstein, Gordon and Zhong, Ellen D},
+  abstract={Proteins and other biomolecules form dynamic macromolecular machines that are tightly orchestrated to move, bind, and perform chemistry. Cryo-electron microscopy (cryo-EM) can access the intrinsic heterogeneity of these complexes and is therefore a key tool for understanding mechanism and function. However, 3D reconstruction of the resulting imaging data presents a challenging computational problem, especially without any starting information, a setting termed ab initio reconstruction. Here, we introduce a method, DRGN-AI, for ab initio heterogeneous cryo-EM reconstruction. With a two-step hybrid approach combining search and gradient-based optimization, DRGN-AI can reconstruct dynamic protein complexes from scratch without input poses or initial models. Using DRGN-AI, we reconstruct the compositional and conformational variability contained in a variety of benchmark datasets, process an unfiltered dataset of the DSL1/SNARE complex fully ab initio, and reveal a new “supercomplex” state of the human erythrocyte ankyrin-1 complex. With this expressive and scalable model for structure determination, we hope to unlock the full potential of cryo-EM as a high-throughput tool for structural biology and discovery.},
+  journal={bioRxiv},
+  pages={2024--05},
+  year={2024},
+  publisher={Cold Spring Harbor Laboratory},
+  abbr={Digital Twins},
+  project={AtomicSPI},
+  preview={levy2024revealing.png},
+  html={https://www.biorxiv.org/content/10.1101/2024.05.30.596729v1.full}
+}
+
+@article{shenoy2023scalable,
+  title={Scalable 3D Reconstruction From Single Particle X-Ray Diffraction Images Based on Online Machine Learning},
+  author={Shenoy, Jay and Levy, Axel and Poitevin, Fr{\'e}d{\'e}ric and Wetzstein, Gordon},
+  journal={arXiv preprint arXiv:2312.14432},
+  year={2023}
+}
+
+@inproceedings{shenoy2023amortized,
+  title={Amortized pose estimation for x-ray single particle imaging},
+  author={Shenoy, Jay and Levy, Axel and Poitevin, Fr{\'e}d{\'e}ric and Wetzstein, Gordon},
+  booktitle={Machine learning for structural biology Workshop},
+  year={2023},
+  organization={NeurIPS 2023},
+  selected={true}
+}
+
+@article{koo2023cryochains,
+  title={CryoChains: Heterogeneous Reconstruction of Molecular Assembly of Semi-flexible Chains from Cryo-EM Images},
+  author={Koo, Bongjin and Martel, Julien and Peck, Ariana and Levy, Axel and Poitevin, Fr{\'e}d{\'e}ric and Miolane, Nina},
+  journal={arXiv e-prints},
+  pages={arXiv--2306},
+  year={2023}
+}
+
+@incollection{peck2023modeling,
+  title={Modeling diffuse scattering with simple, physically interpretable models},
+  author={Peck, Ariana and Lane, Thomas J and Poitevin, Fr{\'e}d{\'e}ric},
+  booktitle={Methods in enzymology},
+  volume={688},
+  pages={169--194},
+  year={2023},
+  publisher={Elsevier}
+}
+
+@article{levy2022amortized,
+  title={Amortized inference for heterogeneous reconstruction in cryo-em},
+  author={Levy, Axel and Wetzstein, Gordon and Martel, Julien NP and Poitevin, Frederic and Zhong, Ellen},
+  journal={Advances in neural information processing systems},
+  volume={35},
+  pages={13038--13049},
+  year={2022}
+}
+
+@article{donnat2022deep,
+  title={Deep generative modeling for volume reconstruction in cryo-electron microscopy},
+  author={Donnat, Claire and Levy, Axel and Poitevin, Frederic and Zhong, Ellen D and Miolane, Nina},
+  journal={Journal of structural biology},
+  volume={214},
+  number={4},
+  pages={107920},
+  year={2022},
+  publisher={Elsevier}
+}
+
+@article{riahi2023alignot,
+  title={Alignot: An optimal transport based algorithm for fast 3d alignment with applications to cryogenic electron microscopy density maps},
+  author={Riahi, Aryan Tajmir and Woollard, Geoffrey and Poitevin, Fr{\'e}d{\'e}ric and Condon, Anne and Duc, Khanh Dao},
+  journal={IEEE/ACM Transactions on Computational Biology and Bioinformatics},
+  year={2023},
+  publisher={IEEE}
+}
+
+@inproceedings{nashed2022heterogeneous,
+  title={Heterogeneous reconstruction of deformable atomic models in Cryo-EM},
+  author={Nashed, Youssef and Peck, Ariana and Martel, Julien and Levy, Axel and Koo, Bongjin and Wetzstein, Gordon and Miolane, Nina and Ratner, Daniel and Poitevin, Fr{\'e}d{\'e}ric},
+  booktitle={Machine learning for structural biology Workshop},
+  year={2022},
+  organization={NeurIPS 2022},
+}
+
+@article{dalton2022careless,
+  title={Careless...},
+  author={Dalton, Kevin, ...},
+  journal={Nature Communications},
+  year={2022},
+  selected={true}
+}
 
 @inproceedings{levy2022cryoai,
   title={CryoAI: Amortized inference of poses for ab initio reconstruction of 3d molecular volumes from real cryo-em images},
@@ -12,36 +184,72 @@
   organization={Springer},
   preview={cryoai.jpg},
   selected={true},
-  abbr={CryoEM}
+  abbr={Digital Twins}
 }
 
-@article{PhysRev.47.777,
-  abbr={Example},
-  title={Example complicated bib: Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  dimensions={false},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  preview={wave-mechanics.gif},
+@article{su2021reproducibility,
+  title={Reproducibility of protein x-ray diffuse scattering and potential utility for modeling atomic displacement parameters},
+  author={Su, Zhen and Dasgupta, Medhanjali and Poitevin, Fr{\'e}d{\'e}ric and Mathews, Irimpan I and van den Bedem, Henry and Wall, Michael E and Yoon, Chun Hong and Wilson, Mark A},
+  journal={Structural Dynamics},
+  volume={8},
+  number={4},
+  year={2021},
+  publisher={AIP Publishing}
 }
 
-@article{exampleminimal,
-  title={Example minimal bib},
-  author={Last, Fist},
-  year={2024}
+@article{ecoffet2021application,
+  title={Application of transport-based metric for continuous interpolation between cryo-EM density maps},
+  author={Ecoffet, Arthur and Woollard, Geoffrey and Kushner, Artem and Poitevin, Fr{\'e}d{\'e}ric and Duc, Khanh Dao},
+  journal={AIMS mathematics},
+  volume={7},
+  number={1},
+  pages={986},
+  year={2021}
+}
+
+@inproceedings{nashed2021cryoposenet,
+  title={CryoPoseNet: End-to-end simultaneous learning of single-particle orientation and 3D map reconstruction from cryo-electron microscopy data},
+  author={Nashed, Youssef SG and Poitevin, Fr{\'e}d{\'e}ric and Gupta, Harshit and Woollard, Geoffrey and Kagan, Michael and Yoon, Chun Hong and Ratner, Daniel},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={4066--4076},
+  year={2021}
+}
+
+@article{ecoffet2020morphot,
+  title={MorphOT: Transport-based interpolation between EM maps with UCSF ChimeraX},
+  author={Ecoffet, Arthur and Poitevin, Fr{\'e}d{\'e}ric and Dao Duc, Khanh},
+  journal={Bioinformatics},
+  volume={36},
+  number={22-23},
+  pages={5528--5529},
+  year={2020},
+  publisher={Oxford University Press}
+}
+
+@inproceedings{miolane2020estimation,
+  title={Estimation of orientation and camera parameters from cryo-electron microscopy images with variational autoencoders and generative adversarial networks},
+  author={Miolane, Nina and Poitevin, Fr{\'e}d{\'e}ric and Li, Yee-Ting and Holmes, Susan},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops},
+  pages={970--971},
+  year={2020}
+}
+
+@article{peck2018intermolecular,
+  title={Intermolecular correlations are necessary to explain diffuse scattering from protein crystals},
+  journal={IUCrJ},
+  volume={5},
+  number={2},
+  pages={211--222},
+  year={2018},
+  publisher={International Union of Crystallography}
+}
+
+@article{houdayer2017reduction,
+  title={Reduction of small-angle scattering profiles to finite sets of structural invariants},
+  journal={Acta Crystallographica Section A: Foundations and Advances},
+  volume={73},
+  number={4},
+  pages={317--332},
+  year={2017},
+  publisher={International Union of Crystallography}
 }

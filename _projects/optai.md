@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 4
-description: a project with no image
+title: OptAI
+description: Optical Azimuthal Integration
 img:
-importance: 4
-category: Past
+importance: 2
+category: Ongoing
 ---
 
 Every project has a beautiful feature showcase page.

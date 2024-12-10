@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 5
-description: another project with an image 🎉
-img: assets/img/5.jpg
-importance: 4
-category: Past
+title: DynaBoost
+description:
+img: #assets/img/5.jpg
+importance: 1
+category: Ongoing
 ---
 
 Every project has a beautiful feature showcase page.

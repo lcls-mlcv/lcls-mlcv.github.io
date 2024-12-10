@@ -1,20 +1,91 @@
-- name: student 1
+- name: Axel Levy
   degrees: M.S.
-  image: 3.jpg
-  position:
-  email: student1 [at] stanford.edu
+  image: axel_levy.jpg
+  position: PhD student
+  email: axlevy [at] stanford.edu
+  website: https://axlevy.com/
+  github: axel-levy
+  scholar: yO62sYUAAAAJ
+  orcid:
+  description: Bonjour!
+  projects: ["AtomicSPI"]
+
+- name: Jay Shenoy
+  degrees: M.S.
+  image: jay_shenoy.jpg
+  position: PhD student
+  email: jayshenoy [at] stanford.edu
+  website: http://jayshenoy.com/
+  github: JayShenoy
+  scholar: rCnqbrwAAAAJ
+  orcid:
+  description: Hello!
+  projects: ["AtomicSPI"]
+
+- name: John Winnicki
+  degrees: M.S.
+  image: john_winnicki.jpg
+  position: PhD student
+  email: winnicki [at] stanford.edu
+  website:
+  github: john-winnicki
+  scholar:
+  orcid:
+  description: Hello!
+  projects: ["MatrixSketcher"]
+
+- name: Louis Conreux
+  degrees: M.S.
+  image: louis_conreux.jpg
+  position: Research Assistant (Spring 2024 - now)
+  email: lconreux [at] stanford.edu
+  website:
+  scholar:
+  orcid:
+  description: Bonjour!
+  projects: ["BayFAI"]
+
+- name: Nathan Fournier
+  degrees: M.S.
+  image: nathan_fournier.jpg
+  position: Research Assistant (Spring 2024 - now)
+  email: nathfrn [at] stanford.edu
   website:
   github:
   scholar:
   orcid:
-  description: I'm student 1.
+  description: Bonjour!
+  projects: ["PyPCA"]
 
-- name: student 2
-  degrees: B.S.
-  image: 4.jpg
-  position:
-  email: student2 [at] visitinguniveristy.edu
+- name: Pierre-Louis Monteil
+  degrees: M.S.
+  image: pierre_louis_monteil.jpg
+  position: Research Assistant (Fall 2024 - now)
+  email: pmonteil [at] stanford.edu
   website:
   scholar:
   orcid:
-  description: I'm student 2.
+  description: Bonjour!
+  projects: ["OptAI"]
+
+- name: Marc Nasser
+  degrees: M.S.
+  image:
+  position: Research Assistant (Winter 2025 - )
+  email: mnasser [at] stanford.edu
+  website:
+  scholar:
+  orcid:
+  description:
+  projects:
+
+- name: Amine Lamouchi
+  degrees: M.S.
+  image:
+  position: Research Assistant (Winter 2025 - )
+  email: aminelam [at] stanford.edu
+  website:
+  scholar:
+  orcid:
+  description:
+  projects:

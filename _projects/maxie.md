@@ -1,11 +1,10 @@
 ---
 layout: page
-title: project 3
-description: an other project with a background image
-img: assets/img/3.jpg
-importance: 2
+title: MAXIE
+description: Masked Autoencoders for X-ray Image Encoding
+img: #assets/img/5.jpg
+importance: 4
 category: Ongoing
-giscus_comments: false
 ---
 
 Every project has a beautiful feature showcase page.

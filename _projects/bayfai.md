@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/1.jpg
+title: BayFAI
+description: Bayesian Optimization meets Fast Azimuthal Integration
+img: #assets/img/1.jpg
 importance: 1
 category: Ongoing
 related_publications: true

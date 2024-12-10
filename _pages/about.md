@@ -2,13 +2,19 @@
 layout: about
 title: About
 permalink: /
+
+profile:
+  align: right
+  image: mlcv2.png
+  image_circular: true
+
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hello, world! This is the LCLS-MLCV website.
+Welcome to the Machine Learning and Computer Vision group (MLCV) at the Linac Coherent Light Source (LCLS) of SLAC National Accelerator Laboratory!
 
-Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+We are a group of researchers and engineers working on developing and applying machine learning and computer vision techniques to the analysis of X-ray free-electron laser (XFEL) data. Our mission is to enable the next generation of XFEL experiments by providing cutting-edge data analysis tools and techniques. We bring innovative solutions from our partners in academia and industry to the forefront of XFEL science.
 
-Link to your social media connections, too.
+Do not hesitate to contact us if you are interested in joining our group or collaborating on a project!

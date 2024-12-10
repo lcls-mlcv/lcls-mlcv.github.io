@@ -11,7 +11,7 @@ nav_order: 2
 
 <!-- The paddingtop and margin-top edits allow anchors to link properly. -->
 <div id = "{{person.name | replace: ' ', '-'}}" class="row" style="padding-top: 60px; margin-top: -60px;">
-    <img style="float: right; width: 25%; padding-left: 20px;" src="{{ person.image | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" alt="photo of {{person.name}}">
+    <img style="float: right; width: 25%; padding-left: 20px; padding-right: 20px;" src="{{ person.image | prepend: '/assets/img/team/' | prepend: site.baseurl | prepend: site.url }}" alt="photo of {{person.name}}">
     <div>
         <h3>{{person.name}}{% if person.degrees %}, {{person.degrees}} {% endif %}</h3>
         {{person.position}} <br>
@@ -43,10 +43,17 @@ nav_order: 2
   <h2 id="students">Students</h2>
   {% for person in site.data.students %}
 <div id = "{{person.name | replace: ' ', '-'}}" class="row" style="padding-top: 60px; margin-top: -60px;">
-    <img style="float: right; width: 25%; padding-left: 20px;" src="{{ person.image | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" alt="photo of {{person.name}}">
+    <img style="float: right; width: 25%;  padding-left: 20px; padding-right: 20px;" src="{{ person.image | prepend: '/assets/img/team/' | prepend: site.baseurl | prepend: site.url }}" alt="photo of {{person.name}}">
     <div>
         <h3>{{person.name}}{% if person.degrees %}, {{person.degrees}} {% endif %}</h3>
         {{person.position}} <br>
+        {% if person.projects %}
+          Projects:
+          {% for project in person.projects %}
+            <a href="{{ project | prepend: '/projects/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">{{ project }}</a>
+          {% endfor %}
+          <br>
+        {% endif %}
         <i class="fa fa-envelope"></i> <em>{{person.email}}</em> <br>
         {% if person.website %}
           <i class="fa fa-globe"></i> <a href= "{{person.website}}" target="_blank">{{person.website}}</a> <br>
@@ -99,6 +106,13 @@ nav_order: 2
     <div style="margin-left: 15px;">
         <h3>{{alum.name}}{% if alum.degrees %}, {{alum.degrees}} {% endif %}</h3>
         {% if alum.previously %}Previously: {{alum.previously}} <br>{% endif %}
+        {% if alum.projects %}
+          Projects:
+          {% for project in alum.projects %}
+            <a href="{{ project | prepend: '/projects/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">{{ project }}</a>
+          {% endfor %}
+          <br>
+        {% endif %}
         {% if alum.now %}Now: {{alum.now}} <br>{% endif %}
         {% if alum.email %}
           <i class="fa fa-envelope"></i> <em>{{alum.email}}</em> <br>

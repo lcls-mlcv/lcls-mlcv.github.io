@@ -3,7 +3,7 @@ layout: page
 permalink: /resources/
 title: Resources
 nav: true
-nav_order: 5
+nav_order: 6
 ---
 
 ### Internship Opportunities
