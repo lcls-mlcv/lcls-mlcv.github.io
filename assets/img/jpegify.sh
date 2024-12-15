@@ -2,11 +2,12 @@
 
 input=$1
 output=$2
+size=$3
 
 echo "converting $input to $output"
 
 magick convert $input \
--resize 400 \
+-resize $size \
 -sampling-factor 4:2:0 \
 -strip \
 -quality 85 \
