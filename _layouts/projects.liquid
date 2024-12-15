@@ -1,0 +1,50 @@
+---
+layout: default
+---
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p>
+    {% assign people = '' | split: '' %}
+    {% assign people=people | concat: site.data.members %}
+    {% assign people=people | concat: site.data.collaborators %}
+    {% assign people=people | concat: site.data.students %}
+    {% assign people=people | concat: site.data.alumni %}
+    {%- for person in people -%}
+      {% for project in person.projects_pi %}
+        {% if project == page.title %}
+          <b>{{ person.name }}</b>
+        {% endif %}
+      {% endfor %}
+      {% for project in person.projects %}
+        {% if project == page.title %}
+          <i>{{ person.name }}</i>
+        {% endif %}
+      {% endfor %}
+    {%- endfor -%}
+    </p>
+    <p class="post-description">{{ page.description }}</p>
+  </header>
+
+  <article>
+    {{ content }}
+  </article>
+
+  {% if page.related_publications %}
+    <h2>References</h2>
+    <div class="publications">
+      {% bibliography --cited_in_order %}
+    </div>
+  {% endif %}
+
+  {% if site.giscus and page.giscus_comments %}
+    {% include giscus.liquid %}
+  {% endif %}
+</div>

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: projects
 title: PyPCA
 description: an other project with a background image
 img: #assets/img/3.jpg

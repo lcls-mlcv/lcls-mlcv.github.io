@@ -8,6 +8,7 @@
   scholar: qz6POUsAAAAJ
   orcid:
   description: Bonjour!
+  projects_pi: ["AtomicSPI", "BayFAI", "DynaBoost", "MorphOT", "PyPCA"]
 
 - name: Kevin M. Dalton
   degrees: Ph.D.
@@ -19,6 +20,7 @@
   scholar: 1d5dig0AAAAJ
   orcid:
   description: Hello!
+  projects_pi: ["Abismal"]
 
 - name: Doris Mai
   degrees: Ph.D.
@@ -28,3 +30,4 @@
   scholar:
   orcid: 0000-0003-2278-0768
   description: 你好！
+  projects: ["Abismal"]

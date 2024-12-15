@@ -7,7 +7,7 @@
   github: axel-levy
   scholar: yO62sYUAAAAJ
   orcid:
-  description: Bonjour!
+  description:
   projects: ["AtomicSPI"]
 
 - name: Jay Shenoy
@@ -19,7 +19,7 @@
   github: JayShenoy
   scholar: rCnqbrwAAAAJ
   orcid:
-  description: Hello!
+  description:
   projects: ["AtomicSPI"]
 
 - name: John Winnicki
@@ -31,7 +31,7 @@
   github: john-winnicki
   scholar:
   orcid:
-  description: Hello!
+  description:
   projects: ["MatrixSketcher"]
 
 - name: Louis Conreux
@@ -42,7 +42,7 @@
   website:
   scholar:
   orcid:
-  description: Bonjour!
+  description:
   projects: ["BayFAI"]
 
 - name: Nathan Fournier
@@ -54,7 +54,7 @@
   github:
   scholar:
   orcid:
-  description: Bonjour!
+  description:
   projects: ["PyPCA"]
 
 - name: Pierre-Louis Monteil
@@ -65,12 +65,12 @@
   website:
   scholar:
   orcid:
-  description: Bonjour!
+  description:
   projects: ["OptAI"]
 
 - name: Marc Nasser
   degrees: M.S.
-  image:
+  image: marc_nasser.jpg
   position: Research Assistant (Winter 2025 - )
   email: mnasser [at] stanford.edu
   website:
@@ -81,7 +81,7 @@
 
 - name: Amine Lamouchi
   degrees: M.S.
-  image:
+  image: amine_lamouchi.jpg
   position: Research Assistant (Winter 2025 - )
   email: aminelam [at] stanford.edu
   website:

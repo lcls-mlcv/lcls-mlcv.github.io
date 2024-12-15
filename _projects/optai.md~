@@ -1,9 +1,9 @@
 ---
-layout: page
-title: MAXIE
-description: Masked Autoencoders for X-ray Image Encoding
-img: #assets/img/5.jpg
-importance: 4
+layout: projects
+title: OptAI
+description: Optical Azimuthal Integration
+img:
+importance: 2
 category: Ongoing
 ---
 

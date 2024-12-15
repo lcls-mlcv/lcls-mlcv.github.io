@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: projects
 title: BayFAI
 description: Bayesian Optimization meets Fast Azimuthal Integration
 img: #assets/img/1.jpg

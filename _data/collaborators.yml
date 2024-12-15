@@ -1,35 +1,62 @@
-- name: Eric Darve
+- name: Apurva Mehta
   degrees: Ph.D.
-  position: Professor, Stanford University
-  email: darve [at] stanford.edu
-  website: https://profiles.stanford.edu/eric-darve
-
-- name: Alec Follmer
-  degrees: Ph.D.
-  position: Assistant Professor, UC Davis
-  email: ahfollmer [at] ucdavis.edu
-  website: https://follmerlab.faculty.ucdavis.edu/
-
-- name: Nina Miolane
-  degrees: Ph.D.
-  position: Assistant Professor, UC Santa Barbara
-  email: ninamiolane [at] ece.ucsb.edu
-  website: https://gi.ece.ucsb.edu/
+  position: LCLS
+  email:
+  website:
+  projects_pi: ["AutoROI"]
 
 - name: Adi Natan
   degrees: Ph.D.
   position: Principal Investigator, PULSE Institute
   email: natan [at] slac.stanford.edu
   website: https://pulse.stanford.edu/
+  projects_pi: ["OptAI"]
 
-- name: Gordon Wetzstein
+- name: Alec Follmer
   degrees: Ph.D.
-  position: Associate Professor, Stanford University
-  email: gordonwz [at] stanford.edu
-  website: https://www.computationalimaging.org/
+  position: Assistant Professor, UC Davis
+  email: ahfollmer [at] ucdavis.edu
+  website: https://follmerlab.faculty.ucdavis.edu/
+  projects_pi: ["DynaBoost"]
+
+- name: Eric Darve
+  degrees: Ph.D.
+  position: Professor, Stanford University
+  email: darve [at] stanford.edu
+  website: https://profiles.stanford.edu/eric-darve
+  projects_pi: ["MatrixSketcher"]
 
 - name: Ellen Zhong
   degrees: Ph.D.
   position: Assistant Professor, Princeton University
   email: zhonge [at] stanford.edu
   website: https://ezlab.princeton.edu/
+  projects: ["AtomicSPI"]
+
+- name: Gordon Wetzstein
+  degrees: Ph.D.
+  position: Associate Professor, Stanford University
+  email: gordonwz [at] stanford.edu
+  website: https://www.computationalimaging.org/
+  projects: ["AtomicSPI"]
+
+- name: Daniel Ratner
+  degrees: Ph.D.
+  position:
+  email:
+  website:
+  projects: ["AtomicSPI"]
+
+- name: Nina Miolane
+  degrees: Ph.D.
+  position: Assistant Professor, UC Santa Barbara
+  email: ninamiolane [at] ece.ucsb.edu
+  website: https://gi.ece.ucsb.edu/
+  projects: ["AtomicSPI"]
+
+- name: Khanh Dao Duc
+  degrees: Ph.D.
+  position: Assistant Professor, University of British Columbia
+  email: kdd@math[dot]ubc[dot]ca
+  website: https://kdaoduc.com/
+  projects_pi: ["MorphOT"]
