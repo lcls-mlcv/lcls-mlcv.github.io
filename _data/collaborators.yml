@@ -33,6 +33,9 @@
   website: https://ezlab.princeton.edu/
   projects: ["AtomicSPI"]
 
+- name: Julien Martel
+  degrees: Ph.D.
+
 - name: Gordon Wetzstein
   degrees: Ph.D.
   position: Associate Professor, Stanford University
@@ -60,3 +63,6 @@
   email: kdd@math[dot]ubc[dot]ca
   website: https://kdaoduc.com/
   projects_pi: ["MorphOT"]
+
+- name: Ariana Peck
+  degrees: Ph.D.

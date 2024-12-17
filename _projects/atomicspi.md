@@ -3,6 +3,7 @@ layout: projects
 title: AtomicSPI
 description: Learning atomic scale biomolecular dynamics from single-particle imaging data.
 img: assets/img/projects/atomicspi.png
+subprojects: ["cryoAI", "cryoFIRE", "DRGN-AI", "aNiMAte"]
 importance: 1
 category: Past
 related_publications: true
@@ -29,7 +30,6 @@ We illustrate in Figure 2 our main achievements.
 </div>
 
 Other directions explored in the project include studies on latent disentanglement of the conformational space {% cite klindt2024towards %} and a general approach to solve inverse problems in protein space using diffusion-based priors {% cite levy2024solving %}.
-
 
 ### Acknowledgements
 This project sprung from discussions with Nina Miolane, following our initial work described in {% cite miolane2020estimation %}. This project was supported by the LDRD program at SLAC from 2021 to 2024.
