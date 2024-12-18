@@ -3,7 +3,7 @@ layout: page
 title: Seminars
 permalink: /talks/
 nav: true
-nav_order: 5
+nav_order: 3
 display_categories: [Upcoming, Past]
 horizontal: true
 ---

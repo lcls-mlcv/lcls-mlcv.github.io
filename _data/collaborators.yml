@@ -24,38 +24,42 @@
   position: Professor, Stanford University
   email: darve [at] stanford.edu
   website: https://profiles.stanford.edu/eric-darve
-  projects_pi: ["MatrixSketcher"]
+  projects_pi: ["ARAMS"]
 
 - name: Ellen Zhong
   degrees: Ph.D.
   position: Assistant Professor, Princeton University
   email: zhonge [at] stanford.edu
   website: https://ezlab.princeton.edu/
-  projects: ["AtomicSPI"]
+  projects_pi: ["DRGN-AI", "cryoFIRE"]
+  projects: ["AtomicSPI", "ADP-3D"]
 
 - name: Julien Martel
   degrees: Ph.D.
+  projects: ["AtomicSPI", "cryoAI", "aNiMAte"]
 
 - name: Gordon Wetzstein
   degrees: Ph.D.
   position: Associate Professor, Stanford University
   email: gordonwz [at] stanford.edu
   website: https://www.computationalimaging.org/
-  projects: ["AtomicSPI"]
+  projects_pi: ["cryoAI", "X-RAI", "ADP-3D"]
+  projects: ["AtomicSPI", "DRGN-AI", "cryoFIRE", "aNiMAte"]
 
 - name: Daniel Ratner
   degrees: Ph.D.
   position:
   email:
   website:
-  projects: ["AtomicSPI"]
+  projects_pi: ["aNiMAte"]
+  projects: ["AtomicSPI", "cryoAI"]
 
 - name: Nina Miolane
   degrees: Ph.D.
   position: Assistant Professor, UC Santa Barbara
   email: ninamiolane [at] ece.ucsb.edu
   website: https://gi.ece.ucsb.edu/
-  projects: ["AtomicSPI"]
+  projects: ["AtomicSPI", "cryoAI", "aNiMAte"]
 
 - name: Khanh Dao Duc
   degrees: Ph.D.
@@ -66,3 +70,4 @@
 
 - name: Ariana Peck
   degrees: Ph.D.
+  projects: ["cryoAI", "aNiMAte"]

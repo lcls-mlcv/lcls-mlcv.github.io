@@ -8,7 +8,7 @@
   scholar: yO62sYUAAAAJ
   orcid:
   description:
-  projects: ["AtomicSPI"]
+  projects: ["AtomicSPI", "X-RAI", "DRGN-AI", "cryoFIRE", "aNiMAte", "cryoAI", "ADP-3D"]
 
 - name: Jay Shenoy
   degrees: M.S.
@@ -20,7 +20,7 @@
   scholar: rCnqbrwAAAAJ
   orcid:
   description:
-  projects: ["AtomicSPI"]
+  projects: ["AtomicSPI", "X-RAI"]
 
 - name: John Winnicki
   degrees: M.S.
@@ -32,7 +32,7 @@
   scholar:
   orcid:
   description:
-  projects: ["MatrixSketcher"]
+  projects: ["ARAMS"]
 
 - name: Louis Conreux
   degrees: M.S.
@@ -89,3 +89,18 @@
   orcid:
   description:
   projects:
+
+- name: Daisy Liu
+  degrees: M.S.
+  position: ICME Xplore Resarch Intern (Fall 2024)
+  email: daisyliu@stanford.edu
+
+- name: Martin Pollack
+  degrees: M.S.
+  position: ICME Xplore Resarch Intern (Fall 2024)
+  email: pollackm@stanford.edu
+
+- name: Jacob Thornton
+  degrees: M.S.
+  position: ICME Xplore Resarch Intern (Fall 2024)
+  email: jrthorn@stanford.edu
