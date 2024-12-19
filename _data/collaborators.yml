@@ -1,8 +1,14 @@
+- name: Derek Mendez
+  degrees: Ph.D.
+  position: Computational Staff Scientist, SSRL
+  email: dermen [at] slac.stanford.edu
+  website: https://profiles.stanford.edu/dermen
+
 - name: Apurva Mehta
   degrees: Ph.D.
-  position: LCLS
-  email:
-  website:
+  position: Senior Scientist, LCLS
+  email: mehta [at] slac.stanford.edu
+  website: https://profiles.stanford.edu/apurva-mehta
   projects_pi: ["AutoROI"]
 
 - name: Adi Natan
@@ -26,6 +32,13 @@
   website: https://profiles.stanford.edu/eric-darve
   projects_pi: ["ARAMS"]
 
+- name: Sathya Chitturi
+  degrees: Ph.D.
+  position: Machine Learning Researcher, PostEra
+  email: chitturi [at] stanford.edu
+  website: https://src47.github.io/
+  projects: ["BayFAI"]
+
 - name: Ellen Zhong
   degrees: Ph.D.
   position: Assistant Professor, Princeton University
@@ -36,6 +49,8 @@
 
 - name: Julien Martel
   degrees: Ph.D.
+  position: Stealth Startup
+  website: https://jnpmartel.github.io/
   projects: ["AtomicSPI", "cryoAI", "aNiMAte"]
 
 - name: Gordon Wetzstein
@@ -48,9 +63,9 @@
 
 - name: Daniel Ratner
   degrees: Ph.D.
-  position:
-  email:
-  website:
+  position: Senior Scientist, Machine Learning Initiative
+  email: dratner [at] stanford.edu
+  website: https://profiles.stanford.edu/daniel-ratner
   projects_pi: ["aNiMAte"]
   projects: ["AtomicSPI", "cryoAI"]
 
@@ -67,7 +82,3 @@
   email: kdd@math[dot]ubc[dot]ca
   website: https://kdaoduc.com/
   projects_pi: ["MorphOT"]
-
-- name: Ariana Peck
-  degrees: Ph.D.
-  projects: ["cryoAI", "aNiMAte"]

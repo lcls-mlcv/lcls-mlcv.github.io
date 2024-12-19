@@ -4,7 +4,7 @@ date: 2025-01-01
 title: TBD
 speaker: David Klindt
 description:
-img:
+img: assets/img/talks/david_klindt.jpg
 video:
 passcode:
 importance: 1
