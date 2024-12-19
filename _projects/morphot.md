@@ -7,7 +7,7 @@ importance: 1
 category: Past
 related_publications: true
 ---
-{% cite ecoffet2020morphot %} {% cite ecoffet2021application %}
+{% cite ecoffet2020morphot ecoffet2021application %}
 
 ### GitHub Repository
 {% include repository/repo.liquid repository="kdd-ubc/MorphOT" %}

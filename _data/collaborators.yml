@@ -32,6 +32,42 @@
   website: https://profiles.stanford.edu/eric-darve
   projects_pi: ["ARAMS"]
 
+- name: Vincent Esposito
+  degrees: Ph.D.
+  position: Data Scientist, LCLS
+  email: espov [at] slac.stanford.edu
+  projects: ["BayFAI"]
+
+- name: Gabriel Dorlhiac
+  degrees: Ph.D.
+  position: Staff Engineer, LCLS
+  email: dorlhiac [at] slac.stanford.edu
+  projects: ["BayFAI"]
+
+- name: Leland Gee
+  degrees: Ph.D.
+  position: Staff Scientist, LCLS
+  email: lbgee [at] slac.stanford.edu
+  projects_pi: ["autoMFX"]
+
+- name: Daniel Rosenberg
+  degrees: Ph.D.
+  position: Associate Staff Scientist, LCLS
+  email: djr [at] slac.stanford.edu
+  projects: ["autoMFX"]
+
+- name: Zach Lentz
+  degrees: Ph.D.
+  position: Software Developer, LCLS
+  email: zlentz[at] slac.stanford.edu
+  projects: ["autoMFX"]
+
+- name: Max Rakitin
+  degrees: Ph.D.
+  position: Computational Scientist, Brookhaven National Laboratory
+  email: mrakitin[at] bnl.gov
+  projects_pi: ["autoMFX"]
+
 - name: Sathya Chitturi
   degrees: Ph.D.
   position: Machine Learning Researcher, PostEra

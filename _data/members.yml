@@ -8,7 +8,7 @@
   scholar: qz6POUsAAAAJ
   orcid:
   description: Bonjour!
-  projects_pi: ["AtomicSPI", "BayFAI", "DynaBoost", "MorphOT", "PyPCA", "aNiMAte", "cryoAI"]
+  projects_pi: ["AtomicSPI", "BayFAI", "DynaBoost", "MorphOT", "PyPCA", "aNiMAte", "cryoAI", "autoMFX"]
   projects: ["ARAMS", "X-RAI", "DRGN-AI", "cryoFIRE"]
 
 - name: Kevin M. Dalton

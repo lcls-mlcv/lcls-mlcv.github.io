@@ -4,6 +4,7 @@ title: aNiMAte
 description:
 img: #assets/img/3.jpg
 importance: 3
-category: Ongoing
+category: Past
 giscus_comments: false
 ---
+*More details coming soon*
