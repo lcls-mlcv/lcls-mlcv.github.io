@@ -35,20 +35,15 @@ nav_order: 4
 ---
 
 ## Collaborators
-
-{% for collaborator in site.data.collaborators %}
-
-<div id = "{{collaborator.name | replace: ' ', '-'}}" class="row" style="padding-top: 60px; margin-top: -60px;">
-    <div style="margin-left: 15px;">
-        <h3>{{collaborator.name}}{% if collaborator.degrees %}, {{collaborator.degrees}} {% endif %}</h3>
-        {{collaborator.position}} <br>
-        {% if collaborator.website %}
-          <i class="fa fa-globe"></i> <a href= "{{collaborator.website}}" target="_blank">{{collaborator.website}}</a> <br>
-        {% endif %}
+  <div class="projects">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2">
+        {% for person in site.data.collaborators %}
+          {% include team.liquid %}
+        {% endfor %}
+      </div>
     </div>
-</div>
-<hr>
-{% endfor %}
+  </div>
 
 ---
 

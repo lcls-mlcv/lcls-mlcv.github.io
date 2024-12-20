@@ -12,7 +12,7 @@ BayFAI is a robust and efficient method for optimizing the geometry of X-ray det
 *More details coming soon*
 
 
-{% include figure.liquid path="assets/img/projects/bayfai_mfxl1038923.jpg" title="BayFAI" caption="Bayesian Optimization meets Fast Azimuthal Integration" %}
+{% include figure.liquid path="assets/img/projects/bayfai_mfxl1038923.jpg" title="BayFAI" caption="<b>Optimization summary</b>. From left to right, top to bottom. (a) Bayesian optimization score convergence plot. (b) Histogram of Pixel intensities and statistics: pixel intensity above the purple-dashed threshold are considered key data (control point) providing ground for optimization. (c) Radial integration given the optimized geometry. (d) Calibration powder plot in laboratory frame with resulting calibrant data fit. (e) Bayesian optimization best score found for each scanned distance. (f) Least-square residuals of calibrant data to control point data found for each scanned distance. BayFAI scans a range of detector-sample distances. For each distance, BayFAI launches a bayesian optimization to find the beam center quantified by the highest number of control points extracted. Then, a least-square method scores the distance - beam center association. The residuals' minimum gives the optimal distance - beam center." %}
 
 The method is benchmarked against a constantly updated set of calibrant data from the MFX beamline at LCLS.
 <!-- TODO: add link to the benchmark -->
