@@ -12,16 +12,16 @@
             {{person.position}} <br>
             <i class="fa fa-envelope"></i> <em>{{person.email}}</em> <br>
             {% if person.website %}
-            <i class="fa fa-globe"></i> <a href= "{{person.website}}" target="_blank">{{person.website}}</a> <br>
+              <a href= "{{person.website}}" target="_blank"><i class="fa fa-globe" ></i></a>
             {% endif %}
             {% if person.github %}
-              <i class="fab fa-github"></i> <a href= "https://github.com/{{person.github}}" target="_blank"> {{person.github}} </a> <br>
+              <a href= "https://github.com/{{person.github}}" target="_blank"> <i class="fab fa-github"></i> </a>
             {% endif %}
             {% if person.scholar %}
-              <i class="ai ai-google-scholar"></i> <a href= "http://scholar.google.com/citations?user={{person.scholar}}" target="_blank"> Scholar Citations </a> <br>
+              <a href= "http://scholar.google.com/citations?user={{person.scholar}}" target="_blank"><i class="ai ai-google-scholar"></i> </a>
             {% endif %}
             {% if person.orcid %}
-            <i class="ai ai-orcid"></i> <a href="http://{{person.orcid}}" target="_blank"> {{person.orcid}}</a> <br>
+              <a href="http://orcid.org/{{person.orcid}}" target="_blank"> <i class="ai ai-orcid"></i> </a>
             {% endif %}
           </div>
         </div>

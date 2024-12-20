@@ -9,7 +9,7 @@ nav_order: 4
 
 <div class="projects">
   <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
+    <div class="row row-cols-1 row-cols-md-3">
     {% for person in site.data.members %}
       {% include team.liquid %}
     {% endfor %}
@@ -22,7 +22,7 @@ nav_order: 4
   <h2 id="students">Students</h2>
   <div class="projects">
     <div class="container">
-      <div class="row row-cols-1 row-cols-md-2">
+      <div class="row row-cols-1 row-cols-md-3">
         {% for person in site.data.students %}
           {% include team.liquid %}
         {% endfor %}
@@ -37,7 +37,7 @@ nav_order: 4
 ## Collaborators
   <div class="projects">
     <div class="container">
-      <div class="row row-cols-1 row-cols-md-2">
+      <div class="row row-cols-1 row-cols-md-3">
         {% for person in site.data.collaborators %}
           {% include team.liquid %}
         {% endfor %}

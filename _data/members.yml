@@ -3,10 +3,10 @@
   image: fred_poitevin.jpg
   position: Staff Scientist
   email: fpoitevi [at] slac.stanford.edu
-  website: https://profiles.stanford.edu/frdric-poitevin
+  website:
   github: fredericpoitevin
   scholar: qz6POUsAAAAJ
-  orcid:
+  orcid: 0000-0002-3181-8652
   description: Bonjour!
   projects_pi: ["AtomicSPI", "BayFAI", "DynaBoost", "MorphOT", "PyPCA", "aNiMAte", "cryoAI", "autoMFX"]
   projects: ["ARAMS", "X-RAI", "DRGN-AI", "cryoFIRE"]
@@ -16,10 +16,10 @@
   image: kevin_dalton.jpg
   position: Associate Scientist
   email: kmdalton [at] slac.stanford.edu
-  website: https://profiles.stanford.edu/kevin-dalton
+  website:
   github: kmdalton
   scholar: 1d5dig0AAAAJ
-  orcid:
+  orcid: 0000-0001-9396-085X
   description: Hello!
   projects_pi: ["Abismal"]
 
