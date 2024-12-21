@@ -37,7 +37,7 @@ nav_order: 4
 ## Collaborators
   <div class="projects">
     <div class="container">
-      <div class="row row-cols-1 row-cols-md-3">
+      <div class="row row-cols-1 row-cols-md-4">
         {% for person in site.data.collaborators %}
           {% include team.liquid %}
         {% endfor %}
@@ -48,28 +48,12 @@ nav_order: 4
 ---
 
 ## Past Members
-
-{% for alum in site.data.alumni %}
-
-<div id = "{{alum.name | replace: ' ', '-'}}" class="row" style="padding-top: 60px; margin-top: -60px;">
-    <div style="margin-left: 15px;">
-        <h3>{{alum.name}}{% if alum.degrees %}, {{alum.degrees}} {% endif %}</h3>
-        {% if alum.previously %}Previously: {{alum.previously}} <br>{% endif %}
-        {% if alum.projects %}
-          Projects:
-          {% for project in alum.projects %}
-            <a href="{{ project | prepend: '/projects/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">{{ project }}</a>
-          {% endfor %}
-          <br>
-        {% endif %}
-        {% if alum.now %}Now: {{alum.now}} <br>{% endif %}
-        {% if alum.email %}
-          <i class="fa fa-envelope"></i> <em>{{alum.email}}</em> <br>
-        {% endif %}
-        {% if alum.website %}
-          <i class="fa fa-globe"></i> <a href= "{{alum.website}}" target="_blank">{{alum.website}}</a> <br>
-        {% endif %}
+  <div class="projects">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-4">
+        {% for person in site.data.alumni %}
+          {% include team.liquid %}
+        {% endfor %}
+      </div>
     </div>
-</div>
-<hr>
-{% endfor %}
+  </div>

@@ -1,6 +1,6 @@
 - name: David Klindt
   degrees: Ph.D.
-  previously: Research Associate, LCLS Data Systems
+  previously: Research Associate, LCLS
   now: Assistant Professor, Cold Spring Harbor Laboratory
   email: klindt [at] cshl.edu
   website: https://www.cshl.edu/research/faculty-staff/david-klindt/
@@ -8,7 +8,7 @@
 
 - name: Ariana Peck
   degrees: Ph.D.
-  previously: Project Scientist, LCLS Data Systems
+  previously: Project Scientist, LCLS
   now: Data Scientist, Chan Zuckerberg Biohub Network
   projects: ["AtomicSPI", "cryoAI", "aNiMAte"]
 

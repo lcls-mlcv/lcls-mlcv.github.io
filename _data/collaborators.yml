@@ -115,6 +115,6 @@
 - name: Khanh Dao Duc
   degrees: Ph.D.
   position: Assistant Professor, University of British Columbia
-  email: kdd@math[dot]ubc[dot]ca
+  email: kdd@math [dot] ubc [dot] ca
   website: https://kdaoduc.com/
   projects_pi: ["MorphOT"]

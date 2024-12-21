@@ -8,11 +8,14 @@
         <div class="row ml-1 mr-1 p-0">
           <div>
             <!-- h2 class="card-title">{{person.name}}{% if person.degrees %}, {{person.degrees}} {% endif %}</h2 -->
-            <h2 class="card-title">{{person.name}}</h2>
-            {{person.position}} <br>
-            <i class="fa fa-envelope"></i> <em>{{person.email}}</em> <br>
             {% if person.website %}
-              <a href= "{{person.website}}" target="_blank"><i class="fa fa-globe" ></i></a>
+              <a href="{{ person.website | relative_url }}"><h2 class="card-title">{{person.name}}</h2></a>
+            {% else %}
+              <h2 class="card-title">{{person.name}}</h2>
+            {% endif %}
+            {{person.position}} <br>
+            {% if person.email %}
+              <i class="fa fa-envelope"></i> <em>{{person.email}}</em> <br>
             {% endif %}
             {% if person.github %}
               <a href= "https://github.com/{{person.github}}" target="_blank"> <i class="fab fa-github"></i> </a>
@@ -26,7 +29,9 @@
           </div>
         </div>
         <div class="card-text">
-          <p class="text-justify">{{person.description | markdownify}}</p>
+          {% if person.description %}<p class="text-justify">{{person.description | markdownify}}</p>{% endif %}
+          {% if person.previously %}Previously:<br><p class="text-justify"> {{person.previously}}</p>{% endif %}
+          {% if person.now %}Now:<br><p class="text-justify"> {{person.now}}</p>{% endif %}
         </div>
       </div>
     </div>
