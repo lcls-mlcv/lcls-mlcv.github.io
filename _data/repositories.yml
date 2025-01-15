@@ -1,0 +1,9 @@
+repo_description_lines_max: 2
+
+github_repos:
+  - slac-lcls/lute
+  - compSPI/cryoAI
+  - lcls-users/btx
+  - compSPI/aNiMAte
+  - rs-station/abismal
+  - kdd-ubc/MorphOT

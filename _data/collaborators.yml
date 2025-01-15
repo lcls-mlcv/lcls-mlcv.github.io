@@ -1,0 +1,120 @@
+- name: Derek Mendez
+  degrees: Ph.D.
+  position: Computational Staff Scientist, SSRL
+  email: dermen [at] slac.stanford.edu
+  website: https://profiles.stanford.edu/dermen
+
+- name: Apurva Mehta
+  degrees: Ph.D.
+  position: Senior Scientist, LCLS
+  email: mehta [at] slac.stanford.edu
+  website: https://profiles.stanford.edu/apurva-mehta
+  projects_pi: ["AutoROI"]
+
+- name: Adi Natan
+  degrees: Ph.D.
+  position: Principal Investigator, PULSE Institute
+  email: natan [at] slac.stanford.edu
+  website: https://pulse.stanford.edu/
+  projects_pi: ["OptAI"]
+
+- name: Alec Follmer
+  degrees: Ph.D.
+  position: Assistant Professor, UC Davis
+  email: ahfollmer [at] ucdavis.edu
+  website: https://follmerlab.faculty.ucdavis.edu/
+  projects_pi: ["DynaBoost"]
+
+- name: Eric Darve
+  degrees: Ph.D.
+  position: Professor, Stanford University
+  email: darve [at] stanford.edu
+  website: https://profiles.stanford.edu/eric-darve
+  projects_pi: ["ARAMS"]
+
+- name: Vincent Esposito
+  degrees: Ph.D.
+  position: Data Scientist, LCLS
+  email: espov [at] slac.stanford.edu
+  projects: ["BayFAI"]
+
+- name: Gabriel Dorlhiac
+  degrees: Ph.D.
+  position: Staff Engineer, LCLS
+  email: dorlhiac [at] slac.stanford.edu
+  projects: ["BayFAI"]
+
+- name: Leland Gee
+  degrees: Ph.D.
+  position: Staff Scientist, LCLS
+  email: lbgee [at] slac.stanford.edu
+  projects_pi: ["autoMFX"]
+
+- name: Daniel Rosenberg
+  degrees: Ph.D.
+  position: Associate Staff Scientist, LCLS
+  email: djr [at] slac.stanford.edu
+  projects: ["autoMFX"]
+
+- name: Zach Lentz
+  degrees: Ph.D.
+  position: Software Developer, LCLS
+  email: zlentz[at] slac.stanford.edu
+  projects: ["autoMFX"]
+
+- name: Max Rakitin
+  degrees: Ph.D.
+  position: Computational Scientist, Brookhaven National Laboratory
+  email: mrakitin[at] bnl.gov
+  projects_pi: ["autoMFX"]
+
+- name: Sathya Chitturi
+  degrees: Ph.D.
+  position: Machine Learning Researcher, PostEra
+  email: chitturi [at] stanford.edu
+  website: https://src47.github.io/
+  projects: ["BayFAI"]
+
+- name: Ellen Zhong
+  degrees: Ph.D.
+  position: Assistant Professor, Princeton University
+  email: zhonge [at] stanford.edu
+  website: https://ezlab.princeton.edu/
+  projects_pi: ["DRGN-AI", "cryoFIRE"]
+  projects: ["AtomicSPI", "ADP-3D"]
+
+- name: Julien Martel
+  degrees: Ph.D.
+  position: Stealth Startup
+  website: https://jnpmartel.github.io/
+  projects: ["AtomicSPI", "cryoAI", "aNiMAte"]
+
+- name: Gordon Wetzstein
+  degrees: Ph.D.
+  position: Associate Professor, Stanford University
+  email: gordonwz [at] stanford.edu
+  website: https://www.computationalimaging.org/
+  projects_pi: ["cryoAI", "X-RAI", "ADP-3D"]
+  projects: ["AtomicSPI", "DRGN-AI", "cryoFIRE", "aNiMAte"]
+
+- name: Daniel Ratner
+  degrees: Ph.D.
+  position: Senior Scientist, Machine Learning Initiative
+  email: dratner [at] stanford.edu
+  website: https://profiles.stanford.edu/daniel-ratner
+  projects_pi: ["aNiMAte"]
+  projects: ["AtomicSPI", "cryoAI"]
+
+- name: Nina Miolane
+  degrees: Ph.D.
+  position: Assistant Professor, UC Santa Barbara
+  email: ninamiolane [at] ece.ucsb.edu
+  website: https://gi.ece.ucsb.edu/
+  projects: ["AtomicSPI", "cryoAI", "aNiMAte"]
+
+- name: Khanh Dao Duc
+  degrees: Ph.D.
+  position: Assistant Professor, University of British Columbia
+  email: kdd@math [dot] ubc [dot] ca
+  website: https://kdaoduc.com/
+  projects_pi: ["MorphOT"]

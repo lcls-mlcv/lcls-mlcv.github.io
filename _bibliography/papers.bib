@@ -1,0 +1,520 @@
+---
+---
+
+% abbr: ['Data Reduction', 'Digital Twins']
+
+@string{aps = {American Physical Society,}}
+
+@inproceedings{winnicki2024matrixsketcher,
+  title={Matrix Sketching for Online Analysis of LCLS Imaging Datasets},
+  author={Winnicki, John and Poitevin, Fr{\'e}d{\'e}ric and Li, Haoyuan and Darve, Eric},
+  abstract={X-ray light source facilities such as the Linac Coherence Light Source (LCLS) at SLAC National Accelerator
+Laboratory generate massive amounts of data that need to be
+analyzed quickly to inform ongoing experiments. The analysis of
+data streams coming from various parts of the instrument has
+potential to feed back into instrument operation or experiment
+steering. For example, shot-to-shot images of the beam profile
+inform on the quality of the beam delivery while downstream data
+read from large area detectors inform on the state of diffraction
+experiments carried on samples of interests at various beamlines.
+However, the high repetition rate and high dimensionality of
+these data streams make their analysis challenging, both in
+terms of scalability and interpretability. In this work, we propose
+an image monitoring and classification framework that follows
+a three-stage process: dimensionality reduction using principal
+component analysis on a matrix sketch, visualization using
+UMAP, and clustering using OPTICS. In the dimensionality
+reduction step, we combine the Priority Sampling algorithm
+with a modified Frequent Directions algorithm to produce a
+rank-adaptive accelerated matrix sketching (ARAMS) algorithm,
+wherein practitioners specify the target error of the sketch as
+opposed to the rank. Furthermore, the framework is parallel,
+enabling real-time analysis of the underpinning structure of
+the data. This framework demonstrates strong empirical performance and scalability. We explore its effectiveness on both beam
+profile data and diffraction data from recent LCLS experiments.},
+  booktitle={SuperComputing},
+  pages={},
+  year={2024},
+  organization={},
+  preview={matrixsketcher.png},
+  selected={true},
+  abbr={Data Reduction},
+  project={ARAMS},
+  pdf={https://conferences.computer.org/sc-wpub/pdfs/SC-W2024-6oZmigAQfgJ1GhPL0yE3pS/555400c144/555400c144.pdf}
+}
+
+@article{mai2024assessing,
+  title={Assessing the applicability of Bayesian inference for merging small molecule microED data},
+  author={Mai, Huanghao and Peck, Ariana and Dalton, Kevin M and de Moraes, Lygia Silva and Burch, Jessica E and Poitevin, Fr{\'e}d{\'e}ric and Nelson, Hosea M},
+  abstract={Microcrystal electron diffraction (MicroED) is an emerging technique for characterizing small molecule structures from nanoscale crystals. Merging data from multiple crystals is a particularly challenging step in the microED workflow. A common practice is to manually curate datasets and apply scaling programs conventionally utilized in rotational X-ray diffraction (XRD), but this could be time-consuming and risks introducing human bias in data analysis. Recently, a Bayesian inference program named Careless (Dalton et al., 2022) has demonstrated excellent performance in merging macromolecular XRD data. Here, the applicability of Careless to small molecule microED data is evaluated and an investigation of the impact of dataset curation is performed. Benchmarking against XDS/XSCALE shows that Careless is an effective complementary approach that merges data to a higher CC1/2 value at high resolution. Furthermore, merging outcomes are not significantly improved by curating datasets either manually or with an automated extension to Careless, cautioning against the common practice of manual dataset curation.},
+  journal={ChemRxiv},
+  year={2024},
+  abbr={Crystallography},
+  project={Careless},
+  preview={mai2024assessing.png},
+  selected={true},
+  html={https://www.chemrxiv.org/engage/chemrxiv/article-details/66bd949820ac769e5fa7d032},
+  url = {https://chemrxiv.org/engage/chemrxiv/article-details/66bd949820ac769e5fa7d032},
+  doi = {10.26434/chemrxiv-2024-62bmk},
+}
+
+@article{klindt2024towards,
+  title={Towards interpretable Cryo-EM: disentangling latent spaces of molecular conformations},
+  author={Klindt, David A and Hyv{\"a}rinen, Aapo and Levy, Axel and Miolane, Nina and Poitevin, Fr{\'e}d{\'e}ric},
+  abstract={Molecules are essential building blocks of life and their different conformations (i.e., shapes) crucially determine the functional role that they play in living organisms. Cryogenic Electron Microscopy (cryo-EM) allows for acquisition of large image datasets of individual molecules. Recent advances in computational cryo-EM have made it possible to learn latent variable models of conformation landscapes. However, interpreting these latent spaces remains a challenge as their individual dimensions are often arbitrary. The key message of our work is that this interpretation challenge can be viewed as an Independent Component Analysis (ICA) problem where we seek models that have the property of identifiability. That means, they have an essentially unique solution, representing a conformational latent space that separates the different degrees of freedom a molecule is equipped with in nature. Thus, we aim to advance the computational field of cryo-EM beyond visualizations as we connect it with the theoretical framework of (nonlinear) ICA and discuss the need for identifiable models, improved metrics, and benchmarks. Moving forward, we propose future directions for enhancing the disentanglement of latent spaces in cryo-EM, refining evaluation metrics and exploring techniques that leverage physics-based decoders of biomolecular systems. Moreover, we discuss how future technological developments in time-resolved single particle imaging may enable the application of nonlinear ICA models that can discover the true conformation changes of molecules in nature. The pursuit of interpretable conformational latent spaces will empower researchers to unravel complex biological processes and facilitate targeted interventions. This has significant implications for drug discovery and structural biology more broadly. More generally, latent variable models are deployed widely across many scientific disciplines. Thus, the argument we present in this work has much broader applications in AI for science if we want to move from impressive nonlinear neural network models to mathematically grounded methods that can help us learn something new about nature.},
+  journal={Frontiers in Molecular Biosciences},
+  volume={11},
+  pages={1393564},
+  year={2024},
+  publisher={Frontiers Media SA},
+  abbr={Interpretability},
+  project={AtomicSPI},
+  preview={klindt2024towards.jpg},
+  html={https://www.frontiersin.org/journals/molecular-biosciences/articles/10.3389/fmolb.2024.1393564/full},
+  selected={true}
+}
+
+@article{hekstra2024sensitive,
+	title = {Sensitive {Detection} of {Structural} {Differences} using a {Statistical} {Framework} for {Comparative} {Crystallography}},
+	copyright = {© 2024, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution-NonCommercial 4.0 International), CC BY-NC 4.0, as described at http://creativecommons.org/licenses/by-nc/4.0/},
+	url = {https://www.biorxiv.org/content/10.1101/2024.07.22.604476v1},
+	doi = {10.1101/2024.07.22.604476},
+	abstract = {Chemical and conformational changes underlie the functional cycles of proteins. Comparative crystallography can reveal these changes over time, over ligands, and over chemical and physical perturbations in atomic detail. A key difficulty, however, is that the resulting observations must be placed on the same scale by correcting for experimental factors. We recently introduced a Bayesian framework for correcting (scaling) X-ray diffraction data by combining deep learning with statistical priors informed by crystallographic theory. To scale comparative crystallography data, we here combine this framework with a multivariate statistical theory of comparative crystallography. By doing so, we find strong improvements in the detection of protein dynamics, element-specific anomalous signal, and the binding of drug fragments.},
+	language = {en},
+	urldate = {2024-08-07},
+	publisher = {bioRxiv},
+	journal = {bioRxiv},
+	author = {Hekstra, Doeke R. and Wang, Harrison K. and Klureza, Margaret A. and Greisman, Jack B. and Dalton, Kevin M.},
+	month = jul,
+	year = {2024},
+	preview={hekstra2024sensitive.jpg},
+  selected={true},
+  abbr={Crystallography},
+}
+
+@article{zielinski2024resolving,
+	title = {Resolving {DJ}-1 {Glyoxalase} {Catalysis} {Using} {Mix}-and-{Inject} {Serial} {Crystallography} at a {Synchrotron}},
+	copyright = {© 2024, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at http://creativecommons.org/licenses/by-nc-nd/4.0/},
+	url = {https://www.biorxiv.org/content/10.1101/2024.07.19.604369v1},
+	doi = {10.1101/2024.07.19.604369},
+	abstract = {DJ-1 (PARK7) is an intensively studied protein whose cytoprotective activities are dysregulated in multiple diseases. DJ-1 has been reported as having two distinct enzymatic activities in defense against reactive carbonyl species that are difficult to distinguish in conventional biochemical experiments. Here, we establish the mechanism of DJ-1 using a synchrotron-compatible version of mix-and-inject-serial crystallography (MISC), which was previously performed only at XFELs, to directly observe DJ-1 catalysis. We designed and used new diffusive mixers to collect time-resolved Laue diffraction data of DJ-1 catalysis at a pink beam synchrotron beamline. Analysis of structurally similar methylglyoxal-derived intermediates formed through the DJ-1 catalytic cycle shows that the enzyme catalyzes nearly two turnovers in the crystal and defines key aspects of its glyoxalase mechanism. In addition, DJ-1 shows allosteric communication between a distal site at the dimer interface and the active site that changes during catalysis. Our results rule out the widely cited deglycase mechanism for DJ-1 action and provide an explanation for how DJ-1 produces L-lactate with high chiral purity.},
+	language = {en},
+	urldate = {2024-08-07},
+	publisher = {bioRxiv},
+	journal = {bioRxiv},
+	author = {Zielinski, Kara A. and Dolamore, Cole and Dalton, Kevin M. and Smith, Nathan and Termini, John and Henning, Robert and Srajer, Vukica and Hekstra, Doeke R. and Pollack, Lois and Wilson, Mark A.},
+	month = jul,
+	year = {2024},
+  preview={zielinski2024resolving.jpg},
+  abbr={Crystallography},
+}
+
+@article{hewitt2024laue-dials,
+	title = {Laue-{DIALS}: {Open}-source software for polychromatic x-ray diffraction data},
+	volume = {11},
+	issn = {2329-7778},
+	shorttitle = {Laue-{DIALS}},
+	url = {https://doi.org/10.1063/4.0000265},
+	doi = {10.1063/4.0000265},
+	abstract = {Most x-ray sources are inherently polychromatic. Polychromatic (“pink”) x-rays provide an efficient way to conduct diffraction experiments as many more photons can be used and large regions of reciprocal space can be probed without sample rotation during exposure—ideal conditions for time-resolved applications. Analysis of such data is complicated, however, causing most x-ray facilities to discard \&gt;99\% of x-ray photons to obtain monochromatic data. Key challenges in analyzing polychromatic diffraction data include lattice searching, indexing and wavelength assignment, correction of measured intensities for wavelength-dependent effects, and deconvolution of harmonics. We recently described an algorithm, Careless, that can perform harmonic deconvolution and correct measured intensities for variation in wavelength when presented with integrated diffraction intensities and assigned wavelengths. Here, we present Laue-DIALS, an open-source software pipeline that indexes and integrates polychromatic diffraction data. Laue-DIALS is based on the dxtbx toolbox, which supports the DIALS software commonly used to process monochromatic data. As such, Laue-DIALS provides many of the same advantages: an open-source, modular, and extensible architecture, providing a robust basis for future development. We present benchmark results showing that Laue-DIALS, together with Careless, provides a suitable approach to the analysis of polychromatic diffraction data, including for time-resolved applications.},
+	number = {5},
+	urldate = {2024-12-11},
+	journal = {Structural Dynamics},
+	author = {Hewitt*, Rick A. and Dalton*, Kevin M. and Mendez, Derek A. and Wang, Harrison K. and Klureza, Margaret A. and Brookner, Dennis E. and Greisman, Jack B. and McDonagh, David and Šrajer, Vukica and Sauter, Nicholas K. and Brewster, Aaron S. and Hekstra, Doeke R.},
+	month = oct,
+	year = {2024},
+	pages = {054701},
+  preview={hewitt2024laue-dials.png},
+  abbr={Crystallography},
+}
+
+@article{zielinski2024scaling,
+	title = {Scaling and merging time-resolved pink-beam diffraction with variational inference},
+	volume = {11},
+	issn = {2329-7778},
+	url = {https://doi.org/10.1063/4.0000269},
+	doi = {10.1063/4.0000269},
+	abstract = {Time-resolved x-ray crystallography (TR-X) at synchrotrons and free electron lasers is a promising technique for recording dynamics of molecules at atomic resolution. While experimental methods for TR-X have proliferated and matured, data analysis is often difficult. Extracting small, time-dependent changes in signal is frequently a bottleneck for practitioners. Recent work demonstrated this challenge can be addressed when merging redundant observations by a statistical technique known as variational inference (VI). However, the variational approach to time-resolved data analysis requires identification of successful hyperparameters in order to optimally extract signal. In this case study, we present a successful application of VI to time-resolved changes in an enzyme, DJ-1, upon mixing with a substrate molecule, methylglyoxal. We present a strategy to extract high signal-to-noise changes in electron density from these data. Furthermore, we conduct an ablation study, in which we systematically remove one hyperparameter at a time to demonstrate the impact of each hyperparameter choice on the success of our model. We expect this case study will serve as a practical example for how others may deploy VI in order to analyze their time-resolved diffraction data.},
+	number = {6},
+	urldate = {2024-12-11},
+	journal = {Structural Dynamics},
+	author = {Zielinski, Kara A. and Dolamore, Cole and Wang, Harrison K. and Henning, Robert W. and Wilson, Mark A. and Pollack, Lois and Srajer, Vukica and Hekstra, Doeke R. and Dalton, Kevin M.},
+	month = nov,
+	year = {2024},
+	pages = {064301},
+  preview={zielinski2024scaling.jpg},
+  abbr={Crystallography},
+}
+
+@article{levy2024solving,
+  title={Solving Inverse Problems in Protein Space Using Diffusion-Based Priors},
+  author={Levy, Axel and Chan, Eric R and Fridovich-Keil, Sara and Poitevin, Fr{\'e}d{\'e}ric and Zhong, Ellen D and Wetzstein, Gordon},
+  abstract={The interaction of a protein with its environment can be understood and controlled via its 3D structure. Experimental methods for protein structure determination, such as X-ray crystallography or cryogenic electron microscopy, shed light on biological processes but introduce challenging inverse problems. Learning-based approaches have emerged as accurate and efficient methods to solve these inverse problems for 3D structure determination, but are specialized for a predefined type of measurement. Here, we introduce a versatile framework to turn raw biophysical measurements of varying types into 3D atomic models. Our method combines a physics-based forward model of the measurement process with a pretrained generative model providing a task-agnostic, data-driven prior. Our method outperforms posterior sampling baselines on both linear and non-linear inverse problems. In particular, it is the first diffusion-based method for refining atomic models from cryo-EM density maps.},
+  journal={arXiv preprint arXiv:2406.04239},
+  year={2024},
+  abbr={Protein Folding},
+  project={AtomicSPI},
+  preview={levy2024solving.png},
+  html={https://arxiv.org/html/2406.04239v1}
+}
+
+@article{levy2024revealing,
+  title={Revealing biomolecular structure and motion with neural ab initio cryo-EM reconstruction},
+  author={Levy, Axel and Grzadkowski, Michal and Poitevin, Frederic and Vallese, Francesca and Clarke, Oliver B and Wetzstein, Gordon and Zhong, Ellen D},
+  abstract={Proteins and other biomolecules form dynamic macromolecular machines that are tightly orchestrated to move, bind, and perform chemistry. Cryo-electron microscopy (cryo-EM) can access the intrinsic heterogeneity of these complexes and is therefore a key tool for understanding mechanism and function. However, 3D reconstruction of the resulting imaging data presents a challenging computational problem, especially without any starting information, a setting termed ab initio reconstruction. Here, we introduce a method, DRGN-AI, for ab initio heterogeneous cryo-EM reconstruction. With a two-step hybrid approach combining search and gradient-based optimization, DRGN-AI can reconstruct dynamic protein complexes from scratch without input poses or initial models. Using DRGN-AI, we reconstruct the compositional and conformational variability contained in a variety of benchmark datasets, process an unfiltered dataset of the DSL1/SNARE complex fully ab initio, and reveal a new “supercomplex” state of the human erythrocyte ankyrin-1 complex. With this expressive and scalable model for structure determination, we hope to unlock the full potential of cryo-EM as a high-throughput tool for structural biology and discovery.},
+  journal={bioRxiv},
+  pages={2024--05},
+  year={2024},
+  publisher={Cold Spring Harbor Laboratory},
+  abbr={CryoEM},
+  project={AtomicSPI},
+  preview={levy2024revealing.png},
+  selected={true},
+  html={https://www.biorxiv.org/content/10.1101/2024.05.30.596729v1.full}
+}
+
+@article{aldama2023correcting,
+	title = {Correcting systematic errors in diffraction data with modern scaling algorithms},
+	volume = {79},
+	rights = {https://creativecommons.org/licenses/by/4.0/},
+	issn = {2059-7983},
+	url = {https://journals.iucr.org/d/issues/2023/09/00/qi5002/},
+	doi = {10.1107/S2059798323005776},
+  year={2023},
+	abstract = {X-ray diffraction enables the routine determination of the atomic structure of materials. Key to its success are data-processing algorithms that allow experimenters to determine the electron density of a sample from its diffraction pattern. Scaling, the estimation and correction of systematic errors in diffraction intensities, is an essential step in this process. These errors arise from sample heterogeneity, radiation damage, instrument limitations and other aspects of the experiment. New X-ray sources and sample-delivery methods, along with new experiments focused on changes in structure as a function of perturbations, have led to new demands on scaling algorithms. Classically, scaling algorithms use least-squares optimization to fit a model of common error sources to the observed diffraction intensities to force these intensities onto the same empirical scale. Recently, an alternative approach has been demonstrated which uses a Bayesian optimization method, variational inference, to simultaneously infer merged data along with corrections, or scale factors, for the systematic errors. Owing to its flexibility, this approach proves to be advantageous in certain scenarios. This perspective briefly reviews the history of scaling algorithms and contrasts them with variational inference. Finally, appropriate use cases are identified for the first such algorithm, Careless, guidance is offered on its use and some speculations are made about future variational scaling methods.},
+	pages = {796--805},
+	number = {9},
+	journaltitle = {Acta Crystallographica Section D: Structural Biology},
+	shortjournal = {Acta Cryst D},
+	author = {Aldama*, L. A. and Dalton*, K. M. and Hekstra, D. R.},
+	urldate = {2023-09-05},
+	date = {2023-09-01},
+	langid = {english},
+  preview={aldama2023correcting.jpg},
+  abbr={Crystallography}
+}
+
+@article{greisman2024perturbative,
+	title = {Perturbative diffraction methods resolve a conformational switch that facilitates a two-step enzymatic mechanism},
+	volume = {121},
+	url = {https://www.pnas.org/doi/10.1073/pnas.2313192121},
+	doi = {10.1073/pnas.2313192121},
+	abstract = {Enzymes catalyze biochemical reactions through precise positioning of substrates, cofactors, and amino acids to modulate the transition-state free energy. However, the role of conformational dynamics remains poorly understood due to poor experimental access. This shortcoming is evident with Escherichia coli dihydrofolate reductase ({DHFR}), a model system for the role of protein dynamics in catalysis, for which it is unknown how the enzyme regulates the different active site environments required to facilitate proton and hydride transfer. Here, we describe ligand-, temperature-, and electric-field-based perturbations during X-ray diffraction experiments to map the conformational dynamics of the Michaelis complex of {DHFR}. We resolve coupled global and local motions and find that these motions are engaged by the protonated substrate to promote efficient catalysis. This result suggests a fundamental design principle for multistep enzymes in which pre-existing dynamics enable intermediates to drive rapid electrostatic reorganization to facilitate subsequent chemical steps.},
+	pages = {e2313192121},
+	number = {9},
+	journaltitle = {Proceedings of the National Academy of Sciences},
+	author = {Greisman, Jack B. and Dalton, Kevin M. and Brookner, Dennis E. and Klureza, Margaret A. and Sheehan, Candice J. and Kim, In-Sik and Henning, Robert W. and Russi, Silvia and Hekstra, Doeke R.},
+	urldate = {2024-03-12},
+	date = {2024-02-27},
+	note = {Publisher: Proceedings of the National Academy of Sciences},
+	file = {Full Text PDF:/home/kmdalton/Zotero/storage/ZPMFUJPJ/Greisman et al. - 2024 - Perturbative diffraction methods resolve a conform.pdf:application/pdf},
+  year={2024},
+  preview={greisman2024perturbative.jpg},
+  abbr={Crystallography},
+}
+
+@article{shenoy2023scalable,
+  title={Scalable 3D Reconstruction From Single Particle X-Ray Diffraction Images Based on Online Machine Learning},
+  abstract={X-ray free-electron lasers (XFELs) offer unique capabilities for measuring the structure and dynamics of biomolecules, helping us understand the basic building blocks of life. Notably, high-repetition-rate XFELs enable single particle imaging (X-ray SPI) where individual, weakly scattering biomolecules are imaged under near-physiological conditions with the opportunity to access fleeting states that cannot be captured in cryogenic or crystallized conditions. Existing X-ray SPI reconstruction algorithms, which estimate the unknown orientation of a particle in each captured image as well as its shared 3D structure, are inadequate in handling the massive datasets generated by these emerging XFELs. Here, we introduce X-RAI, an online reconstruction framework that estimates the structure of a 3D macromolecule from large X-ray SPI datasets. X-RAI consists of a convolutional encoder, which amortizes pose estimation over large datasets, as well as a physics-based decoder, which employs an implicit neural representation to enable high-quality 3D reconstruction in an end-to-end, self-supervised manner. We demonstrate that X-RAI achieves state-of-the-art performance for small-scale datasets in simulation and challenging experimental settings and demonstrate its unprecedented ability to process large datasets containing millions of diffraction images in an online fashion. These abilities signify a paradigm shift in X-ray SPI towards real-time capture and reconstruction.},
+  author={Shenoy, Jay and Levy, Axel and Poitevin, Fr{\'e}d{\'e}ric and Wetzstein, Gordon},
+  journal={arXiv preprint},
+  doi={10.48550/arXiv.2312.14432},
+  year={2023},
+  preview={shenoy2023scalable.jpg},
+  selected={true},
+  abbr={SPI}
+}
+
+@inproceedings{shenoy2023amortized,
+  title={Amortized pose estimation for x-ray single particle imaging},
+  abstract={X-ray single particle imaging (SPI) is a nascent technique that can capture the dynamics of biomolecules at room temperature. SPI experiments will one day collect tens of millions of images of the same molecule in order to overcome the weak scattering of individual proteins. Existing reconstruction algorithms will be unable to scale to datasets of this size because they perform computationally expensive search steps to estimate the orientation of the molecule in each image. In this work, we propose a reconstruction algorithm that amortizes the estimation of pose via an autoencoder framework. Our approach consists of a convolutional encoder that maps X-ray images to predicted poses and a physics-based decoder that implicitly fuses all the 2D scattering images into a volumetric representation of the molecule. We validate our method on 6 synthetic datasets of 2 distinct proteins, showing that for the largest datasets containing 5 million images, our technique can reconstruct the electron density in a single pass.},
+  author={Shenoy, Jay and Levy, Axel and Poitevin, Fr{\'e}d{\'e}ric and Wetzstein, Gordon},
+  booktitle={Machine learning for structural biology Workshop},
+  year={2023},
+  organization={NeurIPS 2023},
+  selected={false},
+  pdf={https://www.mlsb.io/papers_2023/Amortized_Pose_Estimation_for_X-Ray_Single_Particle_Imaging.pdf},
+  preview={shenoy2023amortized.jpg},
+  abbr={SPI}
+}
+
+@article{koo2023cryochains,
+  title={CryoChains: Heterogeneous Reconstruction of Molecular Assembly of Semi-flexible Chains from Cryo-EM Images},
+  abstract={Cryogenic electron microscopy (cryo-EM) has
+transformed structural biology by allowing to reconstruct 3D biomolecular structures up to nearatomic resolution. However, the 3D reconstruction process remains challenging, as the 3D structures may exhibit substantial shape variations,
+while the 2D image acquisition suffers from a low
+signal-to-noise ratio, requiring to acquire very
+large datasets that are time-consuming to process. Current reconstruction methods are precise
+but computationally expensive, or faster but lack
+a physically-plausible model of large molecular
+shape variations. To fill this gap, we propose
+CryoChains that encodes large deformations of
+biomolecules via rigid body transformation of
+their chains, while representing their finer shape
+variations with the normal mode analysis framework of biophysics. Our synthetic data experiments on the human GABAB and heat shock protein show that CryoChains gives a biophysicallygrounded quantification of the heterogeneous conformations of biomolecules, while reconstructing their 3D molecular structures at an improved
+resolution compared to the current fastest, interpretable deep learning method.},
+  author={Koo, Bongjin and Martel, Julien and Peck, Ariana and Levy, Axel and Poitevin, Fr{\'e}d{\'e}ric and Miolane, Nina},
+  journal={arXiv e-prints},
+  pages={arXiv--2306},
+  year={2023},
+  pdf={https://icml-compbio.github.io/2023/papers/WCBICML2023_paper17.pdf},
+  preview={koo2023cryochains.jpg},
+  abbr={CryoEM}
+}
+
+@incollection{peck2023modeling,
+  title={Modeling diffuse scattering with simple, physically interpretable models},
+  abstract={Diffuse scattering has long been proposed to probe protein dynamics relevant for biological function, and more recently, as a tool to aid structure determination. Despite recent advances in measuring and modeling this signal, the field has not been able to routinely use experimental diffuse scattering for either application. A persistent challenge has been to devise models that are sophisticated enough to robustly reproduce experimental diffuse features but remain readily interpretable from the standpoint of structural biology. This chapter presents eryx, a suite of computational tools to evaluate the primary models of disorder that have been used to analyze protein diffuse scattering. By facilitating comparative modeling, eryx aims to provide insights into the physical origins of this signal and help identify the sources of disorder that are critical for reproducing experimental features. This framework also lays the groundwork for the development of more advanced models that integrate different types of disorder without loss of interpretability.},
+  author={Peck, Ariana and Lane, Thomas J and Poitevin, Fr{\'e}d{\'e}ric},
+  booktitle={Methods in enzymology},
+  volume={688},
+  pages={169--194},
+  year={2023},
+  publisher={Elsevier},
+  doi={10.1016/bs.mie.2023.06.022},
+  preview={peck2023modeling.jpg},
+  selected={true},
+  abbr={Diffuse Scattering}
+}
+
+@article{levy2022amortized,
+  title={Amortized inference for heterogeneous reconstruction in cryo-em},
+  abstract={Cryo-electron microscopy (cryo-EM) is an imaging modality that provides unique
+insights into the dynamics of proteins and other building blocks of life. The algorithmic challenge of jointly estimating the poses, 3D structure, and conformational
+heterogeneity of a biomolecule from millions of noisy and randomly oriented 2D
+projections in a computationally efficient manner, however, remains unsolved. Our
+method, cryoFIRE, performs ab initio heterogeneous reconstruction with unknown
+poses in an amortized framework, thereby avoiding the computationally expensive
+step of pose search while enabling the analysis of conformational heterogeneity.
+Poses and conformation are jointly estimated by an encoder while a physics-based
+decoder aggregates the images into an implicit neural representation of the conformational space. We show that our method can provide one order of magnitude
+speedup on datasets containing millions of images without any loss of accuracy.
+We validate that the joint estimation of poses and conformations can be amortized
+over the size of the dataset. For the first time, we prove that an amortized method
+can extract interpretable dynamic information from experimental datasets.},
+  author={Levy, Axel and Wetzstein, Gordon and Martel, Julien NP and Poitevin, Frederic and Zhong, Ellen},
+  journal={Advances in neural information processing systems},
+  volume={35},
+  pages={13038--13049},
+  year={2022},
+  pdf={https://papers.neurips.cc/paper_files/paper/2022/file/54b8b4e0b4ba4aad112e84f32e3b5dbb-Paper-Conference.pdf},
+  preview={levy2022amortized.jpg},
+  abbr={CryoEM}
+}
+
+@article{donnat2022deep,
+  title={Deep generative modeling for volume reconstruction in cryo-electron microscopy},
+  abstract={Advances in cryo-electron microscopy (cryo-EM) for high-resolution imaging of biomolecules in solution have provided new challenges and opportunities for algorithm development for 3D reconstruction. Next-generation volume reconstruction algorithms that combine generative modelling with end-to-end unsupervised deep learning techniques have shown promise, but many technical and theoretical hurdles remain, especially when applied to experimental cryo-EM images. In light of the proliferation of such methods, we propose here a critical review of recent advances in the field of deep generative modelling for cryo-EM reconstruction. The present review aims to (i) provide a unified statistical framework using terminology familiar to machine learning researchers with no specific background in cryo-EM, (ii) review the current methods in this framework, and (iii) outline outstanding bottlenecks and avenues for improvements in the field.},
+  author={Donnat, Claire and Levy, Axel and Poitevin, Frederic and Zhong, Ellen D and Miolane, Nina},
+  journal={Journal of structural biology},
+  volume={214},
+  number={4},
+  pages={107920},
+  year={2022},
+  publisher={Elsevier},
+  preview={donnat2022deep.jpg},
+  doi={10.1016/j.jsb.2022.107920},
+  abbr={CryoEM}
+}
+
+@inproceedings{nashed2022heterogeneous,
+  title={Heterogeneous reconstruction of deformable atomic models in Cryo-EM},
+  abstract={Cryogenic electron microscopy (cryo-EM) provides a unique opportunity to study
+the structural heterogeneity of biomolecules. Being able to explain this heterogeneity with atomic models would help our understanding of their functional
+mechanisms but the size and ruggedness of the structural space (the space of
+atomic 3D cartesian coordinates) presents an immense challenge. Here, we describe a heterogeneous reconstruction method based on an atomistic representation
+whose deformation is reduced to a handful of collective motions through normal
+mode analysis. Our implementation uses an autoencoder. The encoder jointly estimates the amplitude of motion along the normal modes and the 2D shift between
+the center of the image and the center of the molecule . The physics-based decoder
+aggregates a representation of the heterogeneity readily interpretable at the atomic
+level. We illustrate our method on 3 synthetic datasets corresponding to different
+distributions along a simulated trajectory of adenylate kinase transitioning from its
+open to its closed structures. We show for each distribution that our approach is
+able to recapitulate the intermediate atomic models with atomic-level accuracy.},
+  author={Nashed, Youssef and Peck, Ariana and Martel, Julien and Levy, Axel and Koo, Bongjin and Wetzstein, Gordon and Miolane, Nina and Ratner, Daniel and Poitevin, Fr{\'e}d{\'e}ric},
+  booktitle={Machine learning for structural biology Workshop},
+  year={2022},
+  organization={NeurIPS 2022},
+  pdf={https://www.mlsb.io/papers_2022/Heterogeneous_reconstruction_of_deformable_atomic_models_in_Cryo_EM.pdf},
+  preview={nashed2022heterogeneous.jpg},
+  abbr={CryoEM}
+}
+
+
+@inproceedings{levy2022cryoai,
+  title={CryoAI: Amortized inference of poses for ab initio reconstruction of 3d molecular volumes from real cryo-em images},
+  abstract={Cryo-electron microscopy (cryo-EM) has become a tool of fundamental importance in structural biology, helping us understand the basic building blocks of life. The algorithmic challenge of cryo-EM is to jointly estimate the unknown 3D poses and the 3D electron scattering potential of a biomolecule from millions of extremely noisy 2D images. Existing reconstruction algorithms, however, cannot easily keep pace with the rapidly growing size of cryo-EM datasets due to their high computational and memory cost. We introduce cryoAI, an ab initio reconstruction algorithm for homogeneous conformations that uses direct gradient-based optimization of particle poses and the electron scattering potential from single-particle cryo-EM data. CryoAI combines a learned encoder that predicts the poses of each particle image with a physics-based decoder to aggregate each particle image into an implicit representation of the scattering potential volume. This volume is stored in the Fourier domain for computational efficiency and leverages a modern coordinate network architecture for memory efficiency. Combined with a symmetrized loss function, this framework achieves results of a quality on par with state-of-the-art cryo-EM solvers for both simulated and experimental data, one order of magnitude faster for large datasets and with significantly lower memory requirements than existing methods.},
+  author={Levy, Axel and Poitevin, Fr{\'e}d{\'e}ric and Martel, Julien and Nashed, Youssef and Peck, Ariana and Miolane, Nina and Ratner, Daniel and Dunne, Mike and Wetzstein, Gordon},
+  booktitle={European Conference on Computer Vision},
+  doi={10.48550/arXiv.2203.08138},
+  pages={540--557},
+  year={2022},
+  organization={Springer},
+  preview={cryoai.jpg},
+  selected={true},
+  abbr={CryoEM}
+}
+
+@article{greisman2022native,
+	title = {Native {SAD} phasing at room temperature},
+	volume = {78},
+	rights = {https://journals.iucr.org/copyright/licencetopublish.html},
+	issn = {2059-7983},
+	url = {https://journals.iucr.org/d/issues/2022/08/00/rr5221/},
+	doi = {10.1107/S2059798322006799},
+	abstract = {Room-temperature crystallography enables researchers to resolve the conformational heterogeneity of structures. Here, the native {SAD} phasing of four structures at 295 K highlights the strengths of room-temperature diffraction experiments, including detailed anomalous difference maps and alternate conformations that are well supported by the electron density.},
+	pages = {986--996},
+	number = {8},
+	journaltitle = {\textit{Acta Crystallographica Section D: Structural Biology}},
+	shortjournal = {\textit{Acta Cryst D}},
+	author = {Greisman, J. B. and Dalton, K. M. and Sheehan, C. J. and Klureza, M. A. and Kurinov, I. and Hekstra, D. R.},
+	urldate = {2022-08-06},
+	date = {2022-08-01},
+	langid = {english},
+  year={2022},
+  preview={greisman2022native.jpg},
+  abbr={Crystallography}
+}
+
+@article{dalton2022careless,
+	title = {A unifying Bayesian framework for merging X-ray diffraction data},
+	volume = {13},
+	rights = {2022 The Author(s)},
+	issn = {2041-1723},
+	url = {https://www.nature.com/articles/s41467-022-35280-8},
+	doi = {10.1038/s41467-022-35280-8},
+	abstract = {Novel X-ray methods are transforming the study of the functional dynamics of biomolecules. Key to this revolution is detection of often subtle conformational changes from diffraction data. Diffraction data contain patterns of bright spots known as reflections. To compute the electron density of a molecule, the intensity of each reflection must be estimated, and redundant observations reduced to consensus intensities. Systematic effects, however, lead to the measurement of equivalent reflections on different scales, corrupting observation of changes in electron density. Here, we present a modern Bayesian solution to this problem, which uses deep learning and variational inference to simultaneously rescale and merge reflection observations. We successfully apply this method to monochromatic and polychromatic single-crystal diffraction data, as well as serial femtosecond crystallography data. We find that this approach is applicable to the analysis of many types of diffraction experiments, while accurately and sensitively detecting subtle dynamics and anomalous scattering.},
+	pages = {7764},
+	journaltitle = {\textit{Nature Communications}},
+	shortjournal = {Nat Commun},
+	author = {Dalton, Kevin M. and Greisman, Jack B. and Hekstra, Doeke R.},
+	urldate = {2022-12-18},
+	date = {2022-12-15},
+	langid = {english},
+	keywords = {Machine learning, Molecular conformation, X-ray crystallography},
+  year={2022},
+  preview={dalton2022careless.png},
+  selected={true},
+  abbr={Crystallography}
+}
+
+@article{greisman2021reciprocalspaceship,
+	title = {reciprocalspaceship: a Python library for crystallographic data analysis},
+	volume = {54},
+	issn = {0021-8898},
+	doi = {10.1107/S160057672100755X},
+	shorttitle = {reciprocalspaceship},
+	abstract = {Crystallography uses the diffraction of X-rays, electrons or neutrons by crystals to provide invaluable data on the atomic structure of matter, from single atoms to ribosomes. Much of crystallography's success is due to the software packages developed to enable automated processing of diffraction data. However, the analysis of unconventional diffraction experiments can still pose significant challenges - many existing programs are closed source, sparsely documented, or challenging to integrate with modern libraries for scientific computing and machine learning. Described here is reciprocalspaceship, a Python library for exploring reciprocal space. It provides a tabular representation for reflection data from diffraction experiments that extends the widely used pandas library with built-in methods for handling space groups, unit cells and symmetry-based operations. As is illustrated, this library facilitates new modes of exploratory data analysis while supporting the prototyping, development and release of new methods.},
+	pages = {1521--1529},
+	issue = {Pt 5},
+	journaltitle = {\textit{Journal of Applied Crystallography}},
+	shortjournal = {J Appl Crystallogr},
+	author = {Greisman, Jack B. and Dalton, Kevin M. and Hekstra, Doeke R.},
+	date = {2021-10-01},
+	pmid = {34671231},
+	pmcid = {PMC8493618},
+	keywords = {X-ray crystallography, data analysis, Python},
+  year={2021},
+  preview={greisman2021reciprocalspaceship.jpg},
+  abbr={Crystallography}
+}
+
+@article{su2021reproducibility,
+  title={Reproducibility of protein x-ray diffuse scattering and potential utility for modeling atomic displacement parameters},
+  abstract={Protein structure and dynamics can be probed using x-ray crystallography. Whereas the Bragg peaks are only sensitive to the average unit-cell electron density, the signal between the Bragg peaks-diffuse scattering-is sensitive to spatial correlations in electron-density variations. Although diffuse scattering contains valuable information about protein dynamics, the diffuse signal is more difficult to isolate from the background compared to the Bragg signal, and the reproducibility of diffuse signal is not yet well understood. We present a systematic study of the reproducibility of diffuse scattering from isocyanide hydratase in three different protein forms. Both replicate diffuse datasets and datasets obtained from different mutants were similar in pairwise comparisons (Pearson correlation coefficient ≥0.8). The data were processed in a manner inspired by previously published methods using custom software with modular design, enabling us to perform an analysis of various data processing choices to determine how to obtain the highest quality data as assessed using unbiased measures of symmetry and reproducibility. The diffuse data were then used to characterize atomic mobility using a liquid-like motions (LLM) model. This characterization was able to discriminate between distinct anisotropic atomic displacement parameter (ADP) models arising from different anisotropic scaling choices that agreed comparably with the Bragg data. Our results emphasize the importance of data reproducibility as a model-free measure of diffuse data quality, illustrate the ability of LLM analysis of diffuse scattering to select among alternative ADP models, and offer insights into the design of successful diffuse scattering experiments.},
+  author={Su, Zhen and Dasgupta, Medhanjali and Poitevin, Fr{\'e}d{\'e}ric and Mathews, Irimpan I and van den Bedem, Henry and Wall, Michael E and Yoon, Chun Hong and Wilson, Mark A},
+  journal={Structural Dynamics},
+  doi={10.1063/4.0000087},
+  volume={8},
+  number={4},
+  year={2021},
+  publisher={AIP Publishing},
+  preview={su2021reproducibility.jpg},
+  abbr={Diffuse Scattering}
+}
+
+@article{ecoffet2021application,
+  title={Application of transport-based metric for continuous interpolation between cryo-EM density maps},
+  author={Ecoffet, Arthur and Woollard, Geoffrey and Kushner, Artem and Poitevin, Fr{\'e}d{\'e}ric and Duc, Khanh Dao},
+  journal={AIMS mathematics},
+  volume={7},
+  number={1},
+  pages={986},
+  year={2021},
+  doi={10.3934/math.2022059},
+  abstract={Cryogenic electron microscopy (cryo-EM) has become widely used for the past few years in structural biology, to collect single images of macromolecules “frozen in time”. As this technique facilitates the identification of multiple conformational states adopted by the same molecule, a direct product of it is a set of 3D volumes, also called EM maps. To gain more insights on the possible mechanisms that govern transitions between different states, and hence the mode of action of a molecule, we recently introduced a bioinformatic tool that interpolates and generates morphing trajectories joining two given EM maps. This tool is based on recent advances made in optimal transport, that allow efficient evaluation of Wasserstein barycenters of 3D shapes. As the overall performance of the method depends on various key parameters, including the sensitivity of the regularization parameter, we performed various numerical experiments to demonstrate how MorphOT can be applied in different contexts and settings. Finally, we discuss current limitations and further potential connections between other optimal transport theories and the conformational heterogeneity problem inherent with cryo-EM data.},
+  abbr={CryoEM},
+  preview={ecoffet2021application.jpg},
+  project={morphot}
+}
+
+@inproceedings{nashed2021cryoposenet,
+  title={CryoPoseNet: End-to-end simultaneous learning of single-particle orientation and 3D map reconstruction from cryo-electron microscopy data},
+  author={Nashed, Youssef SG and Poitevin, Fr{\'e}d{\'e}ric and Gupta, Harshit and Woollard, Geoffrey and Kagan, Michael and Yoon, Chun Hong and Ratner, Daniel},
+  abstract={Cryogenic electron microscopy (cryo-EM) provides images from different copies of the same biomolecule in arbitrary orientations. Here, we present an end-to-end unsupervised approach that learns individual particle orientations directly from cryo-EM data while reconstructing the 3D map of the biomolecule following random initialization. The approach relies on an auto-encoder architecture where the latent space is explicitly interpreted as orientations used by the decoder to form an image according to the physical projection model. We evaluate our method on simulated data and show that it is able to reconstruct 3D particle maps from noisy- and CTF-corrupted 2D projection images of unknown particle orientations.},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={4066--4076},
+  year={2021},
+  html={https://openaccess.thecvf.com/content/ICCV2021W/LCI/papers/Nashed_CryoPoseNet_End-to-End_Simultaneous_Learning_of_Single-Particle_Orientation_and_3D_Map_ICCVW_2021_paper.pdf},
+  abbr={CryoEM},
+  preview={nashed2021cryoposenet.jpg}
+}
+
+
+@article{ecoffet2020morphot,
+  title={MorphOT: Transport-based interpolation between EM maps with UCSF ChimeraX},
+  abstract={Cryogenic electron microscopy (cryo-EM) offers the unique potential to capture conformational heterogeneity, by solving multiple three-dimensional classes that co-exist within a single cryo-EM image dataset. To investigate the extent and implications of such heterogeneity, we propose to use an optimal-transport-based metric to interpolate barycenters between EM maps and produce morphing trajectories.While standard linear interpolation mostly fails to produce realistic transitions, our method yields continuous trajectories that displace densities to morph one map into the other, instead of blending them.},
+  author={Ecoffet, Arthur and Poitevin, Fr{\'e}d{\'e}ric and Dao Duc, Khanh},
+  journal={Bioinformatics},
+  volume={36},
+  number={22-23},
+  pages={5528--5529},
+  year={2020},
+  publisher={Oxford University Press},
+  preview={ecoffet2020morphot.jpg},
+  doi={10.1093/bioinformatics/btaa1019},
+  abbr={CryoEM},
+  project={morphot}
+}
+
+@inproceedings{miolane2020estimation,
+  title={Estimation of orientation and camera parameters from cryo-electron microscopy images with variational autoencoders and generative adversarial networks},
+  abstract={Cryo-electron microscopy (cryo-EM) is capable of producing reconstructed 3D images of biomolecules at near-atomic resolution. However, raw cryo-EM images are only highly corrupted - noisy and band-pass filtered - 2D projections of the target 3D biomolecules. Reconstructing the 3D molecular shape requires the estimation of the orientation of the biomolecule that has produced the given 2D image, and the estimation of camera parameters to correct for intensity defects. Current techniques performing these tasks are often computationally expensive, while the dataset sizes keep growing. There is a need for next-generation algorithms that preserve accuracy while improving speed and scalability. In this paper, we combine variational autoencoders (VAEs) and generative adversarial networks (GANs) to learn a low-dimensional latent representation of cryo-EM images. This analysis leads us to design an estimation method for orientation and camera parameters of single-particle cryo-EM images, which opens the door to faster cryo-EM biomolecule reconstruction.},
+  author={Miolane, Nina and Poitevin, Fr{\'e}d{\'e}ric and Li, Yee-Ting and Holmes, Susan},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops},
+  pages={970--971},
+  year={2020},
+  preview={miolane2020estimation.gif},
+  html={https://openaccess.thecvf.com/content_CVPRW_2020/html/w57/Miolane_Estimation_of_Orientation_and_Camera_Parameters_From_Cryo-Electron_Microscopy_Images_CVPRW_2020_paper.html},
+  abbr={CryoEM}
+}
+
+@article{peck2018intermolecular,
+  title={Intermolecular correlations are necessary to explain diffuse scattering from protein crystals},
+  abstract={Conformational changes drive protein function, including catalysis, allostery and signaling. X-ray diffuse scattering from protein crystals has frequently been cited as a probe of these correlated motions, with significant potential to advance our understanding of biological dynamics. However, recent work has challenged this prevailing view, suggesting instead that diffuse scattering primarily originates from rigid-body motions and could therefore be applied to improve structure determination. To investigate the nature of the disorder giving rise to diffuse scattering, and thus the potential applications of this signal, a diverse repertoire of disorder models was assessed for its ability to reproduce the diffuse signal reconstructed from three protein crystals. This comparison revealed that multiple models of intramolecular conformational dynamics, including ensemble models inferred from the Bragg data, could not explain the signal. Models of rigid-body or short-range liquid-like motions, in which dynamics are confined to the biological unit, showed modest agreement with the diffuse maps, but were unable to reproduce experimental features indicative of long-range correlations. Extending a model of liquid-like motions to include disorder across neighboring proteins in the crystal significantly improved agreement with all three systems and highlighted the contribution of intermolecular correlations to the observed signal. These findings anticipate a need to account for intermolecular disorder in order to advance the interpretation of diffuse scattering to either extract biological motions or aid structural inference.},
+  author={Peck, Ariana and Poitevin, Fr{\'e}d{\'e}ric and Lane, Thomas J},
+  journal={IUCrJ},
+  volume={5},
+  number={2},
+  pages={211--222},
+  year={2018},
+  doi={10.1107/s2052252518001124},
+  publisher={International Union of Crystallography},
+  preview={peck2018intermolecular.jpg},
+  abbr={Diffuse Scattering}
+}
+
+@article{houdayer2017reduction,
+  title={Reduction of small-angle scattering profiles to finite sets of structural invariants},
+  journal={Acta Crystallographica Section A: Foundations and Advances},
+  author={Houdayer, J{\'e}rome and Poitevin, Fr{\'e}d{\'e}ric},
+  abstract={It is shown how small-angle scattering (SAS) data can be reduced to a set of invariant parameters used to reliably estimate structural moments beyond the radius of gyration, thereby rigorously expanding the actual set of model-free quantities one can extract from experimental SAS data. The pair distance distribution function is also entirely described by this invariant set and the D max parameter can be measured.},
+  volume={73},
+  number={4},
+  pages={317--332},
+  year={2017},
+  publisher={International Union of Crystallography},
+  doi={10.1107/S205327331700451X},
+  abbr={Solution Scattering},
+  preview={houdayer2017reduction.jpg}
+}

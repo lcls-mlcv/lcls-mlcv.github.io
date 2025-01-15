@@ -1,0 +1,34 @@
+- name: Frédéric Poitevin
+  degrees: Ph.D.
+  image: fred_poitevin.jpg
+  position: Staff Scientist
+  email: fpoitevi [at] slac.stanford.edu
+  website:
+  github: fredericpoitevin
+  scholar: qz6POUsAAAAJ
+  orcid: 0000-0002-3181-8652
+  description: Bonjour!
+  projects_pi: ["AtomicSPI", "BayFAI", "DynaBoost", "MorphOT", "PyPCA", "aNiMAte", "cryoAI", "autoMFX"]
+  projects: ["ARAMS", "X-RAI", "DRGN-AI", "cryoFIRE"]
+
+- name: Kevin M. Dalton
+  degrees: Ph.D.
+  image: kevin_dalton.jpg
+  position: Associate Scientist
+  email: kmdalton [at] slac.stanford.edu
+  website:
+  github: kmdalton
+  scholar: 1d5dig0AAAAJ
+  orcid: 0000-0001-9396-085X
+  description: Hello!
+  projects_pi: ["Abismal"]
+
+- name: Doris Mai
+  degrees: Ph.D.
+  image: doris_mai.jpg
+  position: Research Associate
+  email: mai12345 [at] slac.stanford.edu
+  scholar:
+  orcid: 0000-0003-2278-0768
+  description: 你好！
+  projects: ["Abismal"]

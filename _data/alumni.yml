@@ -1,0 +1,76 @@
+- name: David Klindt
+  degrees: Ph.D.
+  previously: Research Associate, LCLS
+  now: Assistant Professor, Cold Spring Harbor Laboratory
+  email: klindt [at] cshl.edu
+  website: https://www.cshl.edu/research/faculty-staff/david-klindt/
+  projects: ["AtomicSPI"]
+
+- name: Ariana Peck
+  degrees: Ph.D.
+  previously: Project Scientist, LCLS
+  now: Data Scientist, Chan Zuckerberg Biohub Network
+  projects: ["AtomicSPI", "cryoAI", "aNiMAte"]
+
+# - name: Bella Crouch
+#   degrees: M.S.
+#   previously: ICME Xplore Resarch Intern (Spring 2024)
+#   now:
+#   projects: ["MAXIE"]
+#   email:
+#   website:
+
+# - name: Fang Shu
+#   degrees: M.S.
+#   previously: ICME Xplore Resarch Intern (Spring 2024)
+#   now:
+#   projects: ["MAXIE"]
+#   email:
+#   website:
+
+- name: Paul-Emile Giacomelli
+  degrees: M.S.
+  previously: Research Assistant (Fall 2023 - Winter 2024)
+  now: Strategy Consultant
+  projects: ["BayFAI"]
+  email:
+  website:
+
+- name: Thomas Bougnon
+  degrees: M.S.
+  previously: Research Assistant (Fall 2023 - Winter 2024)
+  now: Consultant
+  email:
+  website:
+  projects: ["PyPCA"]
+
+- name: Russell Marasigan
+  degrees:
+  previously: LCLS Summer 2023 Intern
+  now:
+  email:
+  website:
+  projects: ["PyPCA"]
+
+- name: Charlotte Meredith
+  degrees:
+  previously: SAGE Summer 2023 Intern
+  now:
+  email:
+  website:
+
+- name: Callum Hepworth
+  degrees:
+  previously: LCLS Summer 2022 Intern
+  now:
+  email:
+  website:
+  projects: ["PyPCA"]
+
+- name: Arthur Ecoffet
+  degrees:
+  previously:
+  now:
+  email:
+  website:
+  projects: ["MorphOT"]
