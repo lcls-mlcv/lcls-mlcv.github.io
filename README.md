@@ -29,9 +29,9 @@ Prerequisites:
 
 #### 1. Add your profile picture to /assets/img/
 
-- format: xxx size in `.jpg` or `.png`
-- name your picture as `team_firstname_lastname.jpg`
-- navigate to `/assets/img/` on GitHub and drag-and-drop the picture file from your desktop into the browser window.
+- format: use the `/assets/img/jpegify.sh` script to standardize image size and format
+- name your picture as `firstname_lastname.jpg`
+- navigate to `/assets/img/team/` on GitHub and drag-and-drop the picture file from your desktop into the browser window.
 - when prompted for **Commit changes**, change the message to "upload `YOUR FILENAME` for members.yml".
 
 #### 2. Add your introduction to /\_data/members.yml

@@ -23,6 +23,11 @@ nav_order: 6
 - [West Coast Structural Biology Workshop](https://wcsbw2025.macromolecules.xyz/)
 - [Machine Learning in Structural Biology](https://www.mlsb.io/)
 
+### Seminars and Lectures
+- [SSRL Photon Science Seminars](https://www-ssrl.slac.stanford.edu/content/events/photon-science-seminar-series)
+- [Stanford Center for Image System Engineering Events](https://scien.stanford.edu/index.php/events/)
+- [Stanford Data Science Seminars](https://datascience.stanford.edu/events/upcoming-events)
+
 ### Scientific and Engineering Background
 
 #### Machine Learning and Computational Methods
