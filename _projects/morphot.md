@@ -4,7 +4,7 @@ title: MorphOT
 description: Optimal Transport for CryoEM
 img: /assets/img/publication_preview/ecoffet2020morphot.jpg
 importance: 1
-category: Past
+category: Structural Dynamics
 related_publications: true
 ---
 {% cite ecoffet2020morphot ecoffet2021application %}

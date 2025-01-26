@@ -4,7 +4,7 @@ title: ARAMS
 description: Monitoring and Classification Framework for LCLS data.
 img: assets/img/publication_preview/matrixsketcher.png
 importance: 3
-category: Past
+category: Data Reduction
 related_publications: true
 ---
 

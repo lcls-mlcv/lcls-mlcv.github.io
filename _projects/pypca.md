@@ -4,7 +4,7 @@ title: PyPCA
 description: Principal Component Analysis of Massive Datasets
 img: #assets/img/3.jpg
 importance: 1
-category: Ongoing
+category: Data Reduction
 giscus_comments: false
 ---
 

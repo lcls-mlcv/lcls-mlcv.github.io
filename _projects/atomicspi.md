@@ -5,7 +5,7 @@ description: Learning atomic scale biomolecular dynamics from single-particle im
 img: assets/img/projects/atomicspi.png
 subprojects: ["cryoAI", "cryoFIRE", "DRGN-AI", "aNiMAte"]
 importance: 1
-category: Past
+category: Structural Dynamics
 related_publications: true
 ---
 
