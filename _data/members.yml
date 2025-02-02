@@ -32,3 +32,13 @@
   orcid: 0000-0003-2278-0768
   description: 你好！
   projects: ["Abismal"]
+
+- name: Oliver Hoidn
+  degrees: Ph.D.
+  image: oliver_hoidn.jpg
+  position: Research Associate
+  email: ohoidn [at] slac.stanford.edu
+  scholar: uHt8pNAAAAAJ
+  orcid: 0000-0003-2758-0642
+  description: ¡Hola!
+  projects: ["DynaBoost"]

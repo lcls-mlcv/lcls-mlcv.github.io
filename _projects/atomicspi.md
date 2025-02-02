@@ -3,9 +3,9 @@ layout: projects
 title: AtomicSPI
 description: Learning atomic scale biomolecular dynamics from single-particle imaging data.
 img: assets/img/projects/atomicspi.png
-subprojects: ["cryoAI", "cryoFIRE", "DRGN-AI", "aNiMAte"]
-importance: 1
-category: Structural Dynamics
+subprojects: ["cryoAI", "cryoFIRE", "DRGN-AI", "aNiMAte", "ADP-3D","X-RAI", "MorphOT"]
+importance: 2
+category: Computational Imaging
 related_publications: true
 ---
 
@@ -27,6 +27,19 @@ We illustrate in Figure 2 our main achievements.
 {% include figure.liquid loading="eager" path="assets/img/projects/atomicspi.jpg" title="AtomicSPI" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
     Development of Heterogeneous Reconstruction Methods across a wide array of Imaging Modalities. This figure highlights the most recent results from our work. (left) We demonstrate the ability to fit large atomic models to each of the images in experimental cryoEM datasets, through deformation along their normal modes {% cite nashed2022heterogeneous %}{% cite koo2023cryochains %}. (top-right) In collaboration with Ellen Zhong, we show that implicit representations like the ones used in cryoAI {% cite levy2022cryoai %} or cryoFIRE {% cite levy2022amortized %} can be used to reconstruct structural heterogeneity from in situ cryogenic electron tomography experiments {% cite levy2024revealing %}. (bottom-right) The approach pioneered in cryoAI {% cite levy2022cryoai %}was adapted to the X-ray SPI modality through a simple change of the image formation model, highlighting the versatility of our approach and showcasing its modular architecture {% cite shenoy2023amortized %}{% cite shenoy2023scalable %}.
+</div>
+
+
+### AtomicSPI Projects
+For a deeper dive into the AtomicSPI projects, check out their individual pages:
+<div class="projects">
+  <div class="row row-cols-1 row-cols-md-3">
+  {% for project in site.projects %}
+    {% if page.subprojects contains project.title %}
+      {% include projects.liquid %}
+    {% endif %}
+  {% endfor %}
+  </div>
 </div>
 
 Other directions explored in the project include studies on latent disentanglement of the conformational space {% cite klindt2024towards %} and a general approach to solve inverse problems in protein space using diffusion-based priors {% cite levy2024solving %}.

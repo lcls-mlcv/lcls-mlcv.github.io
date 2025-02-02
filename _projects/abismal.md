@@ -4,7 +4,7 @@ title: Abismal
 description: A Different Way of Modeling Diffraction
 img: /assets/img/projects/abismal.png
 importance: 1
-category: Scientific Imaging
+category: Computational Imaging
 related_publications: true
 ---
 

@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 nav: true
 nav_order: 1
-display_categories: [Scientific Imaging, Automation, Data Reduction, Structural Dynamics]
+display_categories: [Computational Imaging, Automation, Data Reduction]
 horizontal: false
 ---
 
