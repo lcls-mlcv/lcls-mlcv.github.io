@@ -90,6 +90,28 @@
   description:
   projects: ["autoMFX"]
 
+- name: Martina Del Gaudio
+  degrees: M.S.
+  image: martina_del_gaudio.jpg
+  position: Research Assistant (Spring 2025 - )
+  email: mdgaudio [at] stanford.edu
+  website:
+  scholar:
+  orcid:
+  description:
+  projects: ["autoMFX"]
+
+- name: Sonia Kim
+  degrees: M.S.
+  image:sonia_kim.jpg
+  position: Student (Spring 2025 - )
+  email: kminseo [at] stanford.edu
+  website:
+  scholar:
+  orcid:
+  description:
+  projects:
+
 - name: Daisy Liu
   degrees: M.S.
   position: ICME Xplore Resarch Intern (Fall 2024)
