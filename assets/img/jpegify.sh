@@ -6,7 +6,7 @@ size=$3
 
 echo "converting $input to $output"
 
-magick convert $input \
+magick convert "$input" \
 -resize $size \
 -sampling-factor 4:2:0 \
 -strip \
