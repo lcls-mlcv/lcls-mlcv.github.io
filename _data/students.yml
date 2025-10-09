@@ -1,14 +1,3 @@
-- name: Axel Levy
-  degrees: M.S.
-  image: axel_levy.jpg
-  position: PhD student
-  email: axlevy [at] stanford.edu
-  website: https://axlevy.com/
-  github: axel-levy
-  scholar: yO62sYUAAAAJ
-  orcid:
-  description:
-  projects: ["AtomicSPI", "X-RAI", "DRGN-AI", "cryoFIRE", "aNiMAte", "cryoAI", "ADP-3D"]
 
 - name: Jay Shenoy
   degrees: M.S.
@@ -21,41 +10,6 @@
   orcid:
   description:
   projects: ["AtomicSPI", "X-RAI"]
-
-- name: John Winnicki
-  degrees: M.S.
-  image: john_winnicki.jpg
-  position: PhD student
-  email: winnicki [at] stanford.edu
-  website:
-  github: john-winnicki
-  scholar:
-  orcid:
-  description:
-  projects: ["ARAMS"]
-
-- name: Louis Conreux
-  degrees: M.S.
-  image: louis_conreux.jpg
-  position: Research Assistant (Spring 2024 - now)
-  email: lconreux [at] stanford.edu
-  website:
-  scholar:
-  orcid:
-  description:
-  projects: ["BayFAI"]
-
-- name: Nathan Fournier
-  degrees: M.S.
-  image: nathan_fournier.jpg
-  position: Research Assistant (Spring 2024 - now)
-  email: nathfrn [at] stanford.edu
-  website:
-  github:
-  scholar:
-  orcid:
-  description:
-  projects: ["PyPCA"]
 
 - name: Pierre-Louis Monteil
   degrees: M.S.
@@ -104,7 +58,7 @@
 - name: Sonia Kim
   degrees: M.S.
   image: sonia_kim.jpg
-  position: Student (Spring 2025 - )
+  position: Research Assistant (Spring 2025 - )
   email: kminseo [at] stanford.edu
   website:
   scholar:
@@ -112,22 +66,13 @@
   description:
   projects:
 
-- name: Daisy Liu
+- name: Noemie Claret
   degrees: M.S.
-  position: ICME Xplore Resarch Intern (Fall 2024)
-  email: daisyliu [at] stanford.edu
-
-- name: Martin Pollack
-  degrees: M.S.
-  position: ICME Xplore Resarch Intern (Fall 2024)
-  email: pollackm [at] stanford.edu
-
-- name: Jacob Thornton
-  degrees: M.S.
-  position: ICME Xplore Resarch Intern (Fall 2024)
-  email: jrthorn [at] stanford.edu
-
-- name: Vignesh Bhethanabotla
-  degrees: M.S.
-  position: Affiliate
-  email: vbhethan [at] caltech.edu
+  image: noemie_claret.jpg
+  position: Research Assistant (Fall 2025 - )
+  email: nclaret [at] stanford.edu
+  website:
+  scholar:
+  orcid:
+  description:
+  projects:

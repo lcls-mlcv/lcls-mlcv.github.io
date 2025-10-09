@@ -1,5 +1,68 @@
+- name: Axel Levy
+  degrees: M.S.
+  image: axel_levy.jpg
+  position: PhD student
+  email: axlevy [at] stanford.edu
+  website: https://axlevy.com/
+  github: axel-levy
+  scholar: yO62sYUAAAAJ
+  orcid:
+  description:
+  projects: ["AtomicSPI", "X-RAI", "DRGN-AI", "cryoFIRE", "aNiMAte", "cryoAI", "ADP-3D"]
+
+- name: Nathan Fournier
+  degrees: M.S.
+  image: nathan_fournier.jpg
+  position: Research Assistant (Spring 2024 - now)
+  email: nathfrn [at] stanford.edu
+  website:
+  github:
+  scholar:
+  orcid:
+  description:
+  projects: ["PyPCA"]
+
+- name: Louis Conreux
+  degrees: M.S.
+  image: louis_conreux.jpg
+  position: Research Assistant (Spring 2024 - Spring 2025)
+  email: lconreux [at] stanford.edu
+  website:
+  scholar:
+  orcid:
+  description:
+  projects: ["BayFAI"]
+
+- name: Daisy Liu
+  degrees: M.S.
+  position: ICME Xplore Resarch Intern (Fall 2024)
+  email: daisyliu [at] stanford.edu
+
+- name: Martin Pollack
+  degrees: M.S.
+  position: ICME Xplore Resarch Intern (Fall 2024)
+  email: pollackm [at] stanford.edu
+
+- name: Jacob Thornton
+  degrees: M.S.
+  position: ICME Xplore Resarch Intern (Fall 2024)
+  email: jrthorn [at] stanford.edu
+
+- name: John Winnicki
+  degrees: M.S.
+  image: john_winnicki.jpg
+  position: PhD student
+  email: winnicki [at] stanford.edu
+  website:
+  github: john-winnicki
+  scholar:
+  orcid:
+  description:
+  projects: ["ARAMS"]
+
 - name: David Klindt
   degrees: Ph.D.
+  image: david_klindt.jpg
   previously: Research Associate, LCLS
   now: Assistant Professor, Cold Spring Harbor Laboratory
   email: klindt [at] cshl.edu
@@ -8,6 +71,7 @@
 
 - name: Ariana Peck
   degrees: Ph.D.
+  image: ariana_peck.jpg
   previously: Project Scientist, LCLS
   now: Data Scientist, Chan Zuckerberg Biohub Network
   projects: ["AtomicSPI", "cryoAI", "aNiMAte"]
@@ -30,6 +94,7 @@
 
 - name: Paul-Emile Giacomelli
   degrees: M.S.
+  image: paul_emile_giacomelli.jpg
   previously: Research Assistant (Fall 2023 - Winter 2024)
   now: Strategy Consultant
   projects: ["BayFAI"]
@@ -38,6 +103,7 @@
 
 - name: Thomas Bougnon
   degrees: M.S.
+  image: thomas_bougnon.jpg
   previously: Research Assistant (Fall 2023 - Winter 2024)
   now: Consultant
   email:
@@ -46,6 +112,7 @@
 
 - name: Russell Marasigan
   degrees:
+  image: russell_marasigan.jpg
   previously: LCLS Summer 2023 Intern
   now:
   email:
@@ -54,6 +121,7 @@
 
 - name: Charlotte Meredith
   degrees:
+  image: charlotte_meredith.jpg
   previously: SAGE Summer 2023 Intern
   now:
   email:
@@ -61,6 +129,7 @@
 
 - name: Callum Hepworth
   degrees:
+  image: callum_hepworth.jpg
   previously: LCLS Summer 2022 Intern
   now:
   email:

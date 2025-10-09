@@ -42,3 +42,14 @@
   orcid: 0000-0003-2758-0642
   description: ¡Hola!
   projects: ["DynaBoost"]
+
+- name: Louis Conreux
+  degrees: M.S.
+  image: louis_conreux.jpg
+  position: Science and Engineering Associate
+  email: lconreux [at] stanford.edu
+  website:
+  scholar:
+  orcid:
+  description:
+  projects: ["BayFAI"]
