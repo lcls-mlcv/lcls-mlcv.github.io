@@ -8,7 +8,7 @@
   scholar: qz6POUsAAAAJ
   orcid: 0000-0002-3181-8652
   description: Bonjour!
-  projects_pi: ["AtomicSPI", "BayFAI", "DynaBoost", "MorphOT", "PyPCA", "aNiMAte", "cryoAI", "autoMFX"]
+  projects_pi: ["AtomicSPI", "BayFAI", "DynaBoost", "MorphOT", "PyPCA", "aNiMAte", "cryoAI", "autoMFX", "CrystalBoltz"]
   projects: ["ARAMS", "X-RAI", "DRGN-AI", "cryoFIRE"]
 
 - name: Kevin M. Dalton
@@ -31,7 +31,7 @@
   scholar:
   orcid: 0000-0003-2278-0768
   description: 你好！
-  projects: ["Abismal"]
+  projects: ["Abismal", "CrystalBoltz"]
 
 - name: Oliver Hoidn, PhD
   degrees: Ph.D.
