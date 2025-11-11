@@ -64,7 +64,7 @@
   scholar:
   orcid:
   description:
-  projects:
+  projects: ["CrystalBoltz"]
 
 - name: Noemie Claret
   degrees: M.S.

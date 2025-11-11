@@ -3,7 +3,7 @@ layout: projects
 title: AtomicSPI
 description: Learning atomic scale biomolecular dynamics from single-particle imaging data.
 img: assets/img/projects/atomicspi.jpg
-subprojects: ["cryoAI", "cryoFIRE", "DRGN-AI", "aNiMAte", "ADP-3D","X-RAI", "MorphOT"]
+subprojects: ["cryoAI", "cryoFIRE", "DRGN-AI", "aNiMAte", "ADP-3D","X-RAI", "MorphOT", "CrystalBoltz"]
 importance: 2
 category: Computational Imaging
 related_publications: true
