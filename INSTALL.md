@@ -52,12 +52,13 @@ I did the local setup (mac) method that's no longer officially supported by the 
 6. To have consistent code formatting (required by the CI workflow inherited from the original template), install `prettier` and `pre-commit`:
 
    ```zsh
-   # npm install --save-dev --save-exact prettier # no longer needed
+   # npm install --save-dev --save-exact prettier
    pip install pre-commit
    pre-commit install
    ```
-
-   You can follow the official instructions [here for prettier](https://prettier.io/docs/en/install) (Note that this repo already has a `.prettierrc` and a `.prettierignore` file) and [here for pre-commit](https://pre-commit.com/#install) for installation and usage.
+   It doesn't look like we have code-heavy content, so I am commenting out prettier related section here
+   to make things simpler. When making commits, you can specify `skip prettier` anywhere in the commit message to skip the prettier check.
+   ~~You can follow the official instructions [here for prettier](https://prettier.io/docs/en/install) (Note that this repo already has a `.prettierrc` and a `.prettierignore` file) and [here for pre-commit](https://pre-commit.com/#install) for installation and usage.~~
 
 7. Run the website locally:
 
