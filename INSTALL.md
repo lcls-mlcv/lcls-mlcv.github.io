@@ -52,7 +52,7 @@ I did the local setup (mac) method that's no longer officially supported by the 
 6. To have consistent code formatting (required by the CI workflow inherited from the original template), install `prettier` and `pre-commit`:
 
    ```zsh
-   npm install --save-dev --save-exact prettier
+   # npm install --save-dev --save-exact prettier # no longer needed
    pip install pre-commit
    pre-commit install
    ```
@@ -74,7 +74,15 @@ I did the local setup (mac) method that's no longer officially supported by the 
    > ```
    > brew install imagemagick
    > ```
+   >
+   > It's normal to see `ImageMagick` related or potentially other warnings when running `bundle exec jekyll serve`. These are generally harmless and can be ignored, as long as it doesn't exit
+   and in the end you see something like "Server address: ".
 
    > ##### TIP
    >
    > If you modify the overall configuration in `_config.yml`, you need to run `bundle exec jekyll serve` to see the changes you've made. Other changes can be viewed immediately after saving the file.
+
+   > ##### TIP
+   >
+   > If you have successfully tested the website locally before, and now you are seeing `Gem::GemNotFoundException`, it might be because you opened a new terminal window and you need
+   to source the `~/.zshrc` file again.
