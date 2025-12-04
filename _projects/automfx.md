@@ -23,6 +23,9 @@ The system incorporates comprehensive safety and monitoring features, including 
 
 All automation components are designed to work seamlessly together, allowing researchers to execute complex multi-step experimental protocols with simple high-level commands. The system maintains full experimental provenance, automatically recording all relevant parameters, device positions, and experimental conditions for each data acquisition run. This comprehensive automation framework transforms the MFX beamline into a highly efficient experimental platform that enables researchers to focus on scientific analysis rather than manual beamline operation, significantly increasing the scientific productivity of the facility.
 
+<p align="center">
+  <img src="/assets/img/real_long.png" alt="Picture of the real Instrument at MFX" width="900">
+</p>
 
 ### Xopt
 
