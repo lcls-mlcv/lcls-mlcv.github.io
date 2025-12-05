@@ -1,46 +1,44 @@
 ---
 layout: projects
 title: Sim-EXAFS
-description: Simulated devices for Extended X-ray Absorption Fine Structure (EXAFS) spectroscopy scans on the MFX beamline at LCLS-II.
+description: Simulation layer for running and debugging EXAFS workflows on MFX without beamline access (DCCM/vernier/TFS/undulator/diagnostics + lightweight DAQ).
 img: assets/img/Gemini_Generated_Image_EXAFS_simulated.png
 importance: 3
 category: autoMFX
 related_publications: false
 ---
 
-## Overview
-The MFX codebase includes a simulation layer that lets you exercise beamline workflows without access to the physical MFX hutch. The goal is not perfect beam physics, but *high-fidelity control behavior*: the same device interfaces, the same sequencing, and realistic enough signals to develop scan logic, alignment routines, and operator training safely offline.
+### Project Goal
+**Sim-EXAFS** provides an offline, safety-first environment to develop and test EXAFS scan workflows for MFX. Instead of aiming for perfect beam physics, it focuses on *high-fidelity control behavior*: the same device interfaces, the same sequencing, and realistic enough signals to validate scan logic, alignment routines, and operator procedures without touching real hardware.
 
-## Why it exists
-Simulation mode supports day-to-day development (no-beam testing and faster iteration), validation of optimization logic with predictable behavior, training without risk to hardware, and debugging when one needs to separate control-flow bugs from EPICS/DAQ/hardware issues.
+### What it enables
+Sim-EXAFS is used for rapid iteration when beam time is unavailable, debugging control-flow issues independently of EPICS/DAQ problems, validating optimization behavior against predictable synthetic signals, and training new users on complex workflows with zero risk to the instrument.
 
-## How it works
-The simulation follows a centralized **device registry** pattern. A global dictionary of **devices** is populated by either real hardware (`init_devices()`) or synthetic devices (`sim_devices()`). Downstream code consumes the **devices** through the same keys and method calls, so most of the code does not need to care whether it is running against real PV-backed devices or simulated stand-ins.
+### How it works
+Simulation uses a centralized **device registry**. A global `devices` dictionary is populated by real hardware via `init_devices()` or simulated stand-ins via `sim_devices()`. Downstream code interacts with `devices[...]` through the same keys and methods, so most scan and optimization code runs unchanged in either mode.
 
-## What is simulated
+### Simulated beamline components
+Sim-EXAFS covers the control surfaces needed to exercise the EXAFS automation loop:
 
-#### Vernier energy control
-The vernier simulation in `mfx/optimize/beamline_hw.py` mimics fine energy trim around the DCCM. It tracks commanded vs. effective position using a custom axis wrapper and keeps state in module-level trackers so actions remain consistent across calls (important for scan loops). A simple *energy-dependent systematic offset* is applied to emulate the real-world behavior where vernier and DCCM do not perfectly agree, and the offset grows with energy. To enable alignment and calibration workflows, the simulation supports mode-dependent behavior: in “alignment scan” mode the vernier lands exactly at the requested value to emulate an alignment scan; in “calibration scan” mode DCCM and vernier move together while the offset model remains active.
+- **Vernier + DCCM coupling (control realism)**  
+  The vernier simulator mimics fine energy trim around the DCCM with persistent state and an energy-dependent systematic offset (so “commanded” and “effective” energy can differ as they often do on real systems). It also provides mode-aware behavior to support alignment and calibration scans, plus a synthetic intensity signal that peaks when vernier and DCCM match—useful for testing intensity-based alignment.
 
-To make intensity-based alignment testable, the simulation generates a synthetic intensity signal that peaks when the vernier matches the DCCM, using a Gaussian-shaped response with added noise. A companion helper provides a simulated DCCM readback with small measurement noise so code that relies on energy readback behaves realistically.
+- **Transfocator (TFS) mechanics (API compatibility)**  
+  The TFS simulator reproduces the lens insert/remove states and translation-stage motion using the same interface as the real `Transfocator`. This makes focus-tracking and per-energy configuration logic testable even though the simulation does not attempt to compute true optical focus or transmission.
 
-#### Transfocator (TFS)
-The transfocator simulation in `tfs/sim_transfocator.py` reproduces the *mechanics and API* of the lens system: lens insert/remove state, a translation stage, and a wrapper object that looks like the real `Transfocator`. Lenses are backed by fake EPICS signals and the translation stage is implemented as a synthetic motor axis; moving the stage updates lens positions in a consistent way. This is designed to be transparent to scan logic and focus-tracking code: you can call `.insert()`, `.remove()`, and `.translation.mv()` exactly as you would on real hardware.
+- **Undulator pointing (command/actuate/done behavior)**  
+  The undulator simulation mirrors the ACR-style move pattern and preserves polarity conventions. It supports both delta and absolute moves so alignment routines can be developed against realistic control semantics.
 
-What it does not attempt to do is model true optical focusing or transmission. It is a control-level simulation for testing sequencing, configuration lookup, and lens-state bookkeeping.
+- **Diagnostics (YAG cameras, Wave8/IPM-like signals)**  
+  Synthetic YAG images (Gaussian beam spots) respond to simulated mirror pitch and undulator pointing, allowing alignment routines to “see” beam motion. Derived position and intensity-like readbacks include offsets and noise so centering and stability checks behave plausibly. Marker support keeps camera-viewer workflows compatible.
 
-#### Undulator pointing
-The undulator pointing simulation in `mfx/optimize/undpoint.py` emulates the ACR-style “command → actuate → done” move pattern and tracks state across moves. It supports both a delta-move interface and an absolute-position interface (implemented by converting absolute requests into deltas). Polarity conventions are preserved so algorithms that depend on sign behave the same way as on the beamline. The moves complete immediately (no motion time modeling), focusing on logic correctness rather than dynamics.
+- **Lightweight DAQ (for plan execution)**  
+  A minimal fake DAQ interface supports workflows that expect a DAQ object (e.g., bluesky-driven calibration), enabling scan plans to run without network access. This validates sequencing and integration points, but does not generate real data products.
 
-#### DAQ (lightweight)
-For routines that need a DAQ object (notably bluesky-driven calibration flows), a minimal `FakeDaq` replaces the real LCLS-II DAQ interface. Methods are no-ops but return the expected types, which allows plans to run without network access or DAQ state. This is intentionally limited: it validates control flow and integration points, not data products, file writing, or event-dependent logic.
 
-#### Diagnostics (YAG, Wave8, IPMs)
-Diagnostics simulation is primarily implemented in `mfx/optimize/beamline_hw.py` and `mfx/optimize/devices.py`. YAG cameras produce synthetic Gaussian beam images whose centroid responds to simulated mirror pitch and undulator pointing, enabling alignment routines to “see” motion. Wave8/IPM-like readbacks provide derived X/Y positions and intensity-like signals with offsets and noise so centering and stability checks can be exercised. Marker support is included to keep camviewer-style workflows compatible with simulation.
+### Strengths
+Sim-EXAFS is intentionally interface-compatible with real hardware, so scan logic developed in simulation usually transfers directly to beamline operation. Because diagnostics respond to control inputs, optimization and alignment routines can be meaningfully debugged offline, not just “unit tested” in isolation.
 
-## Strengths
-Simulation mode covers all major control surfaces needed for typical MFX workflows (energy trim, focusing optics, pointing, diagnostics, and enough DAQ scaffolding to run plans). It is intentionally interface-compatible with real devices, so code written against simulation is usually deployable without changes. Because synthetic diagnostics respond to control inputs, optimization and alignment routines can be developed and debugged meaningfully offline.
-
-## Known gaps
-The simulation does not include full beam transport physics: no ray tracing, no real focus computation in the transfocator, simplified noise and response models, and minimal modeling of failures (timeouts, limit hits, EPICS disconnects, DAQ error states). Global, module-level trackers also make parallel independent “beamlines” in one process awkward unless a reset/scoping mechanism is added. DAQ simulation does not generate data or emulate file output, so data-dependent workflows cannot be validated end-to-end.
+### Known gaps
+The simulation does not model full beam transport physics (no ray tracing, simplified noise/response models), and most moves succeed immediately without realistic failure modes (timeouts, limit hits, disconnects, DAQ errors). State is often maintained at module scope, which can make parallel independent simulation scenarios awkward without a reset/scoping mechanism. DAQ simulation does not emulate file writing or event streams, so data-dependent logic cannot be validated end-to-end.
 
