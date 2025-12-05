@@ -1,7 +1,7 @@
 ---
 layout: projects
 title: Sim-EXAFS
-description: Simulation layer for running and debugging EXAFS workflows on MFX without beamline access (DCCM/vernier/TFS/undulator/diagnostics + lightweight DAQ).
+description: Simulation layer for running and debugging EXAFS workflows on MFX without beamline access.
 img: assets/img/Gemini_Generated_Image_EXAFS_simulated.png
 importance: 3
 category: autoMFX
