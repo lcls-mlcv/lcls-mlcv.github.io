@@ -1,6 +1,6 @@
 ---
 layout: projects
-title: EXAFS Scan Controller for MFX Beamline
+title: EXAFS
 description: Automated controller for Extended X-ray Absorption Fine Structure (EXAFS) spectroscopy scans on the MFX beamline at LCLS-II.
 img: assets/img/projects/Gemini_Generated_Image_EXAFS.png‎
 importance: 3
