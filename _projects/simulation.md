@@ -15,7 +15,7 @@ related_publications: false
 Sim-EXAFS is used for rapid iteration when beam time is unavailable, debugging control-flow issues independently of EPICS/DAQ problems, validating optimization behavior against predictable synthetic signals, and training new users on complex workflows with zero risk to the instrument.
 
 ### How it works
-Simulation uses a centralized **device registry**. A global devices dictionary is populated by real hardware via or simulated stand-ins. Downstream code interacts with `devices[...]` through the same keys and methods, so most scan and optimization code runs unchanged in either mode.
+Simulation uses a centralized **device registry**. A global devices dictionary is populated by real hardware via or simulated stand-ins. Downstream code interacts with the devices through the same keys and methods, so most scan and optimization code runs unchanged in either mode.
 
 ### Simulated beamline components
 Sim-EXAFS covers the control surfaces needed to exercise the EXAFS automation loop:
