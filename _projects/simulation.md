@@ -15,7 +15,7 @@ related_publications: false
 Sim-EXAFS is used for rapid iteration when beam time is unavailable, debugging control-flow issues independently of EPICS/DAQ problems, validating optimization behavior against predictable synthetic signals, and training new users on complex workflows with zero risk to the instrument.
 
 ### How it works
-Simulation uses a centralized **device registry**. A global `devices` dictionary is populated by real hardware via `init_devices()` or simulated stand-ins via `sim_devices()`. Downstream code interacts with `devices[...]` through the same keys and methods, so most scan and optimization code runs unchanged in either mode.
+Simulation uses a centralized **device registry**. A global devices dictionary is populated by real hardware via or simulated stand-ins. Downstream code interacts with `devices[...]` through the same keys and methods, so most scan and optimization code runs unchanged in either mode.
 
 ### Simulated beamline components
 Sim-EXAFS covers the control surfaces needed to exercise the EXAFS automation loop:
@@ -24,7 +24,7 @@ Sim-EXAFS covers the control surfaces needed to exercise the EXAFS automation lo
   The vernier simulator mimics fine energy trim around the DCCM with persistent state and an energy-dependent systematic offset (so “commanded” and “effective” energy can differ as they often do on real systems). It also provides mode-aware behavior to support alignment and calibration scans, plus a synthetic intensity signal that peaks when vernier and DCCM match—useful for testing intensity-based alignment.
 
 - **Transfocator (TFS) mechanics (API compatibility)**  
-  The TFS simulator reproduces the lens insert/remove states and translation-stage motion using the same interface as the real `Transfocator`. This makes focus-tracking and per-energy configuration logic testable even though the simulation does not attempt to compute true optical focus or transmission.
+  The TFS simulator reproduces the lens insert/remove states and translation-stage motion using the same interface as the real Transfocator. This makes focus-tracking and per-energy configuration logic testable even though the simulation does not attempt to compute true optical focus or transmission.
 
 - **Undulator pointing (command/actuate/done behavior)**  
   The undulator simulation mirrors the ACR-style move pattern and preserves polarity conventions. It supports both delta and absolute moves so alignment routines can be developed against realistic control semantics.
