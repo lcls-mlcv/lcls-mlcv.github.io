@@ -3,6 +3,7 @@ layout: projects
 title: autoMFX
 description: Automation of the MFX beamline at LCLS
 img: assets/img/projects/automfx.jpg
+subprojects: ["EXAFS"]
 importance: 3
 category: Automation
 related_publications: false
@@ -34,4 +35,20 @@ Xopt is the core optimization engine driving our group’s automation efforts in
 <p align="center">
 <img width="629" height="267" alt="xopt_diagram" src="https://github.com/user-attachments/assets/b763377b-bac6-4685-acef-eb84f090b783" />
 </p>
+
+
+
+### AutoMFX Projects
+For a deeper dive into the AutoMFX projects, check out their individual pages:
+<div class="projects">
+  <div class="row row-cols-1 row-cols-md-3">
+  {% for project in site.projects %}
+    {% if page.subprojects contains project.title %}
+      {% include projects.liquid %}
+    {% endif %}
+  {% endfor %}
+  </div>
+</div>
+
+
 
