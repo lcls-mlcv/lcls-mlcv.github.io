@@ -2,7 +2,7 @@
 layout: projects
 title: Von Hamos
 description: Deterministic control of the MFX 6-crystal Von Hamos X-ray emission spectrometer.
-img: assets/img/vonhamos_mfx.jpg
+img: assets/img/vonhamos_mfx.png
 importance: 3
 category: autoMFX
 related_publications: false
