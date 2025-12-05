@@ -12,6 +12,10 @@ related_publications: false
 
 ### Project Goal
 
+<p align="center">
+  <img src="/assets/img/mfx_real.png" alt="Picture of the real Instrument at MFX" width="900">
+</p>
+
 The MFX beamline automation project represents a comprehensive effort to transform the Macromolecular Femtosecond Crystallography (MFX) beamline at the Linac Coherent Light Source (LCLS) into a highly automated experimental facility. This system addresses the critical need for efficient, reproducible, and unattended operation of complex X-ray free-electron laser experiments, which require precise coordination of numerous beamline components, sample delivery systems, and data acquisition infrastructure.
 
 The primary goal of this automation framework is to minimize manual intervention during experimental runs while maximizing data collection efficiency and experimental reproducibility. The system achieves this through integrated automation of key experimental workflows, including automated data acquisition sequences, intelligent beam alignment and optimization, energy scanning protocols, timing synchronization, and sample delivery coordination.
@@ -25,8 +29,9 @@ The system incorporates comprehensive safety and monitoring features, including 
 All automation components are designed to work seamlessly together, allowing researchers to execute complex multi-step experimental protocols with simple high-level commands. The system maintains full experimental provenance, automatically recording all relevant parameters, device positions, and experimental conditions for each data acquisition run. This comprehensive automation framework transforms the MFX beamline into a highly efficient experimental platform that enables researchers to focus on scientific analysis rather than manual beamline operation, significantly increasing the scientific productivity of the facility.
 
 <p align="center">
-  <img src="/assets/img/real_long.png" alt="Picture of the real Instrument at MFX" width="900">
+  <img src="/assets/img/mfx_model.png" alt="Picture of the real Instrument at MFX" width="900">
 </p>
+
 
 ### Xopt
 
