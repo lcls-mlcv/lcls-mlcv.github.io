@@ -1,6 +1,6 @@
 ---
 layout: projects
-title: Simulation
+title: simulation
 description: Simulated devices for Extended X-ray Absorption Fine Structure (EXAFS) spectroscopy scans on the MFX beamline at LCLS-II.
 img: assets/img/Gemini_Generated_Image_EXAFS_simulated.png
 importance: 3
