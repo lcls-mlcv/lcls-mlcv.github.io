@@ -3,7 +3,7 @@ layout: projects
 title: autoMFX
 description: Automation of the MFX beamline at LCLS
 img: assets/img/projects/automfx.jpg
-subprojects: ["EXAFS", "Sim-EXAFS"]
+subprojects: ["EXAFS", "Sim-EXAFS", "Von Hamos"]
 importance: 3
 category: Automation
 related_publications: false
