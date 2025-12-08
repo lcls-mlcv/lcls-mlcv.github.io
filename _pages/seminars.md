@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Seminars
+title: Workshops and Seminars
 permalink: /talks/
 nav: true
 nav_order: 3
-display_categories: [Upcoming, Past]
+display_categories: [Past] #[Upcoming, Past]
 horizontal: true
 ---
 
@@ -17,7 +17,7 @@ horizontal: true
     <h2 class="category">{{ category }}</h2>
   </a>
   {% assign categorized_talks = site.talks| where: "category", category %}
-  {% assign sorted_talks = categorized_talks | sort: "importance" %}
+  {% assign sorted_talks = categorized_talks | sort: "date" | reverse %}
   <!-- Generate cards for each talk -->
   {% if page.horizontal %}
   <div class="container">

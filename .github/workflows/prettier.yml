@@ -14,6 +14,9 @@ jobs:
   check:
     # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
+    if: |
+      !( contains(github.event.head_commit.message, 'skip prettier')
+        || (github.event.pull_request.title && contains(github.event.pull_request.title, 'skip prettier')) )
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
