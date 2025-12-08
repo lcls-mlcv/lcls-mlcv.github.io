@@ -28,7 +28,9 @@
   image: doris_mai.jpg
   position: Research Associate
   email: mai12345 [at] slac.stanford.edu
-  scholar:
+  website: https://dorismai.github.io/
+  github: dorismai
+  scholar: UGNnKgIAAAAJ
   orcid: 0000-0003-2278-0768
   description: 你好！
   projects: ["Abismal", "CrystalBoltz"]
