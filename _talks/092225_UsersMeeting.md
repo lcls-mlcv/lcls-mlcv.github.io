@@ -5,7 +5,7 @@ title: "Building a General Inference Engine for Molecular Structures and Ensembl
 speaker: 2025 SSRL/LCLS Users' Meeting Workshop
 description:
 img: assets/img/lcls.png
-video: https://www.youtube.com/playlist?list=PLchtTr-74Q0IizBqpCBT-43MWgShCkmsp
+video: https://www.youtube.com/embed/videoseries?list=PLchtTr-74Q0IizBqpCBT-43MWgShCkmsp
 importance: 1
 category: Past
 related_publications: false
