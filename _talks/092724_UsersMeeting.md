@@ -5,7 +5,7 @@ title: "Building a General Inference Engine for Chemical Dynamics"
 speaker: 2024 SSRL/LCLS Users' Meeting Workshop
 description:
 img: assets/img/lcls.png
-video: https://www.youtube.com/playlist?list=PLchtTr-74Q0JL_ep5Q3Bv4XBn9GGnw81f
+video: https://www.youtube.com/embed/videoseries?list=PLchtTr-74Q0JL_ep5Q3Bv4XBn9GGnw81f
 importance: 1
 category: Past
 related_publications: false
