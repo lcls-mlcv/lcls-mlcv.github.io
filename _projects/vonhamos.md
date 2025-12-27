@@ -2,7 +2,7 @@
 layout: projects
 title: Von Hamos
 description: Deterministic control of the MFX 6-crystal Von Hamos X-ray emission spectrometer.
-img: assets/img/vonhamos_mfx.png
+img: assets/img/vonhamos_new.png
 importance: 3
 category: autoMFX
 related_publications: false
@@ -11,9 +11,9 @@ related_publications: false
 ### Project Goal
 **Von Hamos@MFX** provides reliable, repeatable control of the MFX **6-crystal Von Hamos X-ray emission spectrometer** for high-resolution X-ray emission spectroscopy (XES). The core objective is *deterministic positioning*: crystals must land where we ask—within tight tolerances—despite backlash, drift, and imperfect motor behavior, because small positioning errors directly degrade spectral resolution.
 
-<p align="center">
-  <img src="/assets/img/vonhamos_mfx.png" alt="Picture of the real Instrument at MFX" width="900">
-</p>
+<!-- <p align="center">
+  <img src="/assets/img/vonhamos_new.png" alt="Picture of the real Instrument at MFX" width="500">
+</p> -->
 
 ### Deterministic positioning (the key idea)
 Most motion systems offer a fast “move-to” command, but that does not guarantee the final position is within a micron/arcminute-level tolerance. This module introduces a deterministic motor wrapper that iteratively moves and verifies position until the axis is within a user-defined tolerance.
