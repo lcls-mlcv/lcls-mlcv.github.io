@@ -18,12 +18,12 @@ __Best suited for:__
 
 <div style="display: flex; gap: 1rem; align-items: flex-start;">
   <figure style="flex: 1; text-align: center;">
-    <img src="assets/gif/projects/bayfai_score_map.gif" alt="BayFAI score map evolution" width="100%">
+    <img src="/assets/gif/projects/bayfai_score_map.gif" alt="BayFAI score map evolution" width="100%">
     <figcaption><b>Score map evolution</b><br>Bayesian optimization score landscape at each iteration.</figcaption>
   </figure>
 
   <figure style="flex: 1; text-align: center;">
-    <img src="assets/gif/projects/bayfai_rings_overlay.gif" alt="BayFAI ring overlay evolution" width="100%">
+    <img src="/assets/gif/projects/bayfai_rings_overlay.gif" alt="BayFAI ring overlay" width="100%">
     <figcaption><b>Simulated ring overlay</b><br>Forward-model diffraction rings overlaid on the powder image.</figcaption>
   </figure>
 </div>
