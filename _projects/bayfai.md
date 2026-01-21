@@ -32,8 +32,6 @@ __Best suited for:__
   </figure>
 </div>
 
-{% include figure.liquid path="assets/img/projects/bayfai_summary.jpg" title="BayFAI" caption="<b>Optimization summary</b>. From left to right, top to bottom. (a) Experiment Description and Geometry parameters with uncertainties. (b) Radial integration for the optimal geometry (peaks should match red-dashed calibrant q-values). (c) Calibration powder image overlayed with calibrant rings. (d) Histogram of pixel intensities and statistics: the purple-dashed threshold sets the lower bound for a pixel to be extracted as a Bragg peak. (e) Bayesian optimization history for the best distance. (f) Negative-Log Residual for each scanned distance at the end of the Bayesian Optimization steps. (g) Confidence-Penalized Negative-Log residual after gradient-descent geometry refinement. Green dotted points represent valid geometries whereas red dotted points are non-minimum solutions." %}
-
 BayFAI was benchmarked against a constantly updated set of calibrant data from the MFX and CXI beamlines at LCLS. The MEC beamline is the next target! Stay tuned! 
 Running BayFAI is made possible through the LUTE software package. The user documentation can be found as well as the benchmark data can be found here:
 {% include repository/repo.liquid repository="lcls-mlcv/BayFAI" %}
