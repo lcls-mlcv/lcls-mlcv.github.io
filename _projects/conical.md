@@ -4,7 +4,7 @@ title: ConiCal
 description: Detector Geometry Calibration via Robust Conic Fitting of Powder Diffraction Rings
 img: assets/img/projects/conical.jpg
 importance: 1
-category: Automation
+category: autoGeo
 related_publications: false
 ---
 ConiCal is a computer vision–based detector geometry calibration tool that extracts diffraction features directly from experimental images and fits detector geometry parameters analytically. It identifies diffraction rings using robust feature extraction techniques, such as RANSAC, and models them as conic sections whose parameters are directly linked to the detector geometry.

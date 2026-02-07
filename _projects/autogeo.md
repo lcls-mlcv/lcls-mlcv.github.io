@@ -3,7 +3,7 @@ layout: projects
 title: autoGeo
 description: Towards an Automated Detector Geometry Calibration
 img: assets/img/projects/geometry_calibration.jpg
-subprojects: ["BayFAI", "ConiCal", "PyPCA"]
+subprojects: ["BayFAI", "ConiCal"]
 importance: 1
 category: Automation
 related_publications: false
@@ -27,9 +27,9 @@ Within autoGeo, BayFAI implements the first strategy using Bayesian optimization
 
 ### Limitations
 
-The performance of both approaches is strongly dependent on powder image quality. Artifacts such as high-intensity backgrounds, detector noise, or parasitic scattering can bias the optimization process and degrade feature extraction. To mitigate these effects, future work aims to integrate intelligent denoising and background suppression techniques—leveraging PyPCA—as a preprocessing step prior to geometry optimization.
+The performance of both approaches is strongly dependent on powder image quality. Artifacts such as high-intensity backgrounds, detector noise, or parasitic scattering can bias the optimization process and degrade feature extraction. To mitigate these effects, future work aims to integrate intelligent denoising and background suppression techniques—leveraging [PyPCA](/projects/pypca)—as a preprocessing step prior to geometry optimization.
 
-### AutoGeo Projects 
+### AutoGeo Projects
 For a deeper dive into the autoGeo projects, check out their individual pages:
 <div class="projects">
   <div class="row row-cols-1 row-cols-md-3">

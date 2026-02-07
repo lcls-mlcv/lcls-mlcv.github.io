@@ -16,7 +16,8 @@
   position: Principal Investigator, PULSE Institute
   email: natan [at] slac.stanford.edu
   website: https://pulse.stanford.edu/
-  projects_pi: ["OptAI"]
+  projects_pi: ["ConiCal", "OptAI"]
+  projects: ["autoGeo"]
 
 - name: Alec Follmer
   degrees: Ph.D.
