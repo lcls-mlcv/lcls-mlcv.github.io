@@ -8,8 +8,8 @@
   scholar: qz6POUsAAAAJ
   orcid: 0000-0002-3181-8652
   description: Bonjour!
-  projects_pi: ["AtomicSPI", "BayFAI", "DynaBoost", "MorphOT", "PyPCA", "aNiMAte", "cryoAI", "autoMFX", "CrystalBoltz"]
-  projects: ["ARAMS", "X-RAI", "DRGN-AI", "cryoFIRE"]
+  projects_pi: ["AtomicSPI", "autoGeo", "BayFAI", "DynaBoost", "MorphOT", "PyPCA", "aNiMAte", "cryoAI", "autoMFX", "CrystalBoltz"]
+  projects: ["ARAMS", "X-RAI", "DRGN-AI", "cryoFIRE", "ConiCal"]
 
 - name: Kevin M. Dalton
   degrees: Ph.D.
@@ -54,4 +54,4 @@
   scholar:
   orcid:
   description:
-  projects: ["BayFAI"]
+  projects: ["autoGeo", "BayFAI", "ConiCal"]

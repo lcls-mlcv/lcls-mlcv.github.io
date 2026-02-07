@@ -501,6 +501,49 @@ footer.sticky-bottom {
 
 // Repositories
 
+.repo-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.repo-card {
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  text-align: left;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+}
+
+.repo-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.repo-card-icon {
+  color: var(--global-text-color);
+  font-size: 1.25rem;
+}
+
+.repo-card-title {
+  font-weight: 600;
+  color: var(--global-text-color);
+  word-break: break-all;
+}
+
+.repo-card-footer {
+  font-size: 0.875rem;
+  color: var(--global-theme-color);
+}
+
 @media (min-width: 768px) {
   .repo {
     max-width: 50%;

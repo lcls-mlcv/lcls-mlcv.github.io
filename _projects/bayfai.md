@@ -1,21 +1,37 @@
 ---
 layout: projects
 title: BayFAI
-description: Bayesian Optimization of Detector Geometry meets Fast Azimuthal Integration
+description: Bayesian Optimization meets Fast Azimuthal Integration
 img: assets/img/projects/bayfai.jpg
 importance: 1
-category: Automation
+category: autoGeo
 related_publications: false
 ---
-BayFAI is a robust and efficient method for optimizing the geometry of X-ray detectors against calibrant data. It leverages Bayesian optimization to find the optimal detector geometry, which is then used to perform Fast Azimuthal Integration (FAI) on experimental data. BayFAI builds on the [pyFAI library](https://github.com/silx-kit/pyFAI) developed at ESRF, which is a popular tool for performing FAI on experimental data.
+BayFAI is a physics-driven detector geometry calibration framework that leverages Bayesian optimization to efficiently explore the high-dimensional geometry parameter space. Starting from a forward model of X-ray diffraction, BayFAI simulates powder diffraction patterns for candidate detector geometries and evaluates their agreement with experimental data using a robust, physics-informed scoring function. BayFAI builds on the [pyFAI library](https://github.com/silx-kit/pyFAI) developed at ESRF, which is a popular toolbox for performing Fast Azimuthal Integration (FAI) on experimental data, and
 
-*More details coming soon*
+By balancing exploration and exploitation, Bayesian optimization enables BayFAI to converge toward optimal geometry parameters with significantly fewer forward-model evaluations than traditional grid searches or manual tuning. This makes the method well suited for complex detector layouts and scenarios where prior knowledge of the geometry is incomplete or uncertain.
 
+__Best suited for:__
+- Global, end-to-end geometry refinement
+- Complex detector configurations
+- Cases where physical constraints and priors are important
 
-{% include figure.liquid path="assets/img/projects/bayfai_mfxl1038923.jpg" title="BayFAI" caption="<b>Optimization summary</b>. From left to right, top to bottom. (a) Bayesian optimization score convergence plot. (b) Histogram of Pixel intensities and statistics: pixel intensity above the purple-dashed threshold are considered key data (control point) providing ground for optimization. (c) Radial integration given the optimized geometry. (d) Calibration powder plot in laboratory frame with resulting calibrant data fit. (e) Bayesian optimization best score found for each scanned distance. (f) Least-square residuals of calibrant data to control point data found for each scanned distance. BayFAI scans a range of detector-sample distances. For each distance, BayFAI launches a bayesian optimization to find the beam center quantified by the highest number of control points extracted. Then, a least-square method scores the distance - beam center association. The residuals' minimum gives the optimal distance - beam center." %}
+<div style="display: flex; gap: 1rem; align-items: flex-start;">
+  <figure style="flex: 1; text-align: center;">
+    <img src="/assets/gif/projects/bayfai_score_map.gif"
+         alt="BayFAI score map evolution"
+         style="height: 400px; width: auto;">
+    <figcaption><b>Score map evolution</b><br>Bayesian optimization score landscape at each iteration.</figcaption>
+  </figure>
 
-The method is benchmarked against a constantly updated set of calibrant data from the MFX beamline at LCLS.
-<!-- TODO: add link to the benchmark -->
+  <figure style="flex: 1; text-align: center;">
+    <img src="/assets/gif/projects/bayfai_rings_overlay.gif"
+         alt="BayFAI ring overlay"
+         style="height: 400px; width: auto;">
+    <figcaption><b>Simulated ring overlay</b><br>Forward-model diffraction rings overlaid on the powder image.</figcaption>
+  </figure>
+</div>
 
-The method is available through the LUTE software package.
-<!-- describe usage -->
+BayFAI was benchmarked against a constantly updated set of calibrant data from the MFX and CXI beamlines at LCLS. The MEC beamline is the next target! Stay tuned!
+Running BayFAI is made possible through the LUTE software package. The user documentation can be found as well as the benchmark data can be found here:
+{% include repository/repo.liquid repository="lcls-mlcv/BayFAI" %}
