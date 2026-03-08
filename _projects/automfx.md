@@ -8,7 +8,8 @@ importance: 3
 category: Automation
 related_publications: false
 ---
-*More details coming soon*
+
+_More details coming soon_
 
 ### Project Goal
 
@@ -32,19 +33,18 @@ All automation components are designed to work seamlessly together, allowing res
   <img src="/assets/img/mfx_model.png" alt="Picture of the real Instrument at MFX" width="900">
 </p>
 
-
 ### Xopt
 
-Xopt is the core optimization engine driving our group’s automation efforts in beamline alignment. It is a flexible, open-source Python framework designed for high-level optimization across simulations, experiments, and control systems. It allows users to define input variables, objectives and constraints through a simple “VOCS” interface, then select from advanced algorithmic generators (e.g., evolutionary, Bayesian, multi-objective, multi-fidelity) to drive optimization with minimal boilerplate. 
+Xopt is the core optimization engine driving our group’s automation efforts in beamline alignment. It is a flexible, open-source Python framework designed for high-level optimization across simulations, experiments, and control systems. It allows users to define input variables, objectives and constraints through a simple “VOCS” interface, then select from advanced algorithmic generators (e.g., evolutionary, Bayesian, multi-objective, multi-fidelity) to drive optimization with minimal boilerplate.
 
 <p align="center">
-<img width="629" height="267" alt="xopt_diagram" src="https://github.com/user-attachments/assets/b763377b-bac6-4685-acef-eb84f090b783" />
+<img width="629" height="267" alt="xopt_diagram" src="/assets/img/xopt_diagram.png" />
 </p>
 
-
-
 ### AutoMFX Projects
+
 For a deeper dive into the AutoMFX projects, check out their individual pages:
+
 <div class="projects">
   <div class="row row-cols-1 row-cols-md-3">
   {% for project in site.projects %}
@@ -54,6 +54,3 @@ For a deeper dive into the AutoMFX projects, check out their individual pages:
   {% endfor %}
   </div>
 </div>
-
-
-
