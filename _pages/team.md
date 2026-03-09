@@ -35,6 +35,7 @@ nav_order: 4
 ---
 
 ## Collaborators
+
   <div class="projects">
     <div class="container">
       <div class="row row-cols-1 row-cols-md-4">
@@ -48,6 +49,7 @@ nav_order: 4
 ---
 
 ## Past Members
+
   <div class="projects">
     <div class="container">
       <div class="row row-cols-1 row-cols-md-4">

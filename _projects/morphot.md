@@ -7,7 +7,9 @@ importance: 3
 category: AtomicSPI
 related_publications: true
 ---
+
 {% cite ecoffet2020morphot ecoffet2021application %}
 
 ### GitHub Repository
+
 {% include repository/repo.liquid repository="kdd-ubc/MorphOT" %}

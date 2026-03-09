@@ -24,6 +24,7 @@ nav_order: 6
 - [Machine Learning in Structural Biology](https://www.mlsb.io/)
 
 ### Seminars and Lectures
+
 - [SSRL Photon Science Seminars](https://www-ssrl.slac.stanford.edu/content/events/photon-science-seminar-series)
 - [Stanford Center for Image System Engineering Events](https://scien.stanford.edu/index.php/events/)
 - [Stanford Data Science Seminars](https://datascience.stanford.edu/events/upcoming-events)
@@ -31,13 +32,15 @@ nav_order: 6
 ### Scientific and Engineering Background
 
 #### Machine Learning and Computational Methods
+
 - [CS231N Deep Learning for Computer Vision](https://cs231n.github.io/)
 - [CS 279 Computational Biology](https://web.stanford.edu/class/cs279/)
 - [EE367 / CS448I: Computational Imaging](https://stanford.edu/class/ee367/)
 - [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
 
 #### Structural Methods
-- *Visualizing the Invisible* by Peter Moore (ISBN: 9780199930722)
+
+- _Visualizing the Invisible_ by Peter Moore (ISBN: 9780199930722)
 - [IUCrJ teaching pamphlets](https://www.iucr.org/education/pamphlets)
 - [Movies](https://bl831.als.lbl.gov/~jamesh/movies/) for crystallography metrics by James Holton
 - [The Interactive Structure Factor Tutorial](http://www.ysbl.york.ac.uk/~cowtan/sfapplet/sfintro.html)
