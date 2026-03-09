@@ -10,7 +10,7 @@ nav_order: 6
 
 - [LCLS Data Systems](https://lcls.slac.stanford.edu/depts/data-systems)
 - [LCLS User Resources](https://lcls-users.readthedocs.io) and [LUTE documentation](https://slac-lcls.github.io/lute)
-- Reciprocal Spaceship [GitHub](https://rs-station.github.io) and [Forum](https://rs-station.discourse.group/)
+- Reciprocal Spaceship [GitHub](https://rs-station.github.io) and [Forum](https://discourse.rs-station.org)
 
 ### Internship Opportunities
 

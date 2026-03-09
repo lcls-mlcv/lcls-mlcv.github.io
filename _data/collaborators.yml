@@ -99,7 +99,7 @@
   position: Associate Professor, Stanford University
   email: gordonwz [at] stanford.edu
   website: https://www.computationalimaging.org/
-  projects_pi: ["cryoAI", "X-RAI", "ADP-3D"]
+  projects_pi: ["cryoAI", "X-RAI", "ADP-3D", "CrystalBoltz"]
   projects: ["AtomicSPI", "DRGN-AI", "cryoFIRE", "aNiMAte"]
 
 - name: Daniel Ratner
