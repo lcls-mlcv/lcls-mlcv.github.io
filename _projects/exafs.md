@@ -14,7 +14,9 @@ The goal of **EXAFS@MFX** is to provide a reliable, operator-friendly controller
 
 ### Automation loop
 
-EXAFS scans require stepping photon energy while maintaining throughput and stability. This module runs that workflow by coupling **DCCM energy moves** (the primary scan axis) with **undulator K stepping** to keep the source tuned, and optional per-point optimization and tracking. It can align the **vernier** by maximizing intensity, apply **transfocator** focus configurations from a tracking map, track the **FEE spectrometer** (and optionally its camera), and manage the full **LCLS-II DAQ** lifecycle (configure → run → pause/resume when needed → stop). A flux threshold can be enforced to automatically pause DAQ if the beam drops and resume when it recovers.
+EXAFS scans require stepping photon energy while maintaining throughput and stability. This module runs that workflow by coupling DCCM energy moves (the primary scan axis) with undulator K stepping to keep the source tuned, and optional per-point optimization and tracking. It can align the vernier by maximizing intensity, apply transfocator focus configurations from a tracking map, and manage the full LCLS-II DAQ lifecycle (configure → run → pause/resume when needed → stop).
+
+Additionally, it can track the **FEE spectrometer**, which automatically recalibrates the crystal and camera positions based on the current energy to maintain transmission. It can also optionally track only its camera angle to compensate for detector vignetting as the beam moves during a scan. A flux threshold can be enforced to automatically pause DAQ if the beam drops and resume when it recovers.
 
 <p align="center">
   <img src="/assets/img/Gemini_Generated_Image_EXAFS.png" alt="Picture of the real Instrument at MFX" width="900">
