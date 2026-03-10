@@ -20,6 +20,8 @@ related_publications: false
 
 Most motion systems offer a fast “move-to” command, but that does not guarantee the final position is within a micron/arcminute-level tolerance. This module introduces a deterministic motor wrapper that iteratively moves and verifies position until the axis is within a user-defined tolerance.
 
+**Disclaimer**: This iterative approach is designed for high-precision requirements where standard motion calls fall short. It should only be used if the default "move-to" command fails to meet the necessary position accuracy, as it introduces additional overhead and motion cycles.
+
 **`DeterministicBeckhoffAxis`** extends standard Beckhoff motion with a `go(target, epsilon, ...)` routine that:
 
 - clears errors and reads back the actual position,
