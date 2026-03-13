@@ -2,7 +2,7 @@
 layout: projects
 title: autoMFX
 description: Automation of the MFX beamline at LCLS
-img: assets/img/projects/automfx.jpg
+img: assets/img/Gemini_Generated_Image_EXAFS.png
 subprojects: ["EXAFS", "Von Hamos Spectrometer", "Undulator Pointing"]
 importance: 3
 category: Automation
