@@ -46,9 +46,18 @@ The spectrometer is modeled as a **6-crystal assembly** with both per-crystal an
 
 Von Hamos@MFX supports common operations needed during setup and data taking:
 
-- **initialization and repeatable positioning** (bring crystals back to known “good” coordinates),
-- **per-crystal tuning** (x/rot/tilt adjustments to maximize signal and lock energy),
-- **energy scans** by stepping crystal rotation,
-- **multi-crystal acquisition** where all six analyzers collect in parallel and spectra are combined downstream.
+- **Initialization and repeatable positioning**: bring crystals back to known “good” coordinates
+- **Per-crystal tuning**: x/rot/tilt adjustments to maximize signal and lock energy
+- **Energy scans**: The software coordinates global and per-crystal rotations to step through Bragg angles. By utilizing deterministic moves during a scan, we ensure that each energy point is reached with the same mechanical approach, eliminating energy-axis "jitter" caused by backlash.
+- **Multi-crystal acquisition**: All six analyzers collect in parallel and spectra are combined downstream.
 
-Helper utilities like `optimize_crystal()`, `set_all_crystals()`, and position reporting functions provide quick “one-call” operations during shifts and alignment.
+### Alignment Automation
+
+The project moves beyond manual "knob-turning" by providing high-level automation via one-call utilities:
+
+* **Automated Array Initialization**: Instead of moving 18 axes (3 per crystal) individually, `set_all_crystals()` allows a single command to drive the entire spectrometer to a target geometry. This is used to rapidly switch the instrument between major emission lines.
+* **Closed-Loop Optimization**: The `optimize_crystal()` utility provides a framework for beam-based alignment. It can be paired with detector feedback to iteratively refine the **tilt** (vertical focus) and **rotation** (Bragg angle) of a specific crystal until the signal is maximized and centered.
+* **Deterministic Verification**: Alignment is only as good as the verification. Every automated move uses the `DeterministicBeckhoffAxis` logic to verify that the final position is within a micron-level `epsilon`. If a motor is "stuck," the **Smart Mode** automatically triggers an overshoot-and-return sequence to break through mechanical stiction without user intervention.
+* **State Reporting**: `print_crystal_positions()` generates a live alignment table, allowing scientists to instantly compare the current physical state of the 6-crystal array against theoretical Rowland circle parameters.
+
+
