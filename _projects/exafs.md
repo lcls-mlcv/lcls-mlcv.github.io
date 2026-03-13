@@ -8,7 +8,7 @@ category: autoMFX
 related_publications: false
 ---
 
-### Project Goal 1: Automation
+## Project Goal 1: Automation
 
 The goal of **EXAFS@MFX** is to provide a reliable, operator-friendly controller for running Extended X-ray Absorption Fine Structure (EXAFS) scans at MFX. It automates an end-to-end scan across an absorption edge while keeping beam delivery optimized and the experiment protected, so scans run repeatably with minimal manual intervention.
 
@@ -34,7 +34,7 @@ Furthermore, pointing stability remains a challenge; while undulator alignment i
 
 
 
-### Project Goal 2: Simulation
+## Project Goal 2: Simulation
 
 **Sim-EXAFS** provides an offline, safety-first environment to develop and test EXAFS scan workflows for MFX. Instead of aiming for perfect beam physics, it focuses on _high-fidelity control behavior_: the same device interfaces, the same sequencing, and realistic enough signals to validate scan logic, alignment routines, and operator procedures without touching real hardware.
 
