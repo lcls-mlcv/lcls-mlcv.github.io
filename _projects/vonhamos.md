@@ -36,7 +36,7 @@ The spectrometer is modeled as a **6-crystal assembly** with both per-crystal an
 
 **`DeterministicCrystal`** represents one analyzer crystal with three critical axes:
 
-- **x**: sets the crystal’s distance / Rowland geometry (strongly impacts resolution and collection efficiency),
+- **x**: sets the crystal’s distance (strongly impacts resolution and collection efficiency),
 - **rot**: selects energy via Bragg angle,
 - **tilt**: corrects vertical focusing and mounting offsets.
 
