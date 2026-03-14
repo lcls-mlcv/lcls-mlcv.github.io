@@ -7,4 +7,5 @@ importance: 1
 category: AtomicSPI
 giscus_comments: false
 ---
-*More details coming soon*
+
+_More details coming soon_

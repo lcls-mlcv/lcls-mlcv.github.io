@@ -56,6 +56,7 @@ I did the local setup (mac) method that's no longer officially supported by the 
    pip install pre-commit
    pre-commit install
    ```
+
    It doesn't look like we have code-heavy content, so I am commenting out prettier related section here
    to make things simpler. When making commits, you can specify `skip prettier` anywhere in the commit message to skip the prettier check.
    ~~You can follow the official instructions [here for prettier](https://prettier.io/docs/en/install) (Note that this repo already has a `.prettierrc` and a `.prettierignore` file) and [here for pre-commit](https://pre-commit.com/#install) for installation and usage.~~
@@ -77,7 +78,7 @@ I did the local setup (mac) method that's no longer officially supported by the 
    > ```
    >
    > It's normal to see `ImageMagick` related or potentially other warnings when running `bundle exec jekyll serve`. These are generally harmless and can be ignored, as long as it doesn't exit
-   and in the end you see something like "Server address: ".
+   > and in the end you see something like "Server address: ".
 
    > ##### TIP
    >
@@ -86,4 +87,4 @@ I did the local setup (mac) method that's no longer officially supported by the 
    > ##### TIP
    >
    > If you have successfully tested the website locally before, and now you are seeing `Gem::GemNotFoundException`, it might be because you opened a new terminal window and you need
-   to source the `~/.zshrc` file again.
+   > to source the `~/.zshrc` file again.
