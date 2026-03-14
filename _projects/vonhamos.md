@@ -2,7 +2,7 @@
 layout: projects
 title: Von Hamos Spectrometer
 description: Deterministic control of the MFX 6-crystal Von Hamos X-ray emission spectrometer.
-img: assets/img/vonhamos_new_cropped.png
+img: assets/img/projects/automfx/vonhamos_new_cropped.jpg
 importance: 3
 category: autoMFX
 related_publications: false
@@ -59,5 +59,3 @@ The project moves beyond manual "knob-turning" by providing high-level automatio
 * **Closed-Loop Optimization**: The `optimize_crystal()` utility provides a framework for beam-based alignment. It can be paired with detector feedback to iteratively refine the **tilt** (vertical focus) and **rotation** (Bragg angle) of a specific crystal until the signal is maximized and centered.
 * **Deterministic Verification**: Alignment is only as good as the verification. Every automated move uses the `DeterministicBeckhoffAxis` logic to verify that the final position is within a micron-level `epsilon`. If a motor is "stuck," the **Smart Mode** automatically triggers an overshoot-and-return sequence to break through mechanical stiction without user intervention.
 * **State Reporting**: `print_crystal_positions()` generates a live alignment table, allowing scientists to instantly compare the current physical state of the 6-crystal array against theoretical parameters.
-
-
