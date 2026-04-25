@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>
+      
+        Building a General Inference Engine for Chemical Dynamics | MLCV@LCLS
+      
+    </title>
+    <meta name="description" content="MLCV group at LCLS">
+    <link rel="icon" href="/assets/img/lcls.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/mdb.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="/assets/js/theme.js"></script>
+  </head>
+  <body class="fixed-top-nav sticky-bottom-footer">
+    <header>
+  <nav class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" aria-label="Toggle navigation" data-toggle-nav>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="navbar-collapse" id="site-nav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <li class="nav-item ">
+            <a class="nav-link" href="/">About</a>
+          </li>
+          
+          
+            <li class="nav-item ">
+              <a class="nav-link" href="/projects/">Projects</a>
+            </li>
+          
+            <li class="nav-item ">
+              <a class="nav-link" href="/publications/">Publications</a>
+            </li>
+          
+            <li class="nav-item ">
+              <a class="nav-link" href="/talks/">Workshops and Seminars</a>
+            </li>
+          
+            <li class="nav-item ">
+              <a class="nav-link" href="/team/">Team</a>
+            </li>
+          
+            <li class="nav-item ">
+              <a class="nav-link" href="/resources/">Resources</a>
+            </li>
+          
+          
+            <li class="nav-item">
+              <button class="theme-toggle nav-link" type="button" aria-label="Toggle dark mode" title="Toggle dark mode" data-theme-toggle>
+                <i class="theme-toggle-dark fa-solid fa-moon" aria-hidden="true"></i>
+                <i class="theme-toggle-light fa-solid fa-sun" aria-hidden="true"></i>
+              </button>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <main class="container mt-5" role="main">
+      <div class="post">
+  <header class="post-header">
+    <h1 class="post-title">Building a General Inference Engine for Chemical Dynamics</h1>
+    
+  </header>
+
+  <article>
+    <p class="post-meta">
+  September 27, 2024
+  by 2024 SSRL/LCLS Users' Meeting Workshop
+</p>
+
+
+  
+  
+  <img class="page-hero" src="/assets/img/lcls.png" alt="Building a General Inference Engine for Chemical Dynamics">
+
+
+<p>The facilities available at SLAC and other DOE facilities deliver unprecedented access to chemical dynamics across a broad range of timescales. However, each experimental modality presents unique challenges and limitations. To successfully infer the dynamics of complex systems such as biological macromolecules and advanced materials which exhibit motions across many time and length scales, information from a variety of sources must be integrated. This includes experimental observations from particle sources at DOE labs, but might also include conditioning information from other sources. For instance, in the biological setting, evolutionary information from deep sequencing has been very impactful in informing models of protein structure and dynamics. By bringing together experts from experimental disciplines and machine learning, the goal of this workshop is to develop a specification for a generic inference engine for chemical dynamics which admits multi-modal experimental observations alongside conditioning information. Through discussion, we seek to identify suitable parameterizations of chemical systems which support the ability to cheaply and differentiably compute experimental observables while allowing for changes in bond topology. We will begin to identify pre-trained foundation models which can supply conditioning information, differentiable forward models for experimental observables, appropriate generative models, and inference algorithms to train such models. Thereby, we will produce a blueprint for a machine-learning framework which can synthesize multi-modal experimental data with generic conditioning information to deliver a time-dependent ensemble description of any (bio)chemical sample. The success of this goal may ultimately lead to generative models of chemistry and biology which could find applications in medicine, chemical synthesis, bioremediation, energy storage, and catalysis.</p>
+
+<h4 id="organizers">Organizers:</h4>
+<p>Kevin Dalton, Minhuan Li, Frédéric Poitevin</p>
+
+<h4 id="agenda">Agenda:</h4>
+<p>8:00 AM Introduction - Kevin Dalton &amp; Minhuan Li</p>
+
+<p>8:30-9:15 AM TBA - Andrej Sali, University of California at San Francisco</p>
+
+<p>9:15-10:00 AM Automated protein structure determination from raw NMR spectra with the NMRtist platform and deep learning method ARTINA - Piotr Klukowski, ETH Zürich</p>
+
+<p>10:30-11:15 AM AlphaFold as a Prior: Guiding Protein Predictions with Experimental Data - Alisia Fadini, University of Cambridge</p>
+
+<p>11:15-12:00 PM Combining simulations and cryo-electron microscopy experiments to infer conformational probability landscapes - Pilar Cossio, Flatiron Institute</p>
+
+<p>1:00-1:45 PM Uncertainty in Single Particle Analysis by CryoEM - Carlos Oscar Sozano, Centro Nacional Biotecnología (CSIC)</p>
+
+<p>1:45-2:30 PM A benchmark for timescales in protein dynamicsics - Hannah Wayment-Steele, Brandeis University</p>
+
+<p>3:00-3:45 PM Hidden in plain sight – What is underlying structural biology models - Stephanie Wankowicz, UCSF</p>
+
+<p>3:45-4:30 PM Combining generative models and cryo-EM data for revealing the structure and the motion of biomolecular complexes - Axel Levy, Stanford University</p>
+
+<p>4:30-5:15 PM Pushing the limits of resolution with solution X-ray scattering - Thomas Grant, University at Buffalo</p>
+
+<p>5:00 PM Discussion</p>
+
+
+
+  <h2>Recording</h2>
+  <div class="video-frame">
+    <iframe src="https://www.youtube.com/embed/videoseries?list=PLchtTr-74Q0JL_ep5Q3Bv4XBn9GGnw81f" title="Building a General Inference Engine for Chemical Dynamics" allowfullscreen></iframe>
+  </div>
+  
+
+
+  </article>
+</div>
+
+    </main>
+    <footer class="fixed-bottom">
+  <div class="container">
+    &copy; Copyright 2026 MLCV@LCLS.
+    
+      Last updated: April 24, 2026.
+    
+    <span>This site is powered by <a href="https://jekyllrb.com/">Jekyll</a>.</span>
+  </div>
+</footer>
+
+  </body>
+</html>

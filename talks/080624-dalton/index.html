@@ -6,10 +6,10 @@
     
     <title>
       
-        CrystalBoltz | MLCV@LCLS
+        Scaling Scaling: Stochastic Variational Inference for X-ray Diffraction Data | MLCV@LCLS
       
     </title>
-    <meta name="description" content="Transforming X-ray Crystallography with Generative AI">
+    <meta name="description" content="MLCV group at LCLS">
     <link rel="icon" href="/assets/img/lcls.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,135 +74,33 @@
     <main class="container mt-5" role="main">
       <div class="post">
   <header class="post-header">
-    <h1 class="post-title">CrystalBoltz</h1>
-    
-      <p class="post-description">Transforming X-ray Crystallography with Generative AI</p>
+    <h1 class="post-title">Scaling Scaling: Stochastic Variational Inference for X-ray Diffraction Data</h1>
     
   </header>
 
   <article>
-    
-
-
-
-
-
-<p class="project-people">
-  
-  
-    
-      <span>Frédéric Poitevin</span>
-      
-    
-  
-    
-  
-    
-      , <span>Doris Mai</span>
-      
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      , <span>Gordon Wetzstein</span>
-      
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      , <span>Sonia Kim</span>
-      
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
+    <p class="post-meta">
+  August 06, 2024
+  by Kevin Dalton
 </p>
 
 
+  
+  
+  <img class="page-hero" src="/assets/img/talks/080624_Dalton.jpg" alt="Scaling Scaling: Stochastic Variational Inference for X-ray Diffraction Data">
 
-<p>Despite being trained predominantly on crystal structures, protein structure prediction models cannot solve structures from crystallography experiments. The discrepancy between predicting and solving structures is rooted in the lack of experimental context for the molecule of interest. In addition, the mainstream practice of solving averaged single structures is suboptimal for emerging experiments that aim to probe the dynamic nature of proteins.</p>
 
-<p>The latest generation of models, such as AlphaFold3, uses a generative approach that inherently supports modeling structural ensembles and could fundamentally transform crystallography data analysis. We propose to guide these generative models using crystallographic measurements. A scalable and efficient way to achieve the guidance is to support inference-time steering of pretrained models. A differentiable forward model computes the likelihood of experimental measurement, which is then injected into the generation process of the molecular structures during inference time. Enhanced sampling techniques can also be incorporated to further speed up the guided inference process.</p>
+<h3 id="inaugural-mlcv-seminar">Inaugural MLCV Seminar</h3>
+
+<p>The systematic errors inherent in crystallographic data introduce a core challenge to structure determination. These errors result from numerous processes including absorption by the sample and surrounding material, polarization, and imperfections in the crystal lattice. Prior to merging redundant observations, these artifacts are typically corrected by an optimization algorithm known as scaling. Recently, we showed that the two procedures, scaling and merging, could be unified into a single algorithm based on Bayesian (variational) inference and deep learning. While this algorithm compared favorably to other algorithms for a broad range of experimental designs, it was limited in applicability by its memory requirements. This was particularly prohibitive for serial crystallography wherein the number of diffraction images becomes too large to fit in memory. In this talk, I will introduce a solution to this problem. By adding a pooling mechanism to the neural scaling model from our previous work, it is possible to train the model on small batches of data. Thereby the memory requirements are determined by the batch size rather than the size of the full data set. This innovation opens the door to treating very large datasets with hundreds of thousands or millions of diffraction images.</p>
 
 
+
+  <h2>Recording</h2>
+  <div class="video-frame">
+    <iframe src="https://www.youtube.com/embed/w-8m2PvhTzA?si=yULb0B6DgLvJqh3p" title="Scaling Scaling: Stochastic Variational Inference for X-ray Diffraction Data" allowfullscreen></iframe>
+  </div>
+  
 
 
   </article>
