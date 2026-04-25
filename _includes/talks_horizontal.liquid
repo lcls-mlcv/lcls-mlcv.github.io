@@ -1,10 +1,16 @@
 <div class="col mb-4">
-  <a href="{% if talk.redirect %}{{ talk.redirect }}{% else %}{{ talk.url | relative_url }}{% endif %}">
-    <div class="card h-100 hoverable">
+  <a class="card-link" href="{% if talk.redirect %}{{ talk.redirect }}{% else %}{{ talk.url | relative_url }}{% endif %}">
+    <div class="card h-100 hoverable horizontal-card">
       <div class="row no-gutters">
         {% if talk.img %}
+          {% assign image_start = talk.img | slice: 0 %}
+          {% if image_start == "/" %}
+            {% assign image_src = talk.img %}
+          {% else %}
+            {% assign image_src = talk.img | prepend: "/" %}
+          {% endif %}
           <div class="col-md-6">
-            {% include figure.liquid loading="eager" path=talk.img sizes="(min-width: 768px) 156px, 50vw" alt="talk thumbnail" class="card-img" %}
+            <img class="card-img" src="{{ image_src | relative_url }}" alt="{{ talk.title | escape }} thumbnail">
           </div>
         {% endif %}
         <div class="{% if talk.img %}col-md-6{% else %}col-md-12{% endif %}">
@@ -12,8 +18,6 @@
             <h3 class="card-title">{{ talk.speaker }}</h3>
             <p class="card-subtitle">{{ talk.title }}</p>
             <p class="card-text">{{ talk.date | date: "%B %d, %Y" }}</p>
-            <div class="row ml-1 mr-1 p-0">
-            </div>
           </div>
         </div>
       </div>

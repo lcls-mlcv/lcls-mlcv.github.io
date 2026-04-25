@@ -7,6 +7,20 @@ subprojects: ["cryoAI", "cryoFIRE", "DRGN-AI", "aNiMAte", "ADP-3D","X-RAI", "Mor
 importance: 2
 category: Computational Imaging
 related_publications: true
+publication_ids:
+  - shenoy2025scalable
+  - levy2024solving
+  - levy2024revealing
+  - klindt2024towards
+  - shenoy2023amortized
+  - peck2023modeling
+  - koo2023cryochains
+  - nashed2022heterogeneous
+  - levy2022cryoai
+  - levy2022amortized
+  - donnat2022deep
+  - nashed2021cryoposenet
+  - miolane2020estimation
 ---
 
 ### Project Goal
@@ -17,16 +31,16 @@ The goal of the AtomicSPI project is to deliver software helping structural biol
 4. A deep learning reconstruction pipeline: The pipeline will tie together the above three components to learn atomic models directly from measured datasets. By combining the three components into a single step, the proposed method will be both more efficient and more accurate than existing analysis pipelines.
 
 ### Accomplishments
-We have accomplished all four deliverables above in the cryoEM setting and prototyped them in the X-ray SPI setting. As summarized in Figure 1, the work carried thanks to this LDRD belongs to a new wave of next-generation volume reconstruction algorithm development that combines generative modeling with end-to-end unsupervised deep learning techniques {% cite donnat2022deep %}.
+We have accomplished all four deliverables above in the cryoEM setting and prototyped them in the X-ray SPI setting. As summarized in Figure 1, the work carried thanks to this LDRD belongs to a new wave of next-generation volume reconstruction algorithm development that combines generative modeling with end-to-end unsupervised deep learning techniques.
 {% include figure.liquid loading="eager" path="assets/img/publication_preview/donnat2022deep.jpg" title="AtomicSPI" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
-    Comparison of generative reconstruction methods. Adapted from {% cite donnat2022deep %}. We give a quick overview of our contributions to these methods in what follows. CryoPoseNet {% cite nashed2021cryoposenet %} and CryoAI {% cite donnat2022deep %} are two methods for homogeneous reconstruction, meaning they reconstruct a unique volume from the dataset. CryoFIRE {% cite levy2022amortized %} and aNiMAte {% cite nashed2022heterogeneous %} are not shown in the figure yet and are two methods for heterogeneous reconstruction, meaning they reconstruct one volume per particle in the dataset. CryoFIRE {% cite levy2022amortized %} is a hybrid of CryoAI and CryoDRGN2, encodes both R, t and the conformation z of the particle in each image xi and learns an implicit neural network representation of the 3D volume of the molecule. aNiMAte {% cite nashed2022heterogeneous %} belongs to the same category as CryoFold from MIT and AtomVAE from Deepmind, encodes t and z of the particle in each image xi which help interpret the variability in the dataset as meaningful deformation of a reference atomistic representation of the 3D volume of the molecule. X-RAI {% cite shenoy2025scalable %}{% cite shenoy2023amortized %} is similar to cryo-AI in the X-ray setting (i.e. with a different rendering pipeline).
+    Comparison of generative reconstruction methods. We give a quick overview of our contributions to these methods in what follows. CryoPoseNet and CryoAI are two methods for homogeneous reconstruction, meaning they reconstruct a unique volume from the dataset. CryoFIRE and aNiMAte are not shown in the figure yet and are two methods for heterogeneous reconstruction, meaning they reconstruct one volume per particle in the dataset. CryoFIRE is a hybrid of CryoAI and CryoDRGN2, encodes both R, t and the conformation z of the particle in each image xi and learns an implicit neural network representation of the 3D volume of the molecule. aNiMAte belongs to the same category as CryoFold from MIT and AtomVAE from Deepmind, encodes t and z of the particle in each image xi which help interpret the variability in the dataset as meaningful deformation of a reference atomistic representation of the 3D volume of the molecule. X-RAI is similar to cryo-AI in the X-ray setting (i.e. with a different rendering pipeline).
 </div>
 
 We illustrate in Figure 2 our main achievements.
 {% include figure.liquid loading="eager" path="assets/img/projects/atomicspi.jpg" title="AtomicSPI" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
-    Development of Heterogeneous Reconstruction Methods across a wide array of Imaging Modalities. This figure highlights the most recent results from our work. (left) We demonstrate the ability to fit large atomic models to each of the images in experimental cryoEM datasets, through deformation along their normal modes {% cite nashed2022heterogeneous %}{% cite koo2023cryochains %}. (top-right) In collaboration with Ellen Zhong, we show that implicit representations like the ones used in cryoAI {% cite levy2022cryoai %} or cryoFIRE {% cite levy2022amortized %} can be used to reconstruct structural heterogeneity from in situ cryogenic electron tomography experiments {% cite levy2024revealing %}. (bottom-right) The approach pioneered in cryoAI {% cite levy2022cryoai %}was adapted to the X-ray SPI modality through a simple change of the image formation model, highlighting the versatility of our approach and showcasing its modular architecture {% cite shenoy2023amortized %}{% cite shenoy2025scalable %}.
+    Development of Heterogeneous Reconstruction Methods across a wide array of Imaging Modalities. This figure highlights the most recent results from our work. (left) We demonstrate the ability to fit large atomic models to each of the images in experimental cryoEM datasets, through deformation along their normal modes. (top-right) In collaboration with Ellen Zhong, we show that implicit representations like the ones used in cryoAI or cryoFIRE can be used to reconstruct structural heterogeneity from in situ cryogenic electron tomography experiments. (bottom-right) The approach pioneered in cryoAI was adapted to the X-ray SPI modality through a simple change of the image formation model, highlighting the versatility of our approach and showcasing its modular architecture.
 </div>
 
 
@@ -42,7 +56,7 @@ For a deeper dive into the AtomicSPI projects, check out their individual pages:
   </div>
 </div>
 
-Other directions explored in the project include studies on latent disentanglement of the conformational space {% cite klindt2024towards %} and a general approach to solve inverse problems in protein space using diffusion-based priors {% cite levy2024solving %}.
+Other directions explored in the project include studies on latent disentanglement of the conformational space and a general approach to solve inverse problems in protein space using diffusion-based priors.
 
 ### Acknowledgements
-This project sprung from discussions with Nina Miolane, following our initial work described in {% cite miolane2020estimation %}. This project was supported by the LDRD program at SLAC from 2021 to 2024.
+This project sprung from discussions with Nina Miolane, following our initial work on cryo-EM image models. This project was supported by the LDRD program at SLAC from 2021 to 2024.

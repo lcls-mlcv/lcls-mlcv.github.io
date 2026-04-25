@@ -1,50 +1,38 @@
 ---
-layout: default
+layout: page
 ---
-{% if page._styles %}
-  <!-- Page/Post style -->
-  <style type="text/css">
-    {{ page._styles }}
-  </style>
+{% assign people = '' | split: '' %}
+{% assign people = people | concat: site.data.members %}
+{% assign people = people | concat: site.data.collaborators %}
+{% assign people = people | concat: site.data.students %}
+{% assign people = people | concat: site.data.alumni %}
+
+<p class="project-people">
+  {% assign printed = false %}
+  {% for person in people %}
+    {% if person.projects_pi contains page.title or person.projects contains page.title %}
+      {% if printed %}, {% endif %}<span>{{ person.name }}</span>
+      {% assign printed = true %}
+    {% endif %}
+  {% endfor %}
+</p>
+
+{% if page.img %}
+  {% assign image_start = page.img | slice: 0 %}
+  {% if image_start == "/" %}
+    {% assign image_src = page.img %}
+  {% else %}
+    {% assign image_src = page.img | prepend: "/" %}
+  {% endif %}
+  <img class="page-hero" src="{{ image_src | relative_url }}" alt="{{ page.title | escape }}">
 {% endif %}
 
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p>
-    {% assign people = '' | split: '' %}
-    {% assign people=people | concat: site.data.members %}
-    {% assign people=people | concat: site.data.collaborators %}
-    {% assign people=people | concat: site.data.students %}
-    {% assign people=people | concat: site.data.alumni %}
-    {%- for person in people -%}
-      {% for project in person.projects_pi %}
-        {% if project == page.title %}
-          <b>{{ person.name }}</b>
-        {% endif %}
-      {% endfor %}
-      {% for project in person.projects %}
-        {% if project == page.title %}
-          <i>{{ person.name }}</i>
-        {% endif %}
-      {% endfor %}
-    {%- endfor -%}
-    </p>
-    <p class="post-description">{{ page.description }}</p>
-  </header>
+{{ content }}
 
-  <article>
-    {{ content }}
-  </article>
-
-  {% if page.related_publications %}
+{% if page.related_publications and page.publication_ids %}
+  {% assign related_publications = site.data.publications | where_exp: "pub", "page.publication_ids contains pub.id" %}
+  {% if related_publications.size > 0 %}
     <h2>References</h2>
-    <div class="publications">
-      {% bibliography --cited_in_order %}
-    </div>
+    {% include publication_list.liquid publications=related_publications group_by_year=false %}
   {% endif %}
-
-  {% if site.giscus and page.giscus_comments %}
-    {% include giscus.liquid %}
-  {% endif %}
-</div>
+{% endif %}
