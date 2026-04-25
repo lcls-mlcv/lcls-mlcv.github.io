@@ -1,82 +1,123 @@
 # LCLS MLCV Group Website
 
-## Basics
+This is the Jekyll website for the Machine Learning and Computer Vision group at LCLS.
 
-Hopefully everyone in the group can contribute to:
+The site has been simplified from the original al-folio setup. Most visible content is now maintained through Markdown files, YAML data files, one generated publications JSON file, and a small set of local Liquid includes/layouts.
 
-- [Add/update your own profile](#addupdate-team-profile)
-- [Add/update publications](#addupdate-publications)
-- [Add/update news and posts](#addupdate-news-and-posts)
+## Quick Start
 
-After your changes are committed, it might take a minute or two to see these changes reflected.
+Install dependencies:
 
----
+```bash
+bundle install
+```
 
-Prerequisites:
+Build the site:
 
-- Basic familiarity with using [GitHub](https://docs.github.com/en/get-started).
-- Basic knowledge of [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). This README.md is written as a Markdown file.
-- Basic familiarity of YAML file format:
-  ```yaml
-  - name: Student Name
-    position: Visiting Student
-    email: student [at] college.edu
-  ```
+```bash
+JEKYLL_ENV=production bundle exec jekyll build
+```
 
----
+Preview locally:
 
-### Add/update team profile
+```bash
+bundle exec jekyll serve --host 127.0.0.1 --port 4001
+```
 
-#### 1. Add your profile picture to /assets/img/
+Use `http://127.0.0.1:4001/` for local preview. Avoid the old port `4000` preview if it shows broken CSS/images in sandboxed environments.
 
-- format: use the `/assets/img/jpegify.sh` script to standardize image size and format
-- name your picture as `firstname_lastname.jpg`
-- navigate to `/assets/img/team/` on GitHub and drag-and-drop the picture file from your desktop into the browser window.
-- when prompted for **Commit changes**, change the message to "upload `YOUR FILENAME` for members.yml".
+## Where To Edit Content
 
-#### 2. Add your introduction to /\_data/members.yml
+- About page: `_pages/about.md`
+- Navigation pages: `_pages/*.md`
+- News: `_news/*.md`
+- Projects: `_projects/*.md`
+- Talks/seminars: `_talks/*.md`
+- Team members: `_data/members.yml`
+- Students: `_data/students.yml`
+- Collaborators: `_data/collaborators.yml`
+- Alumni: `_data/alumni.yml`
+- GitHub repository cards: `_data/repositories.yml`
+- Publications source: `_bibliography/papers.bib`
+- Generated publication data: `_data/publications.json`
+- Main styles: `assets/css/main.scss`
+- Theme and small interactions: `assets/js/theme.js`
 
-- navigate to `/_data/members.yml` on GitHub and click the pencil for "Edit this file". Add a new entry roughly
-  matching the format of the existing ones.
-- make sure the indentation is correct -- it's very sensitive for the YAML format.
-- when prompted for **Commit changes**, change the message to "Update members.yml to include `YOUR NAME`".
+## Team Profiles
 
-### Add/update publications
+Add profile photos to `assets/img/team/`. The team include expects the image filename listed in the appropriate YAML data file.
 
-You are expected to know how to add/edit a file on GitHub and commit with a descriptive message at this point. If not, you can reference from the [section above](#addupdate-team-profile) or ask for help.
+Add or update people in:
 
-#### 1. Get citation in BibTeX format
+- `_data/members.yml`
+- `_data/students.yml`
+- `_data/collaborators.yml`
+- `_data/alumni.yml`
 
-You can get this from [Google Scholar](https://scholar.google.com/), other platforms, or citation managers.
+Use the existing entries as the template. Common fields include `name`, `position`, `email`, `image`, `website`, `github`, `scholar`, `orcid`, `projects`, and `projects_pi`.
 
-#### 2. Add your publication
+## Publications
 
-- Add the citation in BibTeX format to `_bibliography/papers.bib`.
-- You can modify specific entries, such as
-  - `abbr` for a label for searching/filtering on the website
-  - `preview` for a preview image
-  - `url`, `pdf`, etc. for linking to the paper
-  - `abstract` for displaying a small paragraph when clicked on the button `ABS`
+Publications are sourced from `_bibliography/papers.bib`, but the site renders `_data/publications.json`. After editing BibTeX, regenerate the JSON:
 
-#### 3. Add a preview image
+```bash
+python3 tools/bibtex_to_json.py
+```
 
-- Add the image to `assets/img/publication_preview/`.
-- Modify the `preview` field in the corresponding entry in `_bibliography/papers.bib`.
+Useful BibTeX fields include:
 
-### Add/update news and posts
+- `abbr`: category/venue label shown above the preview thumbnail
+- `preview`: image filename under `assets/img/publication_preview/`
+- `selected`: set to `true` to show the paper on the home page
+- `abstract`: text shown by the `ABS` toggle
+- `url`, `html`, `pdf`, `doi`: paper links
+- `project`: optional project label
 
-You are expected to know how to add/edit a file on GitHub and commit with a descriptive message at this point. If not, you can reference from the [section above](#addupdate-team-profile) or ask for help.
+Add preview images to `assets/img/publication_preview/`. The generator will try to normalize preview image extensions when the BibTeX value and actual file extension differ.
 
-#### 1. Create a Markdown file containing the news or the post.
+## Project References
 
-- navigate to `_posts/` or `_news/` on GitHub and click **Create new file**.
-- The filename must begin with the date in YYYY-MM-DD format, followed by a brief title delimited by hyphens and then the extension `.md`.
-- Learn more about the format and features supported from examples in the folders or external resources.
+Project pages no longer use `jekyll-scholar` citation tags. To show a `References` section on a project page:
 
-## Advanced
+```yaml
+related_publications: true
+publication_ids:
+  - shenoy2025scalable
+  - shenoy2023amortized
+```
 
-For more advanced edits, you may want to install the website locally and make other customizations. See [INSTALL.md](INSTALL.md), [CUSTOMIZE.md](CUSTOMIZE.md), and [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
+Each `publication_ids` entry must match an `id` in `_data/publications.json`, which comes from the BibTeX citation key.
 
----
+## News
 
-This README instruction is adapted from the [DecisionLab](https://github.com/winstonchiong/decisionlabucsf.github.io) repository.
+Create news items in `_news/`. Filenames should begin with a date:
+
+```text
+YYYY-MM-DD-short-title.md
+```
+
+The home page shows news in a fixed-height scrollable block, and `/news/` shows the full list.
+
+## Projects And Talks
+
+Projects live in `_projects/` and use the `projects` layout. Talks live in `_talks/` and use the `talks` layout.
+
+Common front matter fields include `title`, `description`, `img`, `importance`, `category`, and `related_publications`.
+
+Repository cards can be embedded with:
+
+```liquid
+{% include repository/repo.liquid repository="owner/name" %}
+```
+
+## Resources And Repository Cards
+
+The Resources page is `_pages/repositories.md`. Edit general resource links there.
+
+The GitHub repository card grid is populated from `_data/repositories.yml`.
+
+## Notes For Maintainers
+
+- The active GitHub Actions workflow is `.github/workflows/deploy.yml`.
+- The site intentionally avoids the old al-folio plugin stack, Node/PurgeCSS build, and `jekyll-scholar`.
+- Some old documentation files may still refer to the pre-refactor al-folio setup. Prefer this README and `REFACTOR_REPORT.md` for the current structure.
