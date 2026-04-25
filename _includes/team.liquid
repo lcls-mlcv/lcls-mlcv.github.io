@@ -1,39 +1,40 @@
-<div class="col">
-  <!-- a href="{% if person.redirect %}{{ person.redirect }}{% else %}{{ person.url | relative_url }}{% endif %}" -->
-    <div class="card h-100" id = "{{person.name | replace: ' ', '-'}}">
-      {% if person.image %}
-        <img style="float: right; border-radius: 50%; width: 100%;  padding-left: 20px; padding-right: 20px;" src="{{ person.image | prepend: '/assets/img/team/' | prepend: site.baseurl | prepend: site.url }}" alt="photo of {{person.name}}">
+<div class="col mb-4">
+  <div class="card h-100 person-card" id="{{ person.name | slugify }}">
+    {% if person.image %}
+      <img class="person-photo" src="{{ '/assets/img/team/' | append: person.image | relative_url }}" alt="photo of {{ person.name | escape }}">
+    {% endif %}
+    <div class="card-body">
+      {% if person.website %}
+        <a href="{{ person.website }}"><h4 class="card-title">{{ person.name }}</h4></a>
+      {% else %}
+        <h4 class="card-title">{{ person.name }}</h4>
       {% endif %}
-      <div class="card-body">
-        <div class="row ml-1 mr-1 p-0">
-          <div>
-            <!-- h2 class="card-title">{{person.name}}{% if person.degrees %}, {{person.degrees}} {% endif %}</h2 -->
-            {% if person.website %}
-              <a href="{{ person.website | relative_url }}"><h4 class="card-title">{{person.name}}</h4></a>
-            {% else %}
-              <h4 class="card-title">{{person.name}}</h4>
-            {% endif %}
-            {{person.position}} <br>
-            {% if person.email %}
-              <i class="fa fa-envelope"></i> <em>{{person.email}}</em> <br>
-            {% endif %}
-            {% if person.github %}
-              <a href= "https://github.com/{{person.github}}" target="_blank"> <i class="fab fa-github"></i> </a>
-            {% endif %}
-            {% if person.scholar %}
-              <a href= "http://scholar.google.com/citations?user={{person.scholar}}" target="_blank"><i class="ai ai-google-scholar"></i> </a>
-            {% endif %}
-            {% if person.orcid %}
-              <a href="http://orcid.org/{{person.orcid}}" target="_blank"> <i class="ai ai-orcid"></i> </a>
-            {% endif %}
-          </div>
-        </div>
-        <div class="card-text">
-          {% if person.description %}<p class="text-justify">{{person.description | markdownify}}</p>{% endif %}
-          {% if person.previously %}Previously:<br><p class="text-justify"> {{person.previously}}</p>{% endif %}
-          {% if person.now %}Now:<br><p class="text-justify"> {{person.now}}</p>{% endif %}
-        </div>
-      </div>
+      {% if person.position %}
+        <p class="person-position">{{ person.position }}</p>
+      {% endif %}
+      <p class="person-links">
+        {% if person.email %}
+          <a href="mailto:{{ person.email }}" aria-label="Email {{ person.name | escape }}" title="Email {{ person.name | escape }}"><i class="fa-solid fa-envelope"></i></a>
+        {% endif %}
+        {% if person.github %}
+          <a href="https://github.com/{{ person.github }}" aria-label="{{ person.name | escape }} on GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        {% endif %}
+        {% if person.scholar %}
+          <a href="https://scholar.google.com/citations?user={{ person.scholar }}" aria-label="{{ person.name | escape }} on Google Scholar" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+        {% endif %}
+        {% if person.orcid %}
+          <a href="https://orcid.org/{{ person.orcid }}" aria-label="{{ person.name | escape }} on ORCID" title="ORCID"><i class="ai ai-orcid"></i></a>
+        {% endif %}
+      </p>
+      {% if person.description %}
+        <div class="card-text">{{ person.description | markdownify }}</div>
+      {% endif %}
+      {% if person.previously %}
+        <p><strong>Previously:</strong><br>{{ person.previously }}</p>
+      {% endif %}
+      {% if person.now %}
+        <p><strong>Now:</strong><br>{{ person.now }}</p>
+      {% endif %}
     </div>
-  <!-- /a -->
+  </div>
 </div>

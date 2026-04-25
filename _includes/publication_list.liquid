@@ -1,0 +1,50 @@
+{% assign publications = include.publications | sort: "year" | reverse %}
+<div class="publications">
+  {% assign current_year = "" %}
+  {% for pub in publications %}
+    {% assign pub_year = pub.year | append: "" %}
+    {% if include.group_by_year and pub_year != current_year %}
+      {% assign current_year = pub_year %}
+      <h2 class="bibliography-year">{{ current_year }}</h2>
+    {% endif %}
+    <article class="publication media">
+      {% if pub.preview %}
+        {% assign preview_src = pub.preview | prepend: "/assets/img/publication_preview/" %}
+        <div class="publication-preview">
+          {% if pub.abbr %}
+            <span class="badge badge-light publication-badge">{{ pub.abbr }}</span>
+          {% endif %}
+          <img src="{{ preview_src | relative_url }}" alt="{{ pub.title | escape }}">
+        </div>
+      {% endif %}
+      <div class="media-body">
+        {% unless pub.preview %}
+          {% if pub.abbr %}
+          <span class="badge badge-light">{{ pub.abbr }}</span>
+          {% endif %}
+        {% endunless %}
+        <h3>{{ pub.title }}</h3>
+        <p class="authors">{{ pub.author }}</p>
+        <p class="venue">
+          {{ pub.journal | default: pub.booktitle }}
+          {% if pub.year %}({{ pub.year }}){% endif %}
+        </p>
+        <p class="publication-links">
+          {% if pub.abstract %}
+            {% assign abstract_id = pub.id | default: pub.title | slugify | prepend: "abstract-" %}
+            <button class="publication-link-button" type="button" data-abstract-toggle aria-expanded="false" aria-controls="{{ abstract_id }}">ABS</button>
+          {% endif %}
+          {% if pub.html %}<a href="{{ pub.html }}">HTML</a>{% endif %}
+          {% if pub.url %}<a href="{{ pub.url }}">URL</a>{% endif %}
+          {% if pub.pdf %}<a href="{{ pub.pdf }}">PDF</a>{% endif %}
+          {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}">DOI</a>{% endif %}
+        </p>
+        {% if pub.abstract %}
+          <div class="publication-abstract" id="{{ abstract_id }}" hidden>
+            <p>{{ pub.abstract }}</p>
+          </div>
+        {% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</div>
