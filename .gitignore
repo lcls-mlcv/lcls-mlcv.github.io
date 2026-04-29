@@ -12,3 +12,6 @@ node_modules/
 vendor
 .idea
 FAQ.md
+
+# Local VS Code workspace settings (not for the repo)
+.vscode/
