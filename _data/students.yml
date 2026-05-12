@@ -11,17 +11,6 @@
   description:
   projects: ["AtomicSPI", "X-RAI"]
 
-- name: Pierre-Louis Monteil
-  degrees: M.S.
-  image: pierre_louis_monteil.jpg
-  position: Research Assistant (Fall 2024 - now)
-  email: pmonteil [at] stanford.edu
-  website:
-  scholar:
-  orcid:
-  description:
-  projects: ["OptAI"]
-
 - name: Marc Nasser
   degrees: M.S.
   image: marc_nasser.jpg
@@ -76,3 +65,11 @@
   orcid:
   description:
   projects:
+
+- name: Claire Fitussi
+  degrees: M.S.
+  position: Research Assistant (Winter 2026 - )
+
+- name: Constance Rouffet
+  degrees: M.S.
+  position: Research Assistant (Spring 2026 - )

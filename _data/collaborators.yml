@@ -4,6 +4,16 @@
   email: dermen [at] slac.stanford.edu
   website: https://profiles.stanford.edu/dermen
 
+- name: Doris Mai
+  degrees: Ph.D.
+  position: Research Associate
+  email: mai12345 [at] slac.stanford.edu
+  website: https://dorismai.github.io/
+  github: dorismai
+  scholar: UGNnKgIAAAAJ
+  orcid: 0000-0003-2278-0768
+  projects: ["Abismal", "CrystalBoltz"]
+
 - name: Apurva Mehta
   degrees: Ph.D.
   position: Senior Scientist, LCLS
