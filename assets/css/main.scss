@@ -3,28 +3,28 @@
 
 :root {
   --global-bg-color: #fff;
-  --global-code-bg-color: #f6f8fa;
-  --global-text-color: #111;
-  --global-text-color-light: #555;
-  --global-theme-color: #2698ba;
-  --global-hover-color: #1b6f88;
-  --global-footer-bg-color: #424242;
-  --global-footer-text-color: #e8e8e8;
+  --global-code-bg-color: #f8fafc;
+  --global-text-color: #1e293b;
+  --global-text-color-light: #64748b;
+  --global-theme-color: #334155;
+  --global-hover-color: #0f172a;
+  --global-footer-bg-color: #1e293b;
+  --global-footer-text-color: #e2e8f0;
   --global-card-bg-color: #fff;
-  --global-divider-color: rgba(0, 0, 0, 0.1);
+  --global-divider-color: rgba(0, 0, 0, 0.08);
 }
 
 html[data-theme="dark"] {
-  --global-bg-color: #1c1c1d;
-  --global-code-bg-color: #2c3237;
-  --global-text-color: #e8e8e8;
-  --global-text-color-light: #b6b6b6;
-  --global-theme-color: #79c0d8;
-  --global-hover-color: #9ad4e6;
-  --global-footer-bg-color: #111;
-  --global-footer-text-color: #cfcfcf;
-  --global-card-bg-color: #242526;
-  --global-divider-color: rgba(255, 255, 255, 0.16);
+  --global-bg-color: #0f172a;
+  --global-code-bg-color: #1e293b;
+  --global-text-color: #e2e8f0;
+  --global-text-color-light: #94a3b8;
+  --global-theme-color: #94a3b8;
+  --global-hover-color: #cbd5e1;
+  --global-footer-bg-color: #020617;
+  --global-footer-text-color: #cbd5e1;
+  --global-card-bg-color: #1e293b;
+  --global-divider-color: rgba(255, 255, 255, 0.1);
 }
 
 body {

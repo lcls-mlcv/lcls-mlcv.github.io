@@ -1,25 +1,24 @@
 - name: Axel Levy
   degrees: M.S.
   image: axel_levy.jpg
-  position: PhD student
+  previously: PhD student, LCLS & Stanford EE
+  now: ML Scientist, Generate:Biomedicines
   email: axlevy [at] stanford.edu
   website: https://axlevy.com/
   github: axel-levy
   scholar: yO62sYUAAAAJ
-  orcid:
-  description:
   projects: ["AtomicSPI", "X-RAI", "DRGN-AI", "cryoFIRE", "aNiMAte", "cryoAI", "ADP-3D"]
 
 - name: Doris Mai
   degrees: Ph.D.
   image: doris_mai.jpg
   previously: Research Associate, LCLS
+  now: Scientist, Astera Institute
   email: mai12345 [at] slac.stanford.edu
   website: https://dorismai.github.io/
   github: dorismai
   scholar: UGNnKgIAAAAJ
   orcid: 0000-0003-2278-0768
-  description: 你好！
   projects: ["Abismal", "CrystalBoltz"]
 
 - name: Pierre-Louis Monteil
@@ -31,29 +30,23 @@
   projects: ["OptAI"]
 
 - name: Prakriti Subedi
+  image: prakriti_subedi.jpg
   previously: Intern (Summer 2025)
 
 - name: Nathan Fournier
   degrees: M.S.
   image: nathan_fournier.jpg
-  position: Research Assistant (Spring 2024 - now)
+  previously: Research Assistant (Spring 2024 - Spring 2025)
+  now: Software Engineer, Google
   email: nathfrn [at] stanford.edu
-  website:
-  github:
-  scholar:
-  orcid:
-  description:
   projects: ["PyPCA"]
 
 - name: Louis Conreux
   degrees: M.S.
   image: louis_conreux.jpg
-  position: Research Assistant (Spring 2024 - Spring 2025)
+  previously: Research Assistant (Spring 2024 - Spring 2025)
+  now: Science and Engineering Associate, SLAC
   email: lconreux [at] stanford.edu
-  website:
-  scholar:
-  orcid:
-  description:
   projects: ["BayFAI"]
 
 - name: Daisy Liu
@@ -119,7 +112,7 @@
   degrees: M.S.
   image: paul_emile_giacomelli.jpg
   previously: Research Assistant (Fall 2023 - Winter 2024)
-  now: Strategy Consultant
+  now: Software Engineer, the Exploration Company
   projects: ["BayFAI"]
   email:
   website:
@@ -128,7 +121,7 @@
   degrees: M.S.
   image: thomas_bougnon.jpg
   previously: Research Assistant (Fall 2023 - Winter 2024)
-  now: Consultant
+  now: Consultant, AlixPartners
   email:
   website:
   projects: ["PyPCA"]
